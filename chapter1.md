@@ -1,3 +1,3 @@
 # RX - from .NET to RxJava
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
+响应式编程是一种基于异步数据流概念的编程模式。数据流就像一条河：它可以被观测，被过滤，被操作，或者与第二个流合并为一个新的消费者创建一个新的流。
