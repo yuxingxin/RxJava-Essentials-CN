@@ -1,4 +1,4 @@
-My Awesome Book
+RxJava Essentials 中文翻译版
 =======
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+本书针对Ivan.Morgillo所写一书的翻译版本，仅供交流学习使用，严禁商业用途。
