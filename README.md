@@ -110,4 +110,4 @@ public Observable<List<User>> getMostPopularSOusers(int howmany){
 
 # 读者反馈
 
-发送邮件到 feedback@packtpub.com  在你的正文中要提到书的标题。
+发送邮件到 feedback@packtpub.com  在你的邮件主题中要提到书的标题。
