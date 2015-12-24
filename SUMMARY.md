@@ -1,5 +1,5 @@
 # Summary
 
-* [前言](README.md)
+* [说明](README.md)
 * [第一章](chapter1.md)
 
