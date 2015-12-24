@@ -54,3 +54,13 @@ RxJava Essentials 中文翻译版
 
 
 
+# 学习这本书你需要做的：
+
+为了能够运行书中的例子，你需要一个标准的Android开发环境：
+
+* Android Studio 或 Intellij IDEA
+* Android SDK
+* Java SDK
+
+作为一个纯粹的Java开发者，当你接触RxJava时，很明显你需要一个你喜欢Java编辑器和一个标准的Java JDK 环境。这本书中的一些图表来自http://rxmarbles.com 和 http://reactivex.io。
+
