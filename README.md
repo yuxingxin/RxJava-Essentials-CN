@@ -28,7 +28,7 @@ RxJava Essentials 中文翻译版
 
 ### **4.Filtering Observables**
 
-> 本章我们会研究Observable序列的本质:filtering.我们也讲学到如何从一个发出的Observable中选取我们想要的值，如何获得一个有限的数值，如何处理溢出的场景，以及更多有用的技巧。
+> 本章我们会研究Observable序列的本质:filtering.我们也将学到如何从一个发出的Observable中选取我们想要的值，如何获得一个有限的数值，如何处理溢出的场景，以及更多有用的技巧。
 
 
 ### **5.Transforming Observables**
