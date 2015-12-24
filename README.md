@@ -64,3 +64,7 @@ RxJava Essentials 中文翻译版
 
 作为一个纯粹的Java开发者，当你接触RxJava时，很明显你需要一个你喜欢Java编辑器和一个标准的Java JDK 环境。这本书中的一些图表来自http://rxmarbles.com 和 http://reactivex.io。
 
+
+# 这本书适合哪些人看
+
+如果你是一名有经验的Java开发者，reactive编程将会在后端系统中给你一种新的学习扩展和并发的方式，而这不需要更换开发语言。这本书将帮助你学习RxJava的核心方面,也能帮助你克服Android平台局限性从而创建一个基于事件驱动的，响应式的，流畅体验的Android应用。
