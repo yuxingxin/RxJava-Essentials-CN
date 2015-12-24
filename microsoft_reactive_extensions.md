@@ -10,5 +10,5 @@ Rx创造了众所周知的概念，例如**push approach** ，易于实现和消
 
 | .NET Observable| 一个返回值| 多个返回值  |
 | ------------- |:-------------:| -----:|
-| Pull/Synchronous/Interactive|T| IEnumerable<T> |
-| Push/Asynchronous/Reactive| Task<T>|IObservable<T>|
+| Pull/Synchronous/Interactive|T| `IEnumerable<T>` |
+| Push/Asynchronous/Reactive| `Task<T>`|`IObservable<T>`|
