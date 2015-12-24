@@ -113,3 +113,8 @@ public Observable<List<User>> getMostPopularSOusers(int howmany){
 发送邮件到 feedback@packtpub.com  在你的邮件主题中要提到书的标题。
 
 如果你有擅长的话题并且你对写作感兴趣或者想出书的话，可以看我们作者指南：http://www.packtpub.com/authors
+
+
+# 下载样例代码
+
+你可以从你在http://www.packtpub.com的账户中下载所有你购买Packt 出版的图书的样例代码，如果你从别处购买这本书的话，你可以访问：http://www.packtpub.com/support 注册并直接用邮件发给你
