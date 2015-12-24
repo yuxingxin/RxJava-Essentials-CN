@@ -96,6 +96,13 @@ public Observable<List<User>> getMostPopularSOusers(int howmany){
                 .subscribeOn(Schedulers.io())
                .observeOn(AndroidSchedulers.mainThread());
 }
-
-
 ```
+
+**新的项目**和**重要的词语**都会以粗体显示。你在屏幕看到的字，例如在菜单或者对话框，会以类似这样的形式出现在文本中：“We will just need a fancy progress bar and a **DOWNLOAD** button.”
+
+**Note**
+
+类似这样的是警告或者出现在框中重要提示。
+
+**Tip**
+类似这样的是提示和技巧
