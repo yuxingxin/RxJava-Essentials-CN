@@ -68,3 +68,32 @@ RxJava Essentials 中文翻译版
 # 这本书适合哪些人看
 
 如果你是一名有经验的Java开发者，reactive编程将会在后端系统中给你一种新的学习扩展和并发的方式，而这不需要更换开发语言。这本书将帮助你学习RxJava的核心方面,也能帮助你克服Android平台局限性从而创建一个基于事件驱动的，响应式的，流畅体验的Android应用。
+
+
+# 一些约定
+
+在这本书中，你会发现许多用来区分不同信息的文本样式，这列举这些样式的一些例子和对他们释义的说明。
+
+以下列举了些文本中的代码、数据库表名、文件夹名、文件名、文件扩展名、路径名、伪造的URL、用户输入、Twitter handles ：“正如你看到的那样：zip()有三个参数：两个Observable和一个Func2，正如所预期的一样”
+
+如下面的一块代码：
+
+```java
+public Observable<List<User>> getMostPopularSOusers(int howmany){
+        return mStackExchangeService
+                .getMostPopularSOusers(howmany)
+                .map(UsersResponse::getUsers)
+                .subscribeOn(Schedulers.io())
+               .observeOn(AndroidSchedulers.mainThread());
+}
+```
+当我们想对代码块的某一部分引起你的注意时，会在对应的那一行或列设置为粗体
+```java
+public Observable<List<User>> getMostPopularSOusers(int howmany){
+        return mStackExchangeService
+                .getMostPopularSOusers(howmany)
+                .map(UsersResponse::getUsers)   //也就是这句加粗显示
+                .subscribeOn(Schedulers.io())
+               .observeOn(AndroidSchedulers.mainThread());
+}
+```
