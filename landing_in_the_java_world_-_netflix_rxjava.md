@@ -4,7 +4,7 @@ Netflix在2012年开始意识到他们的架构要满足他们庞大的用户群
 
 为了实现这一目标，他们决定尝试响应式，开始将.NET Rx复用到JVM上面。他们不想只基于Java；而是整个JVM，从而有可能为市场上的每一种基于JVM的语言：如Java、Closure、Groovy、Scala等等提供一种新的工具。
 
-2013年二月份,Ben Christensen 和 Jafar Husain发在Netflix技术博客的一篇文章第一次向世界展示了R小Java。
+2013年二月份,Ben Christensen 和 Jafar Husain发在Netflix技术博客的一篇文章第一次向世界展示了RxJava。
 
 主要特点有：
 
