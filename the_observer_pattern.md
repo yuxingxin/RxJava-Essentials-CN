@@ -8,5 +8,6 @@
 
 这有一张表描述了Subject/Observer的关系是怎样的一对多的关系：
 
+![](figure1.png)
 
-
+上面这张表展示了一个Subject为3个Observers提供服务。
