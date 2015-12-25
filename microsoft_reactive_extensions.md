@@ -1,4 +1,4 @@
-# Microsoft Reactive Extensions
+# 微软响应式扩展
 
 函数响应式编程是一个来自90年代后期受微软的一名计算机科学家Erik Meijer启发的思想，用来设计和开发微软的Rx库。
 
