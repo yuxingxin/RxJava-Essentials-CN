@@ -16,3 +16,4 @@ Observables和Iterables共用一个相似的API：我们在Iterable可以执行�
 | Synchronous|`T getData()`| `Iterable<T>` |
 | Asynchronous| `Future<T> getData()`|`Observable<T> getData()`|
 
+从语义的角度来看，RxJava就是.NET Rx。从语法的角度来看，Netflix考虑到了对应每个Rx方法,牢记了Java代码规范和基本的模式。
