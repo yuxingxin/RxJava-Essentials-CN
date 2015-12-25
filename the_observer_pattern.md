@@ -10,4 +10,4 @@
 
 ![](figure1.png)
 
-上面这张表展示了一个Subject为3个Observers提供服务。
+上面这张表展示了一个Subject为3个Observers提供服务。很明显，没有理由限制Observers的数量：如果有需要，一个Subject可以有无限多个Observers,当subject状态发生变化时，它们中的每一个都会收到通知。
