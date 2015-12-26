@@ -9,5 +9,5 @@
 * [为什么是Observables?](why_observables.md)
    * [观察者模式](the_observer_pattern.md)
    * [你什么时候使用观察者模式？](when_do_you_use_the_Observer_pattern.md)
-   * RxJava观察者模式工具包
+   * [RxJava观察者模式工具包](rxjava_observer_pattern_toolkit.md)
 
