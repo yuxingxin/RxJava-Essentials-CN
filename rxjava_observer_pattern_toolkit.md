@@ -6,4 +6,4 @@
 * Subscriber
 * Subjects
 
-Observables和Subjects是两个“生成”实体，Observers和Subscribers是两个“消费”实体。
+Observables和Subjects是两个“生产”实体，Observers和Subscribers是两个“消费”实体。
