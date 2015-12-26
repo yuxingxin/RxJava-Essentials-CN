@@ -8,4 +8,5 @@
    * [总结](summary1.md)
 * [为什么是Observables?](why_observables.md)
    * [观察者模式](the_observer_pattern.md)
+* 你什么时候使用观察者模式？
 
