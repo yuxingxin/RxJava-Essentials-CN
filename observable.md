@@ -78,3 +78,8 @@ Subscription subscriptionPrint = observableString.subscribe(new Observer<Integer
 * 如果错误发生了，我们就打印一个错误的信息。
 
 #### Observable.from()
+
+在上一个例子中，我们创建了一个整数序列并一个一个的发射它们。假如我们已经有一个列表呢？我们是不是可以不用for循环而也可以一个接一个的发射它们呢？
+
+在下面的例子代码中，我们从一个已有的列表中创建一个Observable序列：
+
