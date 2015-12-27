@@ -14,5 +14,12 @@ Observable的生命周期包含了三种可能的易于Iterable生命周期事�
 
 使用Iterable时，消费者从生产者那里以同步的方式得到值，在这些值得到之前线程处于阻塞状态。相反，使用Observable时，生产者以异步的方式把值推给观察者，无论何时，这些值都是可用的。这种方法之所以更灵活是因为即便值是同步或异步方式到达，消费者在这两种场景都可以根据自己的需要来处理。
 
-为了更好地复用Iterable接口，RxJava Observable类扩展了“四人组”的观察者模式的语义。
+为了更好地复用Iterable接口，RxJava Observable类扩展了GOF观察者模式的语义。引入了两个新的接口：
+* onCompleted() 即通知观察者Observable没有更多的数据。
+* onError() 即观察者有一个错误出现了。
+
+
+### 热Observables和冷Observables
+
+从发射物的
 
