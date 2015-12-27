@@ -149,3 +149,7 @@ private String helloWorld(){
 
 最后注意`just()`创建符，它发射出值后，Observable正常结束，在上面那个例子中，我们会在控制台打印出两条信息：“Hello World”和“Observable completed”。
 
+#### Observable.empty(),Observable.never(),和Observable.throw()
+
+
+
