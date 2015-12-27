@@ -71,3 +71,6 @@ Subscription subscriptionPrint = observableString.subscribe(new Observer<Integer
 
 我们创建一个新的`Observable<Integer>`,它执行了5个元素的for循环，一个接一个的发射他们，最后完成。
 
+另一方面，我们订阅了Observable，返回一个Subscription
+。一旦我们订阅了，我们就开始接受整数，并一个接一个的打印出它们。我们并不知道要接受多少整数。事实上，我们也无需知道是因为我们为每种场景都提供对应的行为操作：
+* 如果我们接收到了整数，那么久打印他。
