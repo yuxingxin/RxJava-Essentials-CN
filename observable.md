@@ -114,5 +114,32 @@ Subscription subscriptionPrint = observableString.subscribe(new Observer<Integer
 
 #### Observable.just()
 
-如果我们已经有了一个传统的Java函数，我们想把它转变为一个Observable又改怎么办呢？我们可以用`create()`方法，正如我们先前看到的，或者我们也可以用下面的这个以此来省去许多模板代码。
+如果我们已经有了一个传统的Java函数，我们想把它转变为一个Observable又改怎么办呢？我们可以用`create()`方法，正如我们先前看到的，或者我们也可以像下面那样使用以此来省去许多模板代码：
+```java
+Observable<String> observableString = Observable.just(helloWorld());
+
+Subscription subscriptionPrint = observableString.subscribe(new Observer<String>() {
+    @Override
+    public void onCompleted() {
+        System.out.println("Observable completed");
+    }
+
+    @Override
+    public void onError(Throwable e) {
+        System.out.println("Oh,no! Something wrong happened!");
+    }
+
+    @Override
+    public void onNext(String message) {
+        System.out.println(message);
+    }
+});
+```
+
+`helloWorld()`方法比较简单，像这样：
+```java
+private String helloWorld(){
+    return "Hello World";
+}
+```
 
