@@ -76,3 +76,5 @@ Subscription subscriptionPrint = observableString.subscribe(new Observer<Integer
 * 如果我们接收到了整数，那么久打印它。
 * 如果序列结束，我们就打印一个关闭的序列信息。
 * 如果错误发生了，我们就打印一个错误的信息。
+
+#### Observable.from()
