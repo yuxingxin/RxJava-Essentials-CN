@@ -114,5 +114,5 @@ Subscription subscriptionPrint = observableString.subscribe(new Observer<Integer
 
 #### Observable.just()
 
-
+如果我们已经有了一个传统的Java函数，我们想把它转变为一个Observable又改怎么办呢？我们可以用`create()`方法，正如我们先前看到的，或者我们也可以用下面的这个以此来省去许多模板代码。
 
