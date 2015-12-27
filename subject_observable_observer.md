@@ -93,6 +93,11 @@ BehaviorSubject<Integer> behaviorSubject = BehaviorSubject.create(1);
 在这个短例子中，我们创建了一个能发射整数的BehaviorSubject。由于真相是一旦Observes订阅它就会发射最近的值，所以它需要一个初始值。
 ### ReplaySubject
 
+ReplaySubject会缓存它所订阅的所有数据，向任意一个订阅它的观察者repaly:
+```java
+ReplaySubject<Integer> replaySubject = ReplaySubject.create();
+```
+
 
 
 ### AsyncSubject
