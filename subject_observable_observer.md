@@ -34,10 +34,32 @@ Subscription subscriptionPrint = stringPublishSubject.subscribe(new Observer<Str
 stringPublishSubject.onNext("Hello World");
 ```
 
-在刚才的例子中，我们创建了一个`PublishSubject`，用`create()`方法发射一个`String`值，然后我们订阅了PublishSubject。此时，没有数据要发送，因此我们的观察者只能等待，没有阻塞线程，也没有消耗资源。就在这准备从主题接收值，如果主题没有发射值那么我们的观察者就会一直在等待。再次声明的是，无需担心：观察者知道在每个场景中该做什么，什么时候我们也不用担心是因为它时响应式的：系统会响应。我们并不关心它什么时候响应。我们只关心它响应时该做什么。
+在刚才的例子中，我们创建了一个`PublishSubject`，用`create()`方法发射一个`String`值，然后我们订阅了PublishSubject。此时，没有数据要发送，因此我们的观察者只能等待，没有阻塞线程，也没有消耗资源。就在这准备从主题接收值，如果主题没有发射值那么我们的观察者就会一直在等待。再次声明的是，无需担心：观察者知道在每个场景中该做什么，什么时候我们也不用担心是因为它是响应式的：系统会响应。我们并不关心它什么时候响应。我们只关心它响应时该做什么。
 
 最后一行代码展示了手动发射字符串“Hello World”,它触发了观察者的`onNext()`方法，让我们在控制台打印出“Hello World”信息。
 
 让我们看一个更复杂的例子。话说我们有一个`private`声明的Observable，外部不能访问。Observable在它生命周期期间发射值，我们不用关心这些值，我们只关心他们的结束。
 
 首先，我们创建一个新的PublishSubject来响应它的`onNext()`方法，并且外部也可以访问它。
+
+```java
+final PublishSubject<Boolean> subject = PublishSubject.create();
+        
+subject.subscribe(new Observer<Boolean>() {
+    @Override
+    public void onCompleted() {
+        
+    }
+
+    @Override
+    public void onError(Throwable e) {
+
+    }
+
+    @Override
+    public void onNext(Boolean aBoolean) {
+        System.out.println("Observable Completed");
+    }
+});
+        
+```
