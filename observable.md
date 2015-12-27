@@ -21,5 +21,5 @@ Observable的生命周期包含了三种可能的易于Iterable生命周期事�
 
 ### 热Observables和冷Observables
 
-从发射物的
+从发射物的角度来看，有两种不同的Observables:热的和冷的。一个"热"的Observable典型的只要一创建完就开始发射数据，因此所有后续订阅它的观察者可能从序列中间的某个位置开始接受数据（有一些数据错过了）
 
