@@ -63,3 +63,19 @@ subject.subscribe(new Observer<Boolean>() {
 });
 ```
 然后，我们创建“private”的Observable，只有主题才可以访问的到。
+```java
+Observable.create(new Observable.OnSubscribe<Integer>() {
+    @Override
+    public void call(Subscriber<? super Integer> subscriber) {
+        for (int i = 0; i < 5; i++) {
+            subscriber.onNext(i);
+        }
+        subscriber.onCompleted();
+    }
+}).doOnCompleted(new Action0() {
+    @Override
+    public void call() {
+        subject.onNext(true);
+    }
+}).subscribe();
+```
