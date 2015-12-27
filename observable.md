@@ -82,4 +82,28 @@ Subscription subscriptionPrint = observableString.subscribe(new Observer<Integer
 在上一个例子中，我们创建了一个整数序列并一个一个的发射它们。假如我们已经有一个列表呢？我们是不是可以不用for循环而也可以一个接一个的发射它们呢？
 
 在下面的例子代码中，我们从一个已有的列表中创建一个Observable序列：
+```java
+List<Integer> items = new ArrayList<Integer>();
+items.add(1);
+items.add(10);
+items.add(100);
+items.add(200);
 
+Observable<Integer> observableString = Observable.from(items);
+Subscription subscriptionPrint = observableString.subscribe(new Observer<Integer>() {
+    @Override
+    public void onCompleted() {
+        System.out.println("Observable completed");
+    }
+
+    @Override
+    public void onError(Throwable e) {
+        System.out.println("Oh,no! Something wrong happened！");
+    }
+
+    @Override
+    public void onNext(Integer item) {
+        System.out.println("Item is " + item);
+    }
+});
+```
