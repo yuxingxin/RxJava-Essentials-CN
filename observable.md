@@ -151,6 +151,6 @@ private String helloWorld(){
 
 #### Observable.empty(),Observable.never(),和Observable.throw()
 
-当我们需要一个Observable毫无理由的不再发射数据正常结束时，我们可以使用`empty()`。我们可以使用`never()`创建一个不发射任何数据并且也不永远不会结束的Observable。我们也可以使用`throw()`创建一个不发射任何数据并且以错误结束的Observable。
+当我们需要一个Observable毫无理由的不再发射数据正常结束时，我们可以使用`empty()`。我们可以使用`never()`创建一个不发射任何数据并且也永远不会结束的Observable。我们也可以使用`throw()`创建一个不发射任何数据并且以错误结束的Observable。
 
 
