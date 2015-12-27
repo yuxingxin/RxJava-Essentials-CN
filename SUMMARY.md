@@ -11,5 +11,5 @@
    * [你什么时候使用观察者模式？](when_do_you_use_the_Observer_pattern.md)
    * [RxJava观察者模式工具包](rxjava_observer_pattern_toolkit.md)
    * [Observable](observable.md)
-   * Subject = Observable + Observer
+   * [Subject = Observable + Observer](subject_observable_observer.md)
 
