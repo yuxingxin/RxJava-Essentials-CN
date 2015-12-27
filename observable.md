@@ -38,4 +38,32 @@ Observable.create(new Observable.OnSubscribe<Object>(){
         }
 });
 ```
+Observable通过使用subscriber变量并根据条件调用它的方法来和观察者通信。让我们看一个“现实世界”的例子：
+```java
+Observable<Integer> observableString = Observable.create(new Observable.OnSubscribe<Integer>() {
+            @Override
+            public void call(Subscriber<? super Integer> observer) {
+                for (int i = 0; i < 5; i++) {
+                    observer.onNext(i);
+                }
+                observer.onCompleted();
+            }
+        });
 
+        Subscription subscriptionPrint = observableString.subscribe(new Observer<Integer>() {
+            @Override
+            public void onCompleted() {
+                System.out.println("Observable completed");
+            }
+
+            @Override
+            public void onError(Throwable e) {
+                System.out.println("Oh,no! Something wrong happened！");
+            }
+
+            @Override
+            public void onNext(Integer item) {
+                System.out.println("Item is " + item);
+            }
+        });
+```
