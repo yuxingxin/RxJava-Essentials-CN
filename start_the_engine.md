@@ -16,7 +16,7 @@
 正如你看到的我们引入了RxAndroid。RxAndroid是RxJava的增强版，尤其是针对Android设计。
 ### RxAndroid
 
-RxAndroid是RxJava家族的一部分。它基于RxJava1.0.x,在普通的RxJava基础上添加了几个有用的类。大多数情况下，它为Android添加了特殊的调度器。我们可以在第七章Schedulers-Defeating the Android MainThread Issue再讨论它。
+RxAndroid是RxJava家族的一部分。它基于RxJava1.0.x,在普通的RxJava基础上添加了几个有用的类。大多数情况下，它为Android添加了特殊的调度器。我们将在第七章Schedulers-Defeating the Android MainThread Issue再讨论它。
 
 
 
