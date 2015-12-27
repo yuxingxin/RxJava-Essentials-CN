@@ -62,3 +62,4 @@ subject.subscribe(new Observer<Boolean>() {
     }
 });
 ```
+然后，我们创建“private”的Observable，只有主题才可以访问的到。
