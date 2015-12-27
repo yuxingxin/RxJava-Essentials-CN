@@ -67,4 +67,5 @@ Subscription subscriptionPrint = observableString.subscribe(new Observer<Integer
     }
 });
 ```
-例子故意写的简单，时因为即便是你第一次见到RxJava的操作，我想让你明白接下来要发生什么。
+例子故意写的简单，是因为即便是你第一次见到RxJava的操作，我想让你明白接下来要发生什么。
+
