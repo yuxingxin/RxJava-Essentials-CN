@@ -34,3 +34,4 @@ Subscription subscriptionPrint = stringPublishSubject.subscribe(new Observer<Str
 stringPublishSubject.onNext("Hello World");
 ```
 
+在刚才的例子中，我们创建了一个`PublishSubject`，用`create()`方法发射一个`String`值，然后我们订阅了PublishSubject。此时，没有数据要发送，因此我们的观察者只能等待，没有阻塞线程，也没有消耗资源。就在这准备从主题接收值，如果主题没有发射值那么我们的观察者就会一直在等待。再次声明的是，无需担心：观察者知道在每个场景中该做什么，什么时候我们也不用担心是因为它时响应式的：系统会响应。我们并不关心它什么时候响应。我们只关心它响应时该发生什么。
