@@ -38,4 +38,6 @@ stringPublishSubject.onNext("Hello World");
 
 最后一行代码展示了手动发射字符串“Hello World”,它触发了观察者的`onNext()`方法，让我们在控制台打印出“Hello World”信息。
 
-让我们看一个更复杂的例子。
+让我们看一个更复杂的例子。话说我们有一个`private`声明的Observable，外部不能访问。Observable在它生命周期期间发射值，我们不用关心这些值，我们只关心他们的结束。
+
+首先，我们创建一个新的PublishSubject来响应它的`onNext()`方法，并且外部也可以访问它。
