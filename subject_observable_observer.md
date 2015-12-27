@@ -85,4 +85,8 @@ Observable.create(new Observable.OnSubscribe<Integer>() {
 
 ### BehaviorSubject
 
+基本上，BehaviorSubject是一个能够发射它所观察的最近的那个数据对象并且所有最后已订阅的数据都订阅它。
 
+### ReplaySubject
+
+### AsyncSubject
