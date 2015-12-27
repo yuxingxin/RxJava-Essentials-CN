@@ -61,5 +61,4 @@ subject.subscribe(new Observer<Boolean>() {
         System.out.println("Observable Completed");
     }
 });
-        
 ```
