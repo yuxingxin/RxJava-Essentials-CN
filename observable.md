@@ -144,3 +144,4 @@ private String helloWorld(){
 ```
 
 不管怎样，它可以是我们想要的任何函数。在刚才的例子中，我们一旦创建了Observable，当我们订阅Observable时，`just()`函数执行，它发射返回的值。
+
