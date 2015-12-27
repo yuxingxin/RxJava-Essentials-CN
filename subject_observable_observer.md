@@ -79,6 +79,6 @@ Observable.create(new Observable.OnSubscribe<Integer>() {
     }
 }).subscribe();
 ```
-`Observable.create()`方法包含了我们熟悉的for循环，发射数字。`doOnCompleted()`方法指定当Observable结束时要做什么事情：在subject上发射true。最后，我们订阅了Observable。很明显，空的`subscribe()`调用仅仅时为了开启Observable，而不用管任何已发出的值，完成事件或者错误事件。出于这个例子的目的我们把它设计成这样。
+`Observable.create()`方法包含了我们熟悉的for循环，发射数字。`doOnCompleted()`方法指定当Observable结束时要做什么事情：在subject上发射true。最后，我们订阅了Observable。很明显，空的`subscribe()`调用仅仅时为了开启Observable，而不用管任何已发出的值，完成事件或者错误事件。出于这个例子的目的我们需要它像这样一样。
 
 在这个例子中，我们创建一个实体  可以连接Observables,并且同时可以被观测。这在当我们针对公共资源时想创建独立性，抽象性或者更加有可观测点时是极其有用的。
