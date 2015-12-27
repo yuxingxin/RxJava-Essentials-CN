@@ -30,4 +30,12 @@ Observable的生命周期包含了三种可能的易于Iterable生命周期事�
 #### Observable.create()
 
 create()方法使开发者有能力从零开始创建一个Observable。它需要一个OnSubscribe对象,这个对象继承Action1,当观察者订阅我们的Observable时，它作为一个参数传入并执行call()函数。
+```java
+Observable.create(new Observable.OnSubscribe<Object>(){
+        @Override
+        public void call(Subscriber<? super Object> subscriber) {
+            
+        }
+});
+```
 
