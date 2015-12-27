@@ -89,9 +89,8 @@ Observable.create(new Observable.OnSubscribe<Integer>() {
 
 ```java
 BehaviorSubject<Integer> behaviorSubject = BehaviorSubject.create(1);
-
 ```
-
+在这个短例子中，我们创建了一个能发射整数的BehaviorSubject。由于真相是一旦Observes订阅它将发射最近的值，所以它需要一个初始值。
 ### ReplaySubject
 
 
