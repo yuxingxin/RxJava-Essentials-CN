@@ -98,7 +98,8 @@ ReplaySubject会缓存它所订阅的所有数据，向任意一个订阅它的�
 ReplaySubject<Integer> replaySubject = ReplaySubject.create();
 ```
 
-
-
-
 ### AsyncSubject
+
+```java
+AsyncSubject<Integer> asyncSubject = AsyncSubject.create();
+```
