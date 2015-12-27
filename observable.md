@@ -69,3 +69,5 @@ Subscription subscriptionPrint = observableString.subscribe(new Observer<Integer
 ```
 例子故意写的简单，是因为即便是你第一次见到RxJava的操作，我想让你明白接下来要发生什么。
 
+我们创建一个新的`Observable<Integer>`,它执行了5个元素的for循环，一个接一个的发射他们，最后完成。
+
