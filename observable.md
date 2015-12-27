@@ -6,8 +6,9 @@ RxJava Observables被设计用来解决这些问题。它们灵活，易使用�
 
 Observable的生命周期包含了三种可能的易于Iterable生命周期事件相比较的事件，下表展示了如何将Observable async/push 与 Iterable sync/pull相关联起来。
 
-| Event| Iterable(pull)| Observable(push)  |
+| Event| Iterable(pull)|Observable(push)|
 | ------------- |:-------------:| -----:|
 | 检索数据|`T next()`| `onNext(T)` |
-| Asynchronous| `Future<T> getData()`|`Observable<T> getData()`|
+| 发现错误| `throws Exception`|`onError(Throwable)`|
+| 完成    |`!hasNext()`|`onCompleted()`|
 
