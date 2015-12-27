@@ -13,7 +13,8 @@
 很明显，我们将使用**Gradle**来管理我们的依赖列表。我们的build.gradble文件看起来像这样：
  ![](chapter3_2.png)
  ![](chapter3_3.png)
-正如你看到的我们引入了RxAndroid。RxAndroid是RxJava的增强版，尤其是针对Android设计。
+正如你看到的我们引入了RxAndroid。RxAndroid是RxJava的增强版，尤其是针对Android设计。它在普通的RxJava基础上添加了几个有用的类。
 
 ### RxAndroid
 
+RxAndroid是RxJava家族的一部分。它基于RxJava1.0.x,
