@@ -4,4 +4,4 @@
 
 RxJava Observables被设计用来解决这些问题。它们灵活，易使用，也可以链式调用，并且可以对单个结果程序起作用，更有甚者，也可以对序列起作用。无论何时你想发射单个标量值，或者一连串值，甚至时无限的数值流，你都可以使用Observable。
 
-Observable的生命周期包含了三种可能的易于Iterable生命周期事件相比较的事件，
+Observable的生命周期包含了三种可能的易于Iterable生命周期事件相比较的事件，下表显示如何将Observable async/push 与 Iterable sync/pull相关联起来。
