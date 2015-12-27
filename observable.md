@@ -107,3 +107,5 @@ Subscription subscriptionPrint = observableString.subscribe(new Observer<Integer
     }
 });
 ```
+
+输出的结果和上面的例子绝对是一样的。
