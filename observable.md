@@ -25,5 +25,5 @@ Observable的生命周期包含了三种可能的易于Iterable生命周期事�
 
 ### 创建一个Observable
 
-
+在接下来的小节中将讨论Observables提供的两种创建Observable的方法。
 
