@@ -12,3 +12,5 @@ Observable的生命周期包含了三种可能的易于Iterable生命周期事�
 | 发现错误| `throws Exception`|`onError(Throwable)`|
 | 完成    |`!hasNext()`|`onCompleted()`|
 
+使用Iterable时，消费者从生产者那里同步得到值，在这些值得到之前线程处于阻塞状态。
+
