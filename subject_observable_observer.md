@@ -32,5 +32,5 @@ Subscription subscriptionPrint = stringPublishSubject.subscribe(new Observer<Str
     }
 });
 stringPublishSubject.onNext("Hello World");
-
 ```
+
