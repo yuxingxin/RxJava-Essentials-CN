@@ -1,2 +1,5 @@
 # 总结
 
+本章中，我们了解到了什么是观察者模式，为什么Observables在今天的编程场景中如此重要，以及如何创建Observables和subjects。
+
+下一章中，我们将创建第一个基于RxJava的Android应用程序，学习如何检索数据来填充listview，以及探索如何创建一个基于RxJava的响应式UI。
