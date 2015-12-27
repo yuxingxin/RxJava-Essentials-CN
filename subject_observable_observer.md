@@ -79,3 +79,4 @@ Observable.create(new Observable.OnSubscribe<Integer>() {
     }
 }).subscribe();
 ```
+`Observable.create()`方法包含四类我们熟悉的for循环，发射数字。
