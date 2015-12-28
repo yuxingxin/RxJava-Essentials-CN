@@ -56,7 +56,31 @@ private void loadApps(AppInfo appOne,AppInfo appTwo,AppInfo appThree) {
 假如你想对一个Observable重复发射三次数据。例如，我们用`just()`例子中的Observable：
 
 ```java
+private void loadApps(AppInfo appOne,AppInfo appTwo,AppInfo appThree) {
+    mRecyclerView.setVisibility(View.VISIBLE);
+    Observable.just(appOne,appTwo,appThree)
+            .repeat(3)
+            .subscribe(new Observable<AppInfo>() {
 
+                @Override
+                public void onCompleted() {
+                    mSwipeRefreshLayout.setRefreshing(false);
+                    Toast.makeText(getActivity(), "Here is the list!", Toast.LENGTH_LONG).show();
+                }
+
+                @Override
+                public void onError(Throwable e) {
+                    Toast.makeText(getActivity(), "Something went wrong!", Toast.LENGTH_SHORT).show();
+                    mSwipeRefreshLayout.setRefreshing(false);
+                }
+
+                @Override
+                public void onNext(AppInfo appInfo) {
+                    mAddedApps.add(appInfo); 
+                    mAdapter.addApplication(mAddedApps.size() - 1,appInfo);
+                }
+            });
+}
 ```
 
 
