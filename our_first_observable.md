@@ -62,6 +62,8 @@ public class AppInfo implements Comparable<Object> {
 
 在这一点，我们可以订阅Observable并观察它。订阅一个Observable意味着当我们需要的数据进来时我们必须提供对应的操作来执行它。
 
+当前的场景时什么？我们展示一个进度条来等待数据。当数据到来时，我们需要隐藏掉进度条,填充list,最终展示列表。
+
 
 
 
