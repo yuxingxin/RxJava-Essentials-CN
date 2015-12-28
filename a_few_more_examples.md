@@ -186,7 +186,7 @@ Observable.timer(3,TimeUnit.SECONDS)
 
         @Override
         public void onNext(Integer number) {
-            Log.d("RXJAVA", "I say " + number, Toast.LENGTH_SHORT).show();
+            Log.d("RXJAVA", "I say " + number);
         }
     });
 
