@@ -5,3 +5,13 @@
 ## just()
 
 假如我们只有3个独立的AppInfo对象并且我们想把他们转化为Observable并填充到RecyclerView的item中：
+```java
+List<AppInfo> apps = ApplicationsList.getInstance().getList();
+
+AppInfo appOne = apps.get(0);
+
+AppInfo appTwo = apps.get(1);
+
+AppInfo appThree = apps.get(2);
+
+```
