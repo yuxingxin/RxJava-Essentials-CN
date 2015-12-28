@@ -193,7 +193,7 @@ Observable.timer(3,TimeUnit.SECONDS)
 ```
 它将3秒后发射0,然后就完成了。让我们使用`timer()`的第三个参数，就像下面的例子：
 ```java
-Observable.timer(3,TimeUnit.SECONDS)
+Observable.timer(3,3,TimeUnit.SECONDS)
     .subscribe(new Observable<Integer>() {
 
         @Override
