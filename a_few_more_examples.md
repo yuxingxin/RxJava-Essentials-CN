@@ -173,7 +173,7 @@ Subscription stopMePlease = Observable.interval(3,TimeUnit.SECONDS)
 
 ```java
 Observable.timer(3,TimeUnit.SECONDS)
-    .subscribe(new Observable<Integer>() {
+    .subscribe(new Observable<Long>() {
 
         @Override
         public void onCompleted() {
