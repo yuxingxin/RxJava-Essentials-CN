@@ -82,7 +82,7 @@ private void loadApps(AppInfo appOne,AppInfo appTwo,AppInfo appThree) {
             });
 }
 ```
-
+正如你看到的，我们在`just()`创建Observable后追加了`repeat(3)`，它将会创建9个元素的序列，每一个都单独发射。
 
 
 
