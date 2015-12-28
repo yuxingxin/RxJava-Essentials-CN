@@ -73,7 +73,7 @@ RecyclerView mRecycleView;
 SwipeRefreshLayout mSwipeRefreshLayout;
 ```
 
-
+我们使用Android 5的标准组件：RecyclerView和SwipeRefreshLayout.
 
 
 
