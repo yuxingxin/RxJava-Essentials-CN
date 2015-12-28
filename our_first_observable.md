@@ -60,7 +60,7 @@ public class AppInfo implements Comparable<Object> {
 ```
 需要重点注意的是在发射新的数据或者完成序列之前要检测观察者的订阅情况。这样的话代码会更高效，因为如果没有观察者等待时我们不生成没有必要的数据项。
 
-在这一点，我们可以订阅Observable并观察它。
+在这一点，我们可以订阅Observable并观察它。订阅一个Observable意味着当我们需要的数据进来时我们必须提供对应的操作来执行它。
 
 
 
