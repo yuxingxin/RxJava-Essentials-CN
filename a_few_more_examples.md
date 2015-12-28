@@ -119,7 +119,6 @@ deferred.subscribe(number -> {
 你需要从一个指定的数字X开始发射N个数字吗？你可以用`range`:
 ```java
 
-
 ```
 
 
