@@ -169,7 +169,7 @@ Subscription stopMePlease = Observable.interval(3,TimeUnit.SECONDS)
 
 ## timer()
 
-
+如果你需要一个一段时间之后才发射的Observable，你可以像下面的例子使用`timer()`
 
 
 
