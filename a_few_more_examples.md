@@ -143,7 +143,7 @@ Observable.range(10,3)
 
 ## interval()
 
-
+`interval()`函数在你需要创建一个轮询程序时非常好用。
 
 
 
