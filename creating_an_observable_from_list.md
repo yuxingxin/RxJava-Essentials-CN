@@ -11,6 +11,30 @@ mApps = ApplicationsList.getInstance().getList();
 ```
 获得列表后，我们仅需将它响应化并填充RecyclerView的item:
 ```java
+private void loadList(List<AppInfo> apps) {
+    mRecyclerView.setVisibility(View.VISIBLE);
+    Observable.from(apps)
+            .subscribe(new Observable<AppInfo>() {
 
+                @Override
+                public void onCompleted() {
+                    mSwipeRefreshLayout.setRefreshing(false);
+                    Toast.makeText(getActivity(), "Here is the list!", Toast.LENGTH_LONG).show();
+                }
+
+                @Override
+                public void onError(Throwable e) {
+                    Toast.makeText(getActivity(), "Something went wrong!", Toast.LENGTH_SHORT).show();
+                    mSwipeRefreshLayout.setRefreshing(false);
+                }
+
+                @Override
+                public void onNext(List<AppInfo> appInfos) {
+                    mRecyclerView.setVisibility(View.VISIBLE);
+                    mAdapter.addApplications(appInfos);
+                    mSwipeRefreshLayout.setRefreshing(false);
+                }
+            });
+}
 ```
 
