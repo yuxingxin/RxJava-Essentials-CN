@@ -105,9 +105,13 @@ private void refreshTheList() {
 }
 ```
 
-定义一个函数使我们能够用同样一个block来处理两种场景成为了可能。
+定义一个函数使我们能够用同样一个block来处理两种场景成为了可能。当fragment加载时我们只需调用`refreshTheList()`方法并设置`refreshTheList()`方法作为用户下拉这一行为所触发的方法。
 
+```java
+mSwipeRefreshLayout.setOnRefreshListener(this::refreshTheList);
+```
 
+我们第一个例子现在完成了，运行跑一下。
 
 
 
