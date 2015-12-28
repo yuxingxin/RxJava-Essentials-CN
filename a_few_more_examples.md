@@ -97,7 +97,6 @@ private Observable<Integer> getInt(){
         subscriber.onNext(42);
         subscriber.onCompleted();
     });
-
 }
 ```
 
