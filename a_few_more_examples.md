@@ -4,3 +4,4 @@
 
 ## just()
 
+假如我们只有3个独立的AppInfo对象并且我们想把他们转化为Observable并填充到RecyclerView的item中：
