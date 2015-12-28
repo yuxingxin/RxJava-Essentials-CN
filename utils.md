@@ -12,4 +12,4 @@ Butter Knife使用注解的方式来帮助我们免去写`findViewById()`和设�
 
 ### Retrolambda
 
-最后，我们导入Retrolambda，是因为我们开发的Android是基于Java 1.6，然后我们可以借助它来实现Java 8 Lambda函数从而节省代码。
+最后，我们导入Retrolambda，是因为我们开发的Android是基于Java 1.6，然后我们可以借助它来实现Java 8 Lambda函数从而减少模板代码。
