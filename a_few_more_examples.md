@@ -22,7 +22,7 @@ loadApps(appOne,appTwo,appThree);
 ```java
 private void loadApps(AppInfo appOne,AppInfo appTwo,AppInfo appThree) {
     mRecyclerView.setVisibility(View.VISIBLE);
-    Observable.from(apps)
+    Observable.just(appOne,appTwo,appThree)
             .subscribe(new Observable<AppInfo>() {
 
                 @Override
