@@ -73,9 +73,11 @@ RecyclerView mRecycleView;
 SwipeRefreshLayout mSwipeRefreshLayout;
 ```
 
-我们使用Android 5的标准组件：RecyclerView和SwipeRefreshLayout。
+我们使用Android 5的标准组件：RecyclerView和SwipeRefreshLayout。截屏展示了我们这个简单App的list Fragment的layout文件：
 
+![](chapter3_4.png)
 
+我们使用一个下拉刷新方法，因此列表可以来自初始化加载，或从用户触发的一个刷新动作。
 
 
 
