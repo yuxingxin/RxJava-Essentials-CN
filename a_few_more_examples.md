@@ -87,7 +87,18 @@ private void loadApps(AppInfo appOne,AppInfo appTwo,AppInfo appThree) {
 ## defer()
 
 有这样一个场景，你想在这声明一个Observable但是你又想推迟这个Observable的创建。看下面的`getInt()`函数：
+```java
+private Observable<Integer> getInt(){
+    return Observable.create(subscriber -> {
+        if(subscriber.isUnsubscribed()){
+            return;
+        }
+    
+    
+    )
 
+}
+```
 
 
 
