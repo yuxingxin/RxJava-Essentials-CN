@@ -51,6 +51,8 @@ private void loadApps(AppInfo appOne,AppInfo appTwo,AppInfo appThree) {
 你可以将一个函数作为参数传给`just()`方法，你将会有一个已存在代码的原始Observable版本。在一个新的响应式架构的基础上迁移已存在的代码，这个方法可能时一个有用的开始。
 
 
+## repeat()
+
 
 
 
