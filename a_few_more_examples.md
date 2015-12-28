@@ -123,7 +123,6 @@ Observable.range(10,3)
 
                 @Override
                 public void onCompleted() {
-                    mSwipeRefreshLayout.setRefreshing(false);
                     Toast.makeText(getActivity(), "Here is the list!", Toast.LENGTH_LONG).show();
                 }
 
