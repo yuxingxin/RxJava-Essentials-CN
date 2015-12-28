@@ -32,7 +32,6 @@ private void loadList(List<AppInfo> apps) {
                 public void onNext(AppInfo appInfo) {
                     mAddedApps.add(appInfo); 
                      mAdapter.addApplication(mAddedAPps.size() - 1,appInfo);
-                    mSwipeRefreshLayout.setRefreshing(false);
                 }
             });
 }
