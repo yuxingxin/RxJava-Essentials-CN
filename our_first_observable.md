@@ -4,3 +4,34 @@
 
 首先，我们创建我们的Observable。我们需要一个函数来检索安装的应用程序列表并把它提供给我们的观察者。我们一个接一个的发射这些应用程序数据，将它们分组到一个单独的列表中，以此来展示响应式方法的灵活性。
 
+```java
+private Observable<AppInfo> getApps(){
+    return Observable.create(subscriber -> {
+        List<AppInfoRich> apps = new ArrayList<AppInfoRich>();
+
+        final Intent mainIntent = new Intent(Intent.ACTION_MAIN,null);
+        mainIntent.addCategory(Intent.CATEGORY_LAUNCHER);
+
+        List<ResolveInfo> infos = getActivity().getPackageManager().queryIntentActivities(mainIntent, 0);
+
+        for(ResolveInfo info : infos){
+            apps.add(new AppInfoRich(getActivity(),info));
+        }
+
+        for (AppInfoRich appInfo:apps) {
+            Bitmap icon = Utils.drawableToBitmap(appInfo.getIcon());
+            String name = appInfo.getName();
+            String iconPath = mFilesDir + "/" + name;
+            Utils.storeBitmap(App.instance, icon,name);
+            
+            if (subscriber.isUnsubscribed()){
+                return;
+            }
+            subscriber.onNext(new AppInfo(name,iconPath,appInfo.getLastUpdateTime()));                
+        }
+        if (!subscriber.isUnsubscribed()){
+            subscriber.onCompleted();
+        }
+    });
+}
+```
