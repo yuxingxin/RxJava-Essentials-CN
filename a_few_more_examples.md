@@ -164,7 +164,7 @@ Subscription stopMePlease = Observable.interval(3,TimeUnit.SECONDS)
         }
     });
 ```
-
+`interval()`函数的两个参数：一个指定两次发射的时间间隔，另一个时需要用的时间单位。
 
 
 
