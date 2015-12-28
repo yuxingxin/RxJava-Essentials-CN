@@ -100,6 +100,32 @@ private Observable<Integer> getInt(){
 }
 ```
 
+这比较简单，并且它没有做太多事情，但是它正好为我们服务。现在，我们可以创建一个新的Observable并且应用`defer()`:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
