@@ -112,7 +112,7 @@ deferred.subscribe(number -> {
     App.L.debug(String.valueOf(number));
 });
 ```
-但是一旦我们订阅了，`create()`方法就会被调用并且我们也可以在logcat日志中得到下卖弄两个：GETINT和42
+但是一旦我们订阅了，`create()`方法就会被调用并且我们也可以在logcat日志中得到下卖弄两个：GETINT和42。
 
 
 
