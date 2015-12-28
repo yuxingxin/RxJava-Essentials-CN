@@ -20,7 +20,7 @@ loadApps(appOne,appTwo,appThree);
 
 我们可以像我们之前的例子那样检索列表并提取出这三个元素。然后我们将他们传到这个`loadApps()`函数里面：
 ```java
-private void loadList(List<AppInfo> apps) {
+private void loadApps(List<AppInfo> apps) {
     mRecyclerView.setVisibility(View.VISIBLE);
     Observable.from(apps)
             .subscribe(new Observable<AppInfo>() {
