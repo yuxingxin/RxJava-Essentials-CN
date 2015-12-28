@@ -113,7 +113,7 @@ mSwipeRefreshLayout.setOnRefreshListener(this::refreshTheList);
 
 我们第一个例子现在完成了，运行跑一下。
 
-
+![](chapter3_5.png)
 
 
 
