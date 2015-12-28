@@ -116,7 +116,7 @@ deferred.subscribe(number -> {
 
 ## range()
 
-你需要限制从一个指定的数字X开始发射N个数字吗？你可以用`range`
+你需要限制从一个指定的数字X开始发射N个数字吗？你可以用`range`:
 
 
 
