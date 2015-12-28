@@ -132,9 +132,8 @@ Observable.range(10,3)
                 }
 
                 @Override
-                public void onNext(AppInfo appInfo) {
-                    mAddedApps.add(appInfo); 
-                    mAdapter.addApplication(mAddedApps.size() - 1,appInfo);
+                public void onNext(Integer number) {
+                    Toast.makeText(getActivity(), "I say " + number, Toast.LENGTH_SHORT).show();
                 }
             });
 ```
