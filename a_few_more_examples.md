@@ -176,7 +176,7 @@ Observable.timer(3,TimeUnit.SECONDS)
 
         @Override
         public void onCompleted() {
-            Toast.makeText(getActivity(), "Yeaaah!", Toast.LENGTH_LONG).show();
+            
         }
 
         @Override
