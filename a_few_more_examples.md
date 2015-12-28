@@ -53,6 +53,7 @@ private void loadApps(AppInfo appOne,AppInfo appTwo,AppInfo appThree) {
 
 ## repeat()
 
+假如你想对一个Observable重复发射三次数据。例如，我们用`just()`例子中的Observable：
 
 
 
