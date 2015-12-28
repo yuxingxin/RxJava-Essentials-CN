@@ -64,7 +64,14 @@ public class AppInfo implements Comparable<Object> {
 
 当前的场景时什么？我们展示一个进度条来等待数据。当数据到来时，我们需要隐藏掉进度条,填充list,最终展示列表。现在，我们知道当一切都准备好了该做什么。那么错误的场景呢？针对错误，我们仅仅是用Toast展示一个错误的信息。
 
-
+使用Butter Knife,我们得到list和下拉刷新组件的引用：
+```java
+@InjetcView(R.id.fragment_first_example_list)
+    RecyclerView mRecycleView;
+    
+@InjectView(R.id.fragment_first_example_swipe_container)
+SwipeRefreshLayout mSwipeRefreshLayout;
+```
 
 
 
