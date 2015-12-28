@@ -9,3 +9,7 @@ Lombok使用注解的方式为你生成许多代码。我们将使用它老生�
 ### Butter Knife
 
 Butter Knife使用注解的方式来帮助我们免去写`findViewById()`和设置点击监听的痛苦。至于Lombok,我们可以通过导入依赖和安装Android Studio插件来获得更好的体验。
+
+### Retrolambda
+
+最后，我们导入Retrolambda，是因为我们开发的Android是基于Java 1.6，然后我们可以借助它来实现Java 8 Lambda函数从而节省代码。
