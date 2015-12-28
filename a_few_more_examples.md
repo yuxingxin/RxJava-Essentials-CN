@@ -129,7 +129,6 @@ Observable.range(10,3)
                 @Override
                 public void onError(Throwable e) {
                     Toast.makeText(getActivity(), "Something went wrong!", Toast.LENGTH_SHORT).show();
-                    mSwipeRefreshLayout.setRefreshing(false);
                 }
 
                 @Override
