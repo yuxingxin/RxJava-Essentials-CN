@@ -36,7 +36,7 @@ private void loadList(List<AppInfo> apps) {
             });
 }
 ```
-正如你看到的，我们将已安装的应用程序列表作为参数传进`from()`函数，然后我们订阅生成的Observable。
+正如你看到的，我们将已安装的应用程序列表作为参数传进`from()`函数，然后我们订阅生成的Observable。观察者和我们第一个例子中的观察者十分相像。
 
 
 
