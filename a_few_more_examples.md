@@ -212,7 +212,7 @@ Observable.timer(3,3,TimeUnit.SECONDS)
         }
     });
 ```
-用这个代码，你可以创建一个以初始化延迟执行的`interval()`版本，
+用这个代码，你可以创建一个以初始值延迟执行的`interval()`版本，
 
 
 
