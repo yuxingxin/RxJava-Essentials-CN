@@ -46,7 +46,7 @@ private void loadApps(AppInfo appOne,AppInfo appTwo,AppInfo appThree) {
 }
 ```
 
-正如你看到的，代码和之前的例子很像。这种方法让我们有机会来考虑代码的复用。
+正如你看到的，代码和之前的例子很像。这种方法让我们有机会来考虑一下代码的复用。
 
 
 
