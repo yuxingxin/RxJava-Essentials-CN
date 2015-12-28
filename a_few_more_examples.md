@@ -123,7 +123,7 @@ Observable.range(10,3)
 
                 @Override
                 public void onCompleted() {
-                    Toast.makeText(getActivity(), "Here is the list!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getActivity(), "Yeaaah", Toast.LENGTH_LONG).show();
                 }
 
                 @Override
