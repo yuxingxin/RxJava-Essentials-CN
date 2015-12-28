@@ -1,3 +1,3 @@
 # 我们的第一个Observable
 
-在我们的第一个列子里，我们将检索安装的应用列表并构成RecycleView的item并展示他们。
+在我们的第一个列子里，我们将检索安装的应用列表并构成RecycleView的item并展示它们。
