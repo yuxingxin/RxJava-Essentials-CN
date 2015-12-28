@@ -96,7 +96,7 @@ private Observable<Integer> getInt(){
         App.L.debug("GETINT");
         subscriber.onNext(42);
         subscriber.onCompleted();
-    )
+    });
 
 }
 ```
