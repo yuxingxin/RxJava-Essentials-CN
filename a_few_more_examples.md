@@ -171,7 +171,24 @@ Subscription stopMePlease = Observable.interval(3,TimeUnit.SECONDS)
 
 如果你需要一个一段时间之后才发射的Observable，你可以像下面的例子使用`timer()`：
 
+Observable.timer(3,TimeUnit.SECONDS)
+    .subscribe(new Observable<Integer>() {
 
+        @Override
+        public void onCompleted() {
+            Toast.makeText(getActivity(), "Yeaaah!", Toast.LENGTH_LONG).show();
+        }
+
+        @Override
+        public void onError(Throwable e) {
+            Toast.makeText(getActivity(), "Something went wrong!", Toast.LENGTH_SHORT).show();
+        }
+
+        @Override
+        public void onNext(Integer number) {
+            Toast.makeText(getActivity(), "I say " + number, Toast.LENGTH_SHORT).show();
+        }
+    });
 
 
 
