@@ -8,4 +8,4 @@ Lombok使用注解的方式为你生成许多代码。我们将使用它老生�
 
 ### Butter Knife
 
-Butter Knife使用注解的方式来帮助我们免去写`findViewById()`
+Butter Knife使用注解的方式来帮助我们免去写`findViewById()`和设置点击监听的痛苦。
