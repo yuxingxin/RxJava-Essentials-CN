@@ -18,3 +18,4 @@ loadApps(appOne,appTwo,appThree);
 
 ```
 
+我们可以像我们之前的例子那样检索列表并提取出这三个元素。然后
