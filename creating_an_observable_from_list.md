@@ -29,8 +29,8 @@ private void loadList(List<AppInfo> apps) {
                 }
 
                 @Override
-                public void onNext(List<AppInfo> appInfos) {
-                    mRecyclerView.setVisibility(View.VISIBLE);
+                public void onNext(AppInfo appInfo) {
+                   mAddedApps.add(appInfo); mRecyclerView.setVisibility(View.VISIBLE);
                     mAdapter.addApplications(appInfos);
                     mSwipeRefreshLayout.setRefreshing(false);
                 }
