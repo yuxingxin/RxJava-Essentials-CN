@@ -30,7 +30,7 @@ private void loadList(List<AppInfo> apps) {
 
                 @Override
                 public void onNext(AppInfo appInfo) {
-                   mAddedApps.add(appInfo); mRecyclerView.setVisibility(View.VISIBLE);
+                    mAddedApps.add(appInfo); 
                     mAdapter.addApplications(appInfos);
                     mSwipeRefreshLayout.setRefreshing(false);
                 }
