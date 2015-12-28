@@ -171,6 +171,7 @@ Subscription stopMePlease = Observable.interval(3,TimeUnit.SECONDS)
 
 如果你需要一个一段时间之后才发射的Observable，你可以像下面的例子使用`timer()`：
 
+```java
 Observable.timer(3,TimeUnit.SECONDS)
     .subscribe(new Observable<Integer>() {
 
@@ -189,7 +190,7 @@ Observable.timer(3,TimeUnit.SECONDS)
             Log.d("RXJAVA", "I say " + number);
         }
     });
-
+```
 
 
 
