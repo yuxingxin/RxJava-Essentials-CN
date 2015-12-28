@@ -67,7 +67,7 @@ public class AppInfo implements Comparable<Object> {
 使用Butter Knife,我们得到list和下拉刷新组件的引用：
 ```java
 @InjetcView(R.id.fragment_first_example_list)
-    RecyclerView mRecycleView;
+RecyclerView mRecycleView;
     
 @InjectView(R.id.fragment_first_example_swipe_container)
 SwipeRefreshLayout mSwipeRefreshLayout;
