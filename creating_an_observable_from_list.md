@@ -9,3 +9,6 @@
 ```java
 mApps = ApplicationsList.getInstance().getList();
 ```
+获得列表后，我们仅需将它响应化并填充RecyclerView的item:
+
+
