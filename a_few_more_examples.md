@@ -10,8 +10,8 @@ List<AppInfo> apps = ApplicationsList.getInstance().getList();
 
 AppInfo appOne = apps.get(0);
 
-AppInfo appTwo = apps.get(1);
+AppInfo appTwo = apps.get(10);
 
-AppInfo appThree = apps.get(2);
+AppInfo appThree = apps.get(24);
 
 ```
