@@ -107,7 +107,11 @@ Observable<Integer> deferred = Observable.defer(this::getInt);
 ```
 这次，`deferred`存在，但是`getInt()` `create()`方法还没有调用。logcat日志也没有“GETINT”打印出来:
 
-
+```java
+deferred.subscribe(number -> {
+    App.L.debug(String.valueOf(number));
+});
+```
 
 
 
