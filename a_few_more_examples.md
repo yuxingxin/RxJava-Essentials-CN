@@ -207,7 +207,7 @@ Observable.timer(3,3,TimeUnit.SECONDS)
         }
 
         @Override
-        public void onNext(Integer number) {
+        public void onNext(Long number) {
             Log.d("RXJAVA", "I say " + number);
         }
     });
