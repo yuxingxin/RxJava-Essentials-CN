@@ -93,8 +93,9 @@ private Observable<Integer> getInt(){
         if(subscriber.isUnsubscribed()){
             return;
         }
-    
-    
+        App.L.debug("GETINT");
+        subscriber.onNext(42);
+        subscriber.onCompleted();
     )
 
 }
