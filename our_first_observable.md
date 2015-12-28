@@ -77,7 +77,7 @@ SwipeRefreshLayout mSwipeRefreshLayout;
 
 ![](chapter3_4.png)
 
-我们使用一个下拉刷新方法，因此列表可以来自初始化加载，或从用户触发的一个刷新动作。
+我们使用一个下拉刷新方法，因此列表可以来自初始化加载，或由用户触发的一个刷新动作。
 
 
 
