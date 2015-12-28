@@ -10,5 +10,35 @@
 mApps = ApplicationsList.getInstance().getList();
 ```
 获得列表后，我们仅需将它响应化并填充RecyclerView的item:
+```java
+private Observable<AppInfo> getApps(){
+    return Observable.create(subscriber -> {
+        List<AppInfoRich> apps = new ArrayList<AppInfoRich>();
 
+        final Intent mainIntent = new Intent(Intent.ACTION_MAIN,null);
+        mainIntent.addCategory(Intent.CATEGORY_LAUNCHER);
+
+        List<ResolveInfo> infos = getActivity().getPackageManager().queryIntentActivities(mainIntent, 0);
+
+        for(ResolveInfo info : infos){
+            apps.add(new AppInfoRich(getActivity(),info));
+        }
+
+        for (AppInfoRich appInfo:apps) {
+            Bitmap icon = Utils.drawableToBitmap(appInfo.getIcon());
+            String name = appInfo.getName();
+            String iconPath = mFilesDir + "/" + name;
+            Utils.storeBitmap(App.instance, icon,name);
+            
+            if (subscriber.isUnsubscribed()){
+                return;
+            }
+            subscriber.onNext(new AppInfo(name,iconPath,appInfo.getLastUpdateTime()));                
+        }
+        if (!subscriber.isUnsubscribed()){
+            subscriber.onCompleted();
+        }
+    });
+}
+```
 
