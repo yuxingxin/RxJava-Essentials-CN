@@ -119,23 +119,23 @@ deferred.subscribe(number -> {
 你需要从一个指定的数字X开始发射N个数字吗？你可以用`range`:
 ```java
 Observable.range(10,3)
-            .subscribe(new Observable<Integer>() {
+    .subscribe(new Observable<Integer>() {
 
-                @Override
-                public void onCompleted() {
-                    Toast.makeText(getActivity(), "Yeaaah!", Toast.LENGTH_LONG).show();
-                }
+        @Override
+        public void onCompleted() {
+            Toast.makeText(getActivity(), "Yeaaah!", Toast.LENGTH_LONG).show();
+        }
 
-                @Override
-                public void onError(Throwable e) {
-                    Toast.makeText(getActivity(), "Something went wrong!", Toast.LENGTH_SHORT).show();
-                }
+        @Override
+        public void onError(Throwable e) {
+            Toast.makeText(getActivity(), "Something went wrong!", Toast.LENGTH_SHORT).show();
+        }
 
-                @Override
-                public void onNext(Integer number) {
-                    Toast.makeText(getActivity(), "I say " + number, Toast.LENGTH_SHORT).show();
-                }
-            });
+        @Override
+        public void onNext(Integer number) {
+            Toast.makeText(getActivity(), "I say " + number, Toast.LENGTH_SHORT).show();
+        }
+    });
 ```
 
 
