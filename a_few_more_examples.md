@@ -144,8 +144,26 @@ Observable.range(10,3)
 ## interval()
 
 `interval()`函数在你需要创建一个轮询程序时非常好用。
+```java
+Subscription stopMePlease = Observable.interval(3,TimeUnit.SECONDS)
+    .subscribe(new Observable<Integer>() {
 
+        @Override
+        public void onCompleted() {
+            Toast.makeText(getActivity(), "Yeaaah!", Toast.LENGTH_LONG).show();
+        }
 
+        @Override
+        public void onError(Throwable e) {
+            Toast.makeText(getActivity(), "Something went wrong!", Toast.LENGTH_SHORT).show();
+        }
+
+        @Override
+        public void onNext(Integer number) {
+            Toast.makeText(getActivity(), "I say " + number, Toast.LENGTH_SHORT).show();
+        }
+    });
+```
 
 
 
