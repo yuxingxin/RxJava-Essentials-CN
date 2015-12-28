@@ -14,4 +14,6 @@ AppInfo appTwo = apps.get(10);
 
 AppInfo appThree = apps.get(24);
 
+loadApps(appOne,appTwo,appThree);
+
 ```
