@@ -79,9 +79,33 @@ SwipeRefreshLayout mSwipeRefreshLayout;
 
 我们使用一个下拉刷新方法，因此列表数据可以来自初始化加载，或由用户触发的一个刷新动作。针对这两个场景，我们用同样的行为，因此我们把我们的观察者放在一个易被复用的函数里面。下面是我们的观察者，定义了成功、失败、完成要做的事情：
 
+```java
+private void refreshTheList() {
+    getApps().toSortedList()
+            .subscribe(new Observable<List<AppInfo>>() {
 
+                @Override
+                public void onCompleted() {
+                    Toast.makeText(getActivity(), "Here is the list!", Toast.LENGTH_LONG).show();
+                }
 
+                @Override
+                public void onError(Throwable e) {
+                    Toast.makeText(getActivity(), "Something went wrong!", Toast.LENGTH_SHORT).show();
+                    mSwipeRefreshLayout.setRefreshing(false);
+                }
 
+                @Override
+                public void onNext(List<AppInfo> appInfos) {
+                    mRecyclerView.setVisibility(View.VISIBLE);
+                    mAdapter.addApplications(appInfos);
+                    mSwipeRefreshLayout.setRefreshing(false);
+                }
+            });
+}
+```
+
+定义一个函数使我们能够用同样一个block来处理两种场景成为了可能。
 
 
 
