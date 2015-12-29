@@ -35,6 +35,8 @@ private void loadList(List<AppInfo> apps) {
 
 ![](chapter4_2.png)
 
+## TakeLast
+
 
 
 
