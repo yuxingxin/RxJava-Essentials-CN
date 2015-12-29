@@ -4,4 +4,4 @@
 
 ![](chapter4_10.png)
 
-`skip()`和`skipLast()`函数与`take()`和`takeLast()`相对应。它们用整数N作参数，
+`skip()`和`skipLast()`函数与`take()`和`takeLast()`相对应。它们用整数N作参数，从根本上来说，它们不让Observable发射前N个或者后N个值。
