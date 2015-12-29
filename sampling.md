@@ -28,6 +28,8 @@ sensor.sample(30,TimeUnit.SECONDS)
 
 下图中展示了一个间隔发射字母的Observable如何sample一个发射数字的Observable。Observable的结果将会发射每个已发射字母的最后一组数据：1，4，5.
 
+![](chapter4_13.png)
+
 
 
 
