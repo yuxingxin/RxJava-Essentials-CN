@@ -28,5 +28,5 @@
    * [Skip and SkipLast](skip_and_skiplast.md)
    * [ElementAt](elementat.md)
    * [Sampling](sampling.md)
-   * Timeout
+   * [Timeout](timeout.md)
 
