@@ -27,5 +27,5 @@
    * [First and last](first_and_last.md)
    * [Skip and SkipLast](skip_and_skiplast.md)
    * [ElementAt](elementat.md)
-   * Sampling
+   * [Sampling](sampling.md)
 
