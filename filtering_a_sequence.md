@@ -34,7 +34,8 @@ private void loadList(List<AppInfo> apps) {
 ```java
 .fliter((appInfo -> appInfo.getName().startsWith("C"))
 ```
-创建Observable完以后，我们从发出的每个元素中过滤掉开头字母不是C的。为了让这的类型更清楚，我们引入Java 7的语法。
+创建Observable完以后，我们从发出的每个元素中过滤掉开头字母不是C的。为了让这里更清楚一些，我们用Java 7的语法来实现：
+
 
 
 
