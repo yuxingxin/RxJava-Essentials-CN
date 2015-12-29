@@ -43,7 +43,7 @@ Observable.from(apps)
         .takeLast(3)
         .subscribe(...);
 ```
-
+正如听起来那样不值一提，重点注意`takeLast()`函数由于用一组有限的发射数的本质使得它仅可用于完成的序列。
 
 
 
