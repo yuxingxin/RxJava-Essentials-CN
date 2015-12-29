@@ -44,7 +44,7 @@ private void loadList(List<AppInfo> apps) {
 })
 ```
 
-我们传一个新的`Func1`对象给`filter()`函数，
+我们传一个新的`Func1`对象给`filter()`函数，即只有一个参数的函数。
 
 
 
