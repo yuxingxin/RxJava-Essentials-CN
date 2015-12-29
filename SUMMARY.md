@@ -21,5 +21,5 @@
    * [再多几个例子](a_few_more_examples.md)
    * [总结](summary3.md)
 * [过滤Observables](filtering_observables.md)
-   * 过滤序列
+   * [过滤序列](filtering_a_sequence.md)
 
