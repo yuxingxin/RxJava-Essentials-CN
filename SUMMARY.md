@@ -31,5 +31,5 @@
    * [Timeout](timeout.md)
    * [Debounce](debounce.md)
    * [总结](summary4.md)
-* [转换Observables](transforming_observables.md)
+* [变换Observables](transforming_observables.md)
 
