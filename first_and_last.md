@@ -10,4 +10,4 @@
 
 ![](chapter4_9.png)
 
-`first()`和`last()`都来自一个相似的变量：`firstOrDefault()`和`lastOrDefault()`.
+与`first()`和`last()`相似的变量有：`firstOrDefault()`和`lastOrDefault()`.
