@@ -15,8 +15,7 @@ sensor.sample(30,TimeUnit.SECONDS)
 
                 @Override
                 public void onError(Throwable e) {
-                    Toast.makeText(getActivity(), "Something went wrong!", Toast.LENGTH_SHORT).show();
-                    mSwipeRefreshLayout.setRefreshing(false);
+                    
                 }
 
                 @Override
