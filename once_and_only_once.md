@@ -26,7 +26,27 @@ Observable<AppInfo> fullOfDuplicates = Observable.from(apps)
 ```
 `fullOfDuplicates`变量里把我们已安装应用的前三个重复了3次：有9个并且许多重复的。然后，我们使用`distinct()`:
 ```java
+fullOfDuplicates.distinct()
+            .subscribe(new Observable<AppInfo>() {
 
+                @Override
+                public void onCompleted() {
+                    mSwipeRefreshLayout.setRefreshing(false);
+                }
+
+                @Override
+                public void onError(Throwable e) {
+                    Toast.makeText(getActivity(), "Something went wrong!", Toast.LENGTH_SHORT).show();
+                    mSwipeRefreshLayout.setRefreshing(false);
+                }
+
+                @Override
+                public void onNext(AppInfo appInfo) {
+                    mAddedApps.add(appInfo); 
+                    mAdapter.addApplication(mAddedApps.size() - 1,appInfo);
+                }
+            });
+}
 ```
 
 
