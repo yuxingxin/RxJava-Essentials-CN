@@ -44,7 +44,7 @@ private void loadList(List<AppInfo> apps) {
 })
 ```
 
-我们传一个新的`Func1`对象给`filter()`函数，即只有一个参数的函数。`Func1`有一个`AppInfo`对象来作为它的参数类型并且返回`Boolean`对象。
+我们传一个新的`Func1`对象给`filter()`函数，即只有一个参数的函数。`Func1`有一个`AppInfo`对象来作为它的参数类型并且返回`Boolean`对象。只要条件符合`filter()`函数将返回`true`
 
 
 
