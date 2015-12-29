@@ -10,4 +10,4 @@
 
 ![](chapter4_9.png)
 
-与`first()`和`last()`相似的变量有：`firstOrDefault()`和`lastOrDefault()`.这两个函数当可观测序列完成时不再发射任何值时用得上。在这种场景下，如果Observable不在发射任何值时我们可以指定发射一个默认的值
+与`first()`和`last()`相似的变量有：`firstOrDefault()`和`lastOrDefault()`.这两个函数当可观测序列完成时不再发射任何值时用得上。在这种场景下，如果Observable不再发射任何值时我们可以指定发射一个默认的值
