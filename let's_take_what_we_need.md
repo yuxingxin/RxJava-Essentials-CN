@@ -47,6 +47,7 @@ Observable.from(apps)
 
 下一张图中展示了如何从可观测源中发射最后一个元素来创建一个新的序列：
 
+![](chapter4_3.png)
 
 
 
