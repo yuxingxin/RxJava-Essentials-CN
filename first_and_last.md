@@ -4,4 +4,4 @@
 
 ![](chapter4_8.png)
 
-`first()`方法和`last()`方法很容易弄明白。它们从Observable只发射第一个元素或者最后一个元素。
+`first()`方法和`last()`方法很容易弄明白。它们从Observable中只发射第一个元素或者最后一个元素。
