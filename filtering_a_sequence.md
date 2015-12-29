@@ -4,5 +4,29 @@ RxJava让我们使用`filter()`方法来过滤我们观测序列中不想要的�
 
 上一章中`loadList()`函数可以改成这样：
 ```java
+private void loadList(List<AppInfo> apps) {
+    mRecyclerView.setVisibility(View.VISIBLE);
+    Observable.from(apps)
+            .filter((appInfo) ->
+            appInfo.getName().startsWith("C"))
+            .subscribe(new Observable<AppInfo>() {
 
+                @Override
+                public void onCompleted() {
+                    mSwipeRefreshLayout.setRefreshing(false);
+                }
+
+                @Override
+                public void onError(Throwable e) {
+                    Toast.makeText(getActivity(), "Something went wrong!", Toast.LENGTH_SHORT).show();
+                    mSwipeRefreshLayout.setRefreshing(false);
+                }
+
+                @Override
+                public void onNext(AppInfo appInfo) {
+                    mAddedApps.add(appInfo); 
+                    mAdapter.addApplication(mAddedApps.size() - 1,appInfo);
+                }
+            });
+}
 ```
