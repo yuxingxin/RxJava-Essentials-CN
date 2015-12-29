@@ -24,7 +24,7 @@ Observable<AppInfo> fullOfDuplicates = Observable.from(apps)
     .take(3)
     .repeat(3);
 ```
-
+`fullOfDuplicates`变量里把我们已安装应用的前三个重复了3次
 
 
 
