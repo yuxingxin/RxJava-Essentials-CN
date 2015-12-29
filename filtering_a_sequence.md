@@ -41,7 +41,6 @@ private void loadList(List<AppInfo> apps) {
     public Boolean call(AppInfo appInfo){
         return appInfo.getName().startsWith("C");
     }
-
 })
 ```
 
