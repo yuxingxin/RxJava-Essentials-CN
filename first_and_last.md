@@ -1,4 +1,4 @@
-# First and Last
+# First and last
 
 下图展示了如何从一个从可观测源序列中创建只发射第一个元素的序列。
 
