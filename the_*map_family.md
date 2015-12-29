@@ -20,6 +20,7 @@ private void loadList(List<AppInfo> apps) {
                 public Appinfo call(AppInfo appInfo){
                     String currentName = appInfo.getName();
                     String lowerCaseName = currentName.toLowerCase();
+                    appInfo.setName(lowerCaseName);
                 
                 
                 }
