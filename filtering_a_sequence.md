@@ -50,7 +50,12 @@ private void loadList(List<AppInfo> apps) {
 
 `filter()`函数最常用的用法之一时过滤`null`对象：
 ```java
-
+.filter(new Func1<AppInfo,Boolean>(){
+    @Override
+    public Boolean call(AppInfo appInfo){
+        return appInfo != null;
+    }
+})
 ```
 
 
