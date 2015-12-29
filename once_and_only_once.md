@@ -54,6 +54,8 @@ fullOfDuplicates.distinct()
 
 ## DistinctUntilsChanged
 
+如果在一个可观测序列发射一个不同于之前的一个新值时让我们得到通知这时候该怎么做？我们猜想一下我们观测的温度传感器，每秒发射的室内温度：
+
 
 
 
