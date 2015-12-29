@@ -36,7 +36,13 @@ private void loadList(List<AppInfo> apps) {
 ```
 创建Observable完以后，我们从发出的每个元素中过滤掉开头字母不是C的。为了让这里更清楚一些，我们用Java 7的语法来实现：
 ```java
+.filter(new Func1<AppInfo,Boolean>(){
+    @Override
+    public Boolean call(AppInfo appInfo){
+        return appInfo.getName().startsWith("C");
+    }
 
+})
 ```
 
 
