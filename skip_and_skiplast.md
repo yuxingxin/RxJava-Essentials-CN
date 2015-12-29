@@ -4,3 +4,4 @@
 
 ![](chapter4_10.png)
 
+`skip()`和`skipLast()`函数
