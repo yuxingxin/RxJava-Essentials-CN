@@ -22,7 +22,6 @@ private void loadList(List<AppInfo> apps) {
                     String lowerCaseName = currentName.toLowerCase();
                     appInfo.setName(lowerCaseName);
                     return appInfo;
-                
                 }
             
             })
