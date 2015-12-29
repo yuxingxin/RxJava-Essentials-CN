@@ -52,6 +52,8 @@ fullOfDuplicates.distinct()
 
 ![](chapter4_6.png)
 
+## DistinctUntilsChanged
+
 
 
 
