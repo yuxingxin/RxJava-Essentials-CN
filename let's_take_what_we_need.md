@@ -49,7 +49,7 @@ Observable.from(apps)
 
 ![](chapter4_3.png)
 
-
+下一张图中展示了我们应用`take()`和`takeLast()`函数在已安装的应用列表后发生的结果：
 
 
 
