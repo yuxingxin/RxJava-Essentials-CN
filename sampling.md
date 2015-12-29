@@ -10,8 +10,7 @@ sensor.sample(30,TimeUnit.SECONDS)
 
                 @Override
                 public void onCompleted() {
-                    mSwipeRefreshLayout.setRefreshing(false);
-                    Toast.makeText(getActivity(), "Here is the list!", Toast.LENGTH_LONG).show();
+                   
                 }
 
                 @Override
