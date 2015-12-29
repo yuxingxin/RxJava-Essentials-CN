@@ -23,7 +23,6 @@ private void loadList(List<AppInfo> apps) {
                 appInfo.setName(lowerCaseName);
                 return appInfo;
             }
-        
         })
         .subscribe(new Observable<AppInfo>() {
 
