@@ -26,6 +26,8 @@ Subscription subscription = getCurrentTemperature()
 
 就像`sample()`，`timeout()`使用`TimeUnit`对象来指定时间间隔。
 
+下图中展示了一旦Observable超过了限时就会触发`onError()`函数：因为超时后它才到达，所以它将不会发射出去。
+
 
 
 
