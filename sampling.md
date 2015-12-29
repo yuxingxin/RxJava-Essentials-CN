@@ -6,23 +6,23 @@
 Observable<Integer> sensor = [...]
 
 sensor.sample(30,TimeUnit.SECONDS)
-            .subscribe(new Observable<Integer>() {
+    .subscribe(new Observable<Integer>() {
 
-                @Override
-                public void onCompleted() {
-                   
-                }
+        @Override
+        public void onCompleted() {
+           
+        }
 
-                @Override
-                public void onError(Throwable e) {
-                    
-                }
+        @Override
+        public void onError(Throwable e) {
+            
+        }
 
-                @Override
-                public void onNext(Integer currentTemperature) {
-                    updateDisplay(currentTemperature)
-                }
-            });
+        @Override
+        public void onNext(Integer currentTemperature) {
+            updateDisplay(currentTemperature)
+        }
+    });
 ```
 例子中Observable将会观测温度Observable然后每隔30秒就会发射最后一个温度值。很明显，`sample()`支持全部的时间单位：秒，毫秒，天，分等等。
 
