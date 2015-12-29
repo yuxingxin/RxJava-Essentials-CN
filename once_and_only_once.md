@@ -19,6 +19,12 @@
 
 我们用程序实现一个重复的序列，然后过滤出它们。这听起来时不可思议的，但是为了实现这个例子来使用我们至今为止已学习到的东西则是个不错的练习。
 
+```java
+Observable<AppInfo> fullOfDuplicates = Observable.from(apps)
+    .take(3)
+    .repeat(3);
+```
+
 
 
 
