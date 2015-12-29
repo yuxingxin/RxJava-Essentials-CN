@@ -15,34 +15,34 @@ RxJava的`map`函数接收一个指定的`Func`对象然后将它应用到每一
 private void loadList(List<AppInfo> apps) {
     mRecyclerView.setVisibility(View.VISIBLE);
     Observable.from(apps)
-            .map(new Func1<AppInfo,AppInfo>(){
-                @Override
-                public Appinfo call(AppInfo appInfo){
-                    String currentName = appInfo.getName();
-                    String lowerCaseName = currentName.toLowerCase();
-                    appInfo.setName(lowerCaseName);
-                    return appInfo;
-                }
-            
-            })
-            .subscribe(new Observable<AppInfo>() {
+        .map(new Func1<AppInfo,AppInfo>(){
+            @Override
+            public Appinfo call(AppInfo appInfo){
+                String currentName = appInfo.getName();
+                String lowerCaseName = currentName.toLowerCase();
+                appInfo.setName(lowerCaseName);
+                return appInfo;
+            }
+        
+        })
+        .subscribe(new Observable<AppInfo>() {
 
-                @Override
-                public void onCompleted() {
-                    mSwipeRefreshLayout.setRefreshing(false);
-                }
+            @Override
+            public void onCompleted() {
+                mSwipeRefreshLayout.setRefreshing(false);
+            }
 
-                @Override
-                public void onError(Throwable e) {
-                    Toast.makeText(getActivity(), "Something went wrong!", Toast.LENGTH_SHORT).show();
-                    mSwipeRefreshLayout.setRefreshing(false);
-                }
+            @Override
+            public void onError(Throwable e) {
+                Toast.makeText(getActivity(), "Something went wrong!", Toast.LENGTH_SHORT).show();
+                mSwipeRefreshLayout.setRefreshing(false);
+            }
 
-                @Override
-                public void onNext(AppInfo appInfo) {
-                    mAddedApps.add(appInfo); 
-                    mAdapter.addApplication(mAddedApps.size() - 1,appInfo);
-                }
-            });
+            @Override
+            public void onNext(AppInfo appInfo) {
+                mAddedApps.add(appInfo); 
+                mAdapter.addApplication(mAddedApps.size() - 1,appInfo);
+            }
+        });
 }
 ```
