@@ -4,4 +4,4 @@ RxJava提供了几个mapping函数：`map()`,`flatMap()`,`concatMap()`,`flatMapI
 
 ## Map
 
-RxJava的`map`函数接收一个指定的`Func`对象然后将它应用到每一个由Observable发射的值上。
+RxJava的`map`函数接收一个指定的`Func`对象然后将它应用到每一个由Observable发射的值上。下图展示了如何将一个乘法函数应用到每个发出的值上以此创建一个新的Observable来发射转换的数据
