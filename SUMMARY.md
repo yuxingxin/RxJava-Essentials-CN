@@ -29,5 +29,5 @@
    * [ElementAt](elementat.md)
    * [Sampling](sampling.md)
    * [Timeout](timeout.md)
-   * Debounce
+   * [Debounce](debounce.md)
 
