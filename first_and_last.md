@@ -4,3 +4,4 @@
 
 ![](chapter4_8.png)
 
+`first()`方法和`last()`方法很容易弄明白。
