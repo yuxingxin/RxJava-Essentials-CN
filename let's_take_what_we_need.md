@@ -37,7 +37,7 @@ private void loadList(List<AppInfo> apps) {
 
 ## TakeLast
 
-
+如果我们想要最后N个元素，我们只需使用`takeLast()`函数：
 
 
 
