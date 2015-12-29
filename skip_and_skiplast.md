@@ -4,4 +4,4 @@
 
 ![](chapter4_10.png)
 
-`skip()`和`skipLast()`函数
+`skip()`和`skipLast()`函数和`take()`和`takeLast()`相对应。
