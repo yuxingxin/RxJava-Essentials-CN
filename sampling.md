@@ -6,7 +6,7 @@
 Observable<Integer> sensor = [...]
 
 sensor.sample(30,TimeUnit.SECONDS)
-            .subscribe(new Observable<AppInfo>() {
+            .subscribe(new Observable<Integer>() {
 
                 @Override
                 public void onCompleted() {
