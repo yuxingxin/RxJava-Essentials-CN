@@ -50,7 +50,7 @@ private void loadList(List<AppInfo> apps) {
 
 ## FlatMap
 
-在复杂的场景中，我们有一个发射序列的Observable，它也能。
+在复杂的场景中，我们有一个这样的Observable：它发射一个数据序列，这些数据本身也可以发射Observable。RxJava的`flatMap()`函数提供一种铺平序列的方式，然后合并这些Observables发射的数据，最后将合并后的结果作为最终的Observable。
 
 
 
