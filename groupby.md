@@ -22,7 +22,6 @@ Observable<GroupedObservable<String,AppInfo>> groupedItems = Observable.from(app
 这一点，我们已经创建了几个发射`AppInfo`数据的Observable，用来填充我们的列表。我们想保留字母排序和分组排序。我们将创建一个新的Observable将所有的联系起来，像通常一样然后订阅它：
 
 ```java
-
     Observable.concat(groupedItems)
         .subscribe(new Observable<AppInfo>() {
 
@@ -43,7 +42,7 @@ Observable<GroupedObservable<String,AppInfo>> groupedItems = Observable.from(app
                 mAdapter.addApplication(mAddedApps.size() - 1,appInfo);
             }
         });
-}
+
 ```
 
 
