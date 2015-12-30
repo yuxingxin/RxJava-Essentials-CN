@@ -74,6 +74,8 @@ RxJava的`concatMap()`函数解决了`flatMap()`的交叉问题，提供了一�
 
 如下图所示，`switchMap()`和`flatMap()`很像，除了一点：当原始Observable发射一个新的数据（Observable）时，它将取消订阅并停止监视之前那个数据的Observable产生的Observable，并开始监视当前这一个。
 
+![](chapter5_5.png)
+
 
 
 
