@@ -4,4 +4,4 @@
 
 ![](chapter5_8.png)
 
-这个函数将源Observable变换成一个新的Observable。
+这个函数将源Observable变换成一个发射Observables的新的Observable。
