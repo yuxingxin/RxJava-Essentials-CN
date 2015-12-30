@@ -102,7 +102,7 @@ Observable.just(1,2,3,4,5)
         });
 ```
 我们得到的结果是：
-```
+```java
 RXJAVA: item is: 1
 RXJAVA: item is: 3
 RXJAVA: item is: 6
@@ -110,6 +110,7 @@ RXJAVA: item is: 10
 RXJAVA: item is: 15
 RXJAVA: Sequence completed.
 ```
+
 
 
 
