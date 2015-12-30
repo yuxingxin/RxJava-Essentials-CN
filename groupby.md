@@ -44,6 +44,9 @@ Observable.concat(groupedItems)
     });
 ```
 
+我们的`loadList()`函数完成了，结果是：
+
+![](chapter5_9.png)
 
 
 
