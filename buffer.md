@@ -10,7 +10,7 @@ RxJava中的`buffer()`函数将源Observable变换一个新的Observable，这�
 
 `buffer()`带一个`timespan`的参数，会创建一个每隔timespan时间段就会发射一个列表的Observable。
 
-
+![](chapter5_12.png)
 
 
 
