@@ -17,7 +17,32 @@ Observable<GroupedObservable<String,AppInfo>> groupedItems = Observable.from(app
         }
     });
 ```
-现在
+现在我们创建了一个新的Observable，`groupedItems`，将会发射一个带有`GroupedObservable`的序列。`GroupedObservable`是一个特殊的Observable，它来自一个分组的key。在我们的例子中，key就是`String`，代表着`Month/Year`格式化的最近更新日期。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
