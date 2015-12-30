@@ -148,7 +148,7 @@ private void loadList(List<AppInfo> apps) {
 
 结果如下：
 
-
+![](chapter5_6.png)
 
 
 
