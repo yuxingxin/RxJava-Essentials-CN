@@ -58,6 +58,10 @@ private void loadList(List<AppInfo> apps) {
 
 重要的一点时关于合并部分：它允许交叉。正如上图显示的那样，这意味着`flatMap()`函数在最后的Observable中不能够保证源Observables确切的发射顺序。
 
+## ConcatMap
+
+
+
 
 
 
