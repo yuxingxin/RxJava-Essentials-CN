@@ -76,7 +76,9 @@ RxJava的`concatMap()`函数解决了`flatMap()`的交叉问题，提供了一�
 
 ![](chapter5_5.png)
 
+## Scan
 
+RxJava的`scan()`函数可以看做是一个累加函数。
 
 
 
