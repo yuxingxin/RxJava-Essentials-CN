@@ -34,4 +34,5 @@
 * [变换Observables](transforming_observables.md)
    * [*map家族](the_*map_family.md)
    * [GroupBy](groupby.md)
+   * Buffer
 
