@@ -152,7 +152,7 @@ private void loadList(List<AppInfo> apps) {
 
 有一个`scan()`函数的变体，它用第一个发射的值作为初始值，方法特征就像：`scan(R,Func2)`，下图中的例子像这样：
 
-
+![](chapter5_7.png)
 
 
 
