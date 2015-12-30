@@ -8,3 +8,5 @@ RxJava中的`buffer()`函数将源Observable变换一个新的Observable，这�
 
 ![](chapter5_11.png)
 
+`buffer()`定期以List的形式发射新的数据，每个时间段，收集来自原始Observable的数据（从前面一个数据包裹之后，或者如果是第一个数据包裹，从有观察者订阅原来的Observale之后开始）。还有另一个版本的buffer接受一个Scheduler参数，默认情况下会使用computation调度器。+
+
