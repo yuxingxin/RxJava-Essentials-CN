@@ -112,7 +112,39 @@ RXJAVA: Sequence completed.
 ```
 我们也可以创建一个新版本的`loadList()`函数用来比较每个安装应用的名字从而创建一个名字长度递增的列表。
 
+```java
+private void loadList(List<AppInfo> apps) {
+    mRecyclerView.setVisibility(View.VISIBLE);
+    Observable.from(apps)
+            .scan((appInfo,appInfo2) -> {
+                if(appInfo.getName().length > appInfo2.getName().length()){
+                    return appInfo;
+                } else {
+                    return appInfo2;
+                }
+            })
+            .subscribe(new Observable<AppInfo>() {
 
+                @Override
+                public void onCompleted() {
+                    mSwipeRefreshLayout.setRefreshing(false);
+                    Toast.makeText(getActivity(), "Here is the list!", Toast.LENGTH_LONG).show();
+                }
+
+                @Override
+                public void onError(Throwable e) {
+                    Toast.makeText(getActivity(), "Something went wrong!", Toast.LENGTH_SHORT).show();
+                    mSwipeRefreshLayout.setRefreshing(false);
+                }
+
+                @Override
+                public void onNext(AppInfo appInfo) {
+                    mAddedApps.add(appInfo); 
+                    mAdapter.addApplication(mAddedApps.size() - 1,appInfo);
+                }
+            });
+}
+```
 
 
 
