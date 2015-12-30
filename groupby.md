@@ -4,4 +4,4 @@
 
 ![](chapter5_8.png)
 
-这个函数将源Observable变换成一个发射Observables的新的Observable。他们中的每一个新的Observable都发射一组指定的数据。
+这个函数将源Observable变换成一个发射Observables的新的Observable。它们中的每一个新的Observable都发射一组指定的数据。
