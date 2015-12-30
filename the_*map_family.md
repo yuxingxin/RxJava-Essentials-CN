@@ -83,23 +83,23 @@ RxJava的`scan()`函数可以看做是一个累加器函数。`scan()`函数对�
 作为一个通用的例子，给出一个累加器：
 ```java
 Observable.just(1,2,3,4,5)
-                .scan((sum,item) -> sum + item)
-                .subscribe(new Subscriber<Integer>() {
-                    @Override
-                    public void onCompleted() {
-                        Log.d("RXJAVA", "Sequence completed.");
-                    }
+        .scan((sum,item) -> sum + item)
+        .subscribe(new Subscriber<Integer>() {
+            @Override
+            public void onCompleted() {
+                Log.d("RXJAVA", "Sequence completed.");
+            }
 
-                    @Override
-                    public void onError(Throwable e) {
-                        Log.e("RXJAVA", "Something went south!");
-                    }
+            @Override
+            public void onError(Throwable e) {
+                Log.e("RXJAVA", "Something went south!");
+            }
 
-                    @Override
-                    public void onNext(Integer item) {
-                        Log.d("RXJAVA", "item is: " + item);
-                    }
-                });
+            @Override
+            public void onNext(Integer item) {
+                Log.d("RXJAVA", "item is: " + item);
+            }
+        });
 ```
 
 
