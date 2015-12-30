@@ -66,7 +66,7 @@ RxJava的`concatMap()`函数解决了`flatMap()`的交叉问题，提供了一�
 
 ## FlatMapIterable
 
-
+作为*map家族的一员，`flatMapInterable()`和`flatMap()`工作原理很像
 
 
 
