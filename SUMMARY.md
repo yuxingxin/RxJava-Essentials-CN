@@ -36,5 +36,5 @@
    * [GroupBy](groupby.md)
    * [Buffer](buffer.md)
    * [Window](window.md)
-   * Cast
+   * [Cast](cast.md)
 
