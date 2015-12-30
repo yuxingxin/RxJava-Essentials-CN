@@ -60,7 +60,7 @@ private void loadList(List<AppInfo> apps) {
 
 ## ConcatMap
 
-
+RxJava的`concatMap()`函数解决了`flatMap()`的交叉问题，提供了一种能够把发射的值连在一起的铺平函数，而不是合并它们，如下图所示
 
 
 
