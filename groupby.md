@@ -5,3 +5,5 @@
 ![](chapter5_8.png)
 
 这个函数将源Observable变换成一个发射Observables的新的Observable。它们中的每一个新的Observable都发射一组指定的数据。
+
+为了创建一个分组了的已安装应用列表，我们在我们的`loadList()`函数中引入了一个新的元素
