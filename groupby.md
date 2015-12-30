@@ -16,11 +16,4 @@ Observable<GroupedObservable<String,AppInfo>> groupedItems = Observable.from(app
             return formatter.format(new Date(appInfo.getLastUpdateTime()));
         }
     });
-
-
-
-
-
-
-
 ```
