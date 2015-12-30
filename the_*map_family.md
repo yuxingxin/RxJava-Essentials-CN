@@ -54,7 +54,7 @@ private void loadList(List<AppInfo> apps) {
 
 ![](chapter5_2.png)
 
-当我们在处理可能有大量的Observables时，重要是记住任何一个Observables发生错误的情况，`flatMap()`函数自己将会触发`onError()`函数并放弃整个链。
+当我们在处理可能有大量的Observables时，重要是记住任何一个Observables发生错误的情况，`flatMap()`函数将会触发它自己的`onError()`函数并放弃整个链。
 
 
 
