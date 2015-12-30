@@ -56,7 +56,7 @@ private void loadList(List<AppInfo> apps) {
 
 当我们在处理可能有大量的Observables时，重要是记住任何一个Observables发生错误的情况，`flatMap()`函数将会触发它自己的`onError()`函数并放弃整个链。
 
-重要的一点时关于合并部分：它允许交叉。这意味着`flatMap()`函数在最后的Observable中不能够保证源Observables确切的发射顺序。
+重要的一点时关于合并部分：它允许交叉。正如上图显示的那样，这意味着`flatMap()`函数在最后的Observable中不能够保证源Observables确切的发射顺序。
 
 
 
