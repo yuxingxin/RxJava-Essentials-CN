@@ -24,15 +24,6 @@ Observable<GroupedObservable<String,AppInfo>> groupedItems = Observable.from(app
 ```java
 
     Observable.concat(groupedItems)
-        .map(new Func1<AppInfo,AppInfo>(){
-            @Override
-            public Appinfo call(AppInfo appInfo){
-                String currentName = appInfo.getName();
-                String lowerCaseName = currentName.toLowerCase();
-                appInfo.setName(lowerCaseName);
-                return appInfo;
-            }
-        })
         .subscribe(new Observable<AppInfo>() {
 
             @Override
