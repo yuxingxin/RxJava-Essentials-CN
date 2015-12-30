@@ -4,3 +4,4 @@ RxJava中的`buffer()`函数将源Observable变换一个新的Observable，这�
 
 ![](chapter5_10.png)
 
+上图中展示
