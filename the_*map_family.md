@@ -50,7 +50,7 @@ private void loadList(List<AppInfo> apps) {
 
 ## FlatMap
 
-在复杂的场景中，我们可以有一个发射值的序列Observable，它也能发射Observable。
+在复杂的场景中，我们有一个发射序列的Observable，它也能。
 
 
 
