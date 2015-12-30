@@ -110,7 +110,7 @@ RXJAVA: item is: 10
 RXJAVA: item is: 15
 RXJAVA: Sequence completed.
 ```
-
+我们也可以创建一个新版本的`loadList()`函数用来比较每个安装应用的名字从而创建一个名字长度递增的列表。
 
 
 
