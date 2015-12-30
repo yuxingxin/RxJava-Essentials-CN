@@ -78,7 +78,7 @@ RxJava的`concatMap()`函数解决了`flatMap()`的交叉问题，提供了一�
 
 ## Scan
 
-RxJava的`scan()`函数可以看做是一个累加器函数。
+RxJava的`scan()`函数可以看做是一个累加器函数。`scan()`函数对原始Observable发射的第一项数据应用一个函数
 
 
 
