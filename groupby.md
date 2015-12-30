@@ -42,7 +42,6 @@ Observable<GroupedObservable<String,AppInfo>> groupedItems = Observable.from(app
                 mAdapter.addApplication(mAddedApps.size() - 1,appInfo);
             }
         });
-
 ```
 
 
