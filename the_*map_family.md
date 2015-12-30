@@ -123,6 +123,7 @@ private void loadList(List<AppInfo> apps) {
                     return appInfo2;
                 }
             })
+            .distinct()
             .subscribe(new Observable<AppInfo>() {
 
                 @Override
