@@ -150,7 +150,7 @@ private void loadList(List<AppInfo> apps) {
 
 ![](chapter5_6.png)
 
-
+有一个`scan()`函数的变体
 
 
 
