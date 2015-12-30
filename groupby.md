@@ -13,6 +13,7 @@ Observable<GroupedObservable<String,AppInfo>> groupedItems = Observable.from(app
         @Override
         public String call(AppInfo appInfo){
             SimpleDateFormat formatter = new SimpleDateFormat("MM/yyyy");
+            return formatter.format(new Date(appInfo.getLastUpdateTime()));
         }
     
     })
