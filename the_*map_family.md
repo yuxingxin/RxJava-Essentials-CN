@@ -54,7 +54,7 @@ private void loadList(List<AppInfo> apps) {
 
 ![](chapter5_2.png)
 
-
+当我们在处理可能有大量的Observables时，重要是记住任何一个Observables的错误情况。
 
 
 
