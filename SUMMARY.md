@@ -43,5 +43,5 @@
    * [Zip](zip.md)
    * [Join](join.md)
    * [combineLatest](combinelatest.md)
-   * And,Then和When
+   * [And,Then和When](and_then_when.md)
 
