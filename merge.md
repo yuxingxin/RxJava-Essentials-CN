@@ -4,4 +4,4 @@
 
 ![](chapter6_1.png)
 
-正如你看到的那样，发射的数据被交叉合并到一个Observable里面，
+正如你看到的那样，发射的数据被交叉合并到一个Observable里面，注意如果你同步的合并Observable，
