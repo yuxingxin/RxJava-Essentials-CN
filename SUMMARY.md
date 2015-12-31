@@ -47,4 +47,5 @@
    * [Switch](switch.md)
    * [StartWith](startwith.md)
    * [总结](summary6.md)
+* Schedulers-解决Android主线程问题
 
