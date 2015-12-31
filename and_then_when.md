@@ -49,7 +49,9 @@ private void loadList(List<AppInfo> apps) {
 ```
 和通常一样，我们有两个发射的序列，`observableApp`，发射我们安装的应用列表数据，`tictoc`每秒发射一个`Long`型整数。现在我们用`and()`连接源Observable和第二个Observable。
 
-
+```java
+JoinObservable.from(observableApp).and(tictoc);
+```
 
 
 
