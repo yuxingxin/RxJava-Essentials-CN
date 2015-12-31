@@ -23,7 +23,8 @@ private void loadList(List<AppInfo> apps) {
         }
         
         @Override
-        public void onError(Throwable e) { Toast.makeText(getActivity(), "One of the two Observable threw an error!", Toast.LENGTH_SHORT).show(); mSwipeRefreshLayout.setRefreshing(false);
+        public void onError(Throwable e) {
+        Toast.makeText(getActivity(), "One of the two Observable threw an error!", Toast.LENGTH_SHORT).show(); mSwipeRefreshLayout.setRefreshing(false);
         }
         @Override
         public void onNext(AppInfoappInfo) { mAddedApps.add(appInfo); mAdapter.addApplication(mAddedApps.size() - 1, appInfo);
