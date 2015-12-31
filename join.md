@@ -70,7 +70,7 @@ this::updateTitle
 结果如下：
 ![](chapter6_7.png)
 
-
+它看起来有点乱，
 
 
 
