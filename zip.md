@@ -5,3 +5,7 @@
 ![](chapter6_4.png)
 
 对于“真实世界”的例子来说，我们将使用已安装的应用列表和一个新的动态的Observable来让例子变得有点混。
+
+```java
+Observable<Long> tictoc = Observable.interval(1, TimeUnit.SECONDS);
+```
