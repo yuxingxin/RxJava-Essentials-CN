@@ -19,7 +19,7 @@ private void loadList(List<AppInfo> apps) {
     Plan0<AppInfo> plan = pattern.then(this::updateTitle);
     
     JoinObservable
-    .when(plan)
+        .when(plan)
         .toObservable()
         .observeOn(AndroidSchedulers.mainThread()) .subscribe(new Observer<AppInfo>() {
 @Override
