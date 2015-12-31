@@ -31,7 +31,7 @@ private void loadList(List<AppInfo> apps) {
             
             @Override
             public void onError(Throwable e) {
-            mSwipeRefreshLayout.setRefreshing(false); Toast.makeText(getActivity(), "Something went wrong!", Toast.LENGTH_SHORT).show();
+                mSwipeRefreshLayout.setRefreshing(false); Toast.makeText(getActivity(), "Something went wrong!", Toast.LENGTH_SHORT).show();
             }
             @Override
             public void onNext(AppInfoappInfo) {
