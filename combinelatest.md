@@ -12,7 +12,7 @@ private void loadList(List<AppInfo> apps) {
     mRecyclerView.setVisibility(View.VISIBLE);
     Observable<AppInfo> appsSequence = Observable.interval(1000, TimeUnit.MILLISECONDS)
               .map(position ->apps.get(position.intValue()));
-Observable<Long> tictoc = Observable.interval(1500, TimeUnit.MILLISECONDS);
+    Observable<Long> tictoc = Observable.interval(1500, TimeUnit.MILLISECONDS);
 Observable
 .combineLatest(appsSequence, tictoc,
 this::updateTitle) .observeOn(AndroidSchedulers.mainThread())
