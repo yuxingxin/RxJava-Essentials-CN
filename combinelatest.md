@@ -15,6 +15,7 @@ private void loadList(List<AppInfo> apps) {
     Observable<Long> tictoc = Observable.interval(1500, TimeUnit.MILLISECONDS);
     Observable.combineLatest(appsSequence, tictoc,
                this::updateTitle)
+              
                .observeOn(AndroidSchedulers.mainThread())
                
                 .subscribe(new Observer<AppInfo>() {
