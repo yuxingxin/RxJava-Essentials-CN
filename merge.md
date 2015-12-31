@@ -37,8 +37,7 @@ private void loadList(List<AppInfo> apps) {
 }
 ```
 
-
-
+我们创建了Observable和observableApps数据以及新的observableReversedApps
 
 
 
