@@ -57,6 +57,10 @@ private void loadList(List<AppInfo> apps) {
 
 仔细一看会发现`observeOn()`函数。它将在下一章中讲解：现在我们可以小试一下。
 
+结果如下：
+
+
+
 
 
 
