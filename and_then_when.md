@@ -19,7 +19,8 @@ private void loadList(List<AppInfo> apps) {
     Plan0<AppInfo> plan = pattern.then(this::updateTitle);
     
     JoinObservable .when(plan)
-.toObservable() .observeOn(AndroidSchedulers.mainThread()) .subscribe(new Observer<AppInfo>() {
+        .toObservable()
+        .observeOn(AndroidSchedulers.mainThread()) .subscribe(new Observer<AppInfo>() {
 @Override
 public void
 Toast.makeText(getActivity(), "Here is the list!", Toast.LENGTH_LONG).show();
