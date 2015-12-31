@@ -56,8 +56,7 @@ JoinObservable.from(observableApp).and(tictoc);
 ```java
 pattern.then(this::updateTitle);
 ```
-
-
+现在我们有了一个`Plan`对象并且当plan发生时我们可以决定接下来发生的事情。
 
 
 
