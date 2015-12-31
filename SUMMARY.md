@@ -41,5 +41,5 @@
 * [组合Observables](combining_observables.md)
    * [Merge](merge.md)
    * [Zip](zip.md)
-   * Join
+   * [Join](join.md)
 
