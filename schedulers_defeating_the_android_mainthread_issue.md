@@ -1,3 +1,3 @@
 # Schedulers-解决Android主线程问题
 
-前面一章是最后一章关于RxJava的Observable的创建和操作的章节
+前面一章是最后一章关于RxJava的Observable的创建和操作的章节。
