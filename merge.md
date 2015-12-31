@@ -32,6 +32,7 @@ private void loadList(List<AppInfo> apps) {
         public void onNext(AppInfoappInfo) {
             mAddedApps.add(appInfo);
             mAdapter.addApplication(mAddedApps.size() - 1, appInfo);
-        } });
+        } 
+    });
 }
 ```
