@@ -52,8 +52,7 @@ private void loadList(List<AppInfo> apps) {
 ```java
 JoinObservable.from(observableApp).and(tictoc);
 ```
-
-
+这里创建一个pattern对象，
 
 
 
