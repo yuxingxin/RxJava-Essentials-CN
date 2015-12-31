@@ -56,6 +56,30 @@ private void loadList(List<AppInfo> apps) {
         });
 }
 ```
+我们有一个新的对象`appsSequence`，它是一个每秒从我们已安装的app列表发射app的可观测序列。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
