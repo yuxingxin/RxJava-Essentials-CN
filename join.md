@@ -10,4 +10,7 @@
 * `Func1`参数：在指定的由时间窗口定义时间间隔内，源Observable发射的数据和从第二个Observable发射的数据相互配合返回的Observable。
 * `Func1`参数：在指定的由时间窗口定义时间间隔内，第二个Observable发射的数据和从源Observable发射的数据相互配合返回的Observable。
 * `Func2`参数：定义已发射的数据如何与新发射的数据项相结合。
+* 
+如下练习的例子，我们可以修改`loadList()`函数如下所示：
+
 
