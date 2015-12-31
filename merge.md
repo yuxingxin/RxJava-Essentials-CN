@@ -15,7 +15,7 @@ private void loadList(List<AppInfo> apps) {
     Observable<AppInfo> observableReversedApps =Observable.from(reversedApps);
     Observable<AppInfo> mergedObserbable = Observable.merge(observableApps,observableReversedApps);
     
-    mergedObserbable.subscribe(new Observer<AppInfo>(){ 
+    mergedObserbable.subscribe(new Observer<AppInfo>(){
         @Override
         public void onCompleted() {
             mSwipeRefreshLayout.setRefreshing(false);
