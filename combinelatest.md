@@ -4,4 +4,4 @@ RxJava的`combineLatest()`函数有点像`zip()`函数的特殊形式。正如�
 
 ![](chapter6_9.png)
 
-`combineLatest()`函数用9个Observables作为参数，如果有需要的话甚至是一个Observables列表
+`combineLatest()`函数用9个Observables作为参数，如果有需要的话或者甚至是一个Observables列表
