@@ -26,7 +26,6 @@ private void loadList(List<AppInfo> apps) {
         
             @Override
             public void onCompleted() {
-            
                 Toast.makeText(getActivity(), "Here is the list!", Toast.LENGTH_LONG).show();
             }
             @Override
