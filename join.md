@@ -7,4 +7,4 @@
 为了正确的理解上一张图，我们解释下`join()`需要的参数：
 
 * 第二个Observable和源Observable结合。
-* `Func1`参数
+* `Func1`参数：在指定的由时间窗口定义时间间隔内，源Observable发射的数据和从第二个Observable发射的数据相互配合返回的Observable。
