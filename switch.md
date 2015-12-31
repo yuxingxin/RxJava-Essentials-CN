@@ -1,3 +1,3 @@
 # Switch
 
-有这样一个复杂的场景就是我们能够从一个Observable自动取消订阅
+有这样一个复杂的场景就是我们能够从一个Observable自动取消订阅来订阅一个新的Observable
