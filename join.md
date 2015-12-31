@@ -16,9 +16,11 @@
 private void loadList(List<AppInfo> apps) {
     mRecyclerView.setVisibility(View.VISIBLE);
     
-    Observable<AppInfo> appsSequence = Observable.interval(1000, TimeUnit.MILLISECONDS).map(position -> {
-        return apps.get(position.intValue());
-    });
+    Observable<AppInfo> appsSequence =
+    Observable.interval(1000, TimeUnit.MILLISECONDS)
+                                                    .map(position -> {
+                                                        return apps.get(position.intValue());
+                                                    });
     Observable<Long> tictoc = Observable.interval(1000,TimeUnit.MILLISECONDS);
     appsSequence.join(
         tictoc, appInfo ->Observable.timer(2,TimeUnit.SECONDS),
