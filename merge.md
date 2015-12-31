@@ -14,4 +14,17 @@ private void loadList(List<AppInfo> apps) {
     Observable<AppInfo> observableApps =Observable.from(apps);
     Observable<AppInfo> observableReversedApps =Observable.from(reversedApps);
     Observable<AppInfo> mergedObserbable = Observable.merge(observableApps,observableReversedApps);
+    
+    mergedObserbable.subscribe(new Observer<AppInfo>(){ 
+        @Override
+        public void onCompleted() {
+            mSwipeRefreshLayout.setRefreshing(false); Toast.makeText(getActivity(), "Here is the list!", Toast.LENGTH_LONG).show();
+        }
+        @Override
+        public void onError(Throwable e) { Toast.makeText(getActivity(), "One of the two Observable threw an error!", Toast.LENGTH_SHORT).show(); mSwipeRefreshLayout.setRefreshing(false);
+        }
+        @Override
+        public void onNext(AppInfoappInfo) { mAddedApps.add(appInfo); mAdapter.addApplication(mAddedApps.size() - 1, appInfo);
+        } });
+}
 ```
