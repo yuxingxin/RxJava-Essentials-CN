@@ -60,7 +60,7 @@ pattern.then(this::updateTitle);
 ```java
 .when(plan).toObservable()
 ```
-这时候，我们可以订阅新的Observable，正如我们一直做的那样。
+这时候，我们可以订阅新的Observable，正如我们总是做的那样。
 
 
 
