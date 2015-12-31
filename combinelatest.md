@@ -42,11 +42,11 @@ private void loadList(List<AppInfo> apps) {
     });
 }
 ```
-这我们使用了两个Observables：一个是每秒钟从我们已安装的应用列表发射一个App数据，第二个是每隔1.5秒发射一个Long型整数。我们将他们结合起来并执行`updateTitle()`函数，结果如下：
+这我们使用了两个Observables：一个是每秒钟从我们已安装的应用列表发射一个App数据，第二个是每隔1.5秒发射一个`Long`型整数。我们将他们结合起来并执行`updateTitle()`函数，结果如下：
 
 ![](chapter6_10.png)
 
-
+正如你看到的，由于不同的时间间隔，`AppInfo`对象如我们所预料的那样有时候会重复。
 
 
 
