@@ -48,7 +48,7 @@ private void loadList(List<AppInfo> apps) {
             mAdapter.addApplication(position, appInfo);
             mRecyclerView.smoothScrollToPosition(position);
         }
-    } });
+    });
 }
 ```
 
