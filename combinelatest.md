@@ -13,8 +13,10 @@ private void loadList(List<AppInfo> apps) {
     Observable<AppInfo> appsSequence = Observable.interval(1000, TimeUnit.MILLISECONDS)
               .map(position ->apps.get(position.intValue()));
     Observable<Long> tictoc = Observable.interval(1500, TimeUnit.MILLISECONDS);
-    Observable.combineLatest(appsSequence, tictoc,
-this::updateTitle) .observeOn(AndroidSchedulers.mainThread())
+    Observable.combineLatest(appsSequence, 
+               tictoc,
+               this::updateTitle)
+              .observeOn(AndroidSchedulers.mainThread())
 .subscribe(new Observer<AppInfo>() {
 @Override
 public void onCompleted() { Toast.makeText(getActivity(), "Here is the list!", Toast.LENGTH_LONG).show();
