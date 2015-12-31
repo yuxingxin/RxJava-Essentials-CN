@@ -13,10 +13,12 @@
 * 
 如下练习的例子，我们可以修改`loadList()`函数像下面这样：
 ```java
-private void loadList(List<AppInfo> apps) { mRecyclerView.setVisibility(View.VISIBLE);
-Observable<AppInfo> appsSequence = Observable.interval(1000, TimeUnit.MILLISECONDS).map(position -> {
-return apps.get(position.intValue());
-});
+private void loadList(List<AppInfo> apps) {
+    mRecyclerView.setVisibility(View.VISIBLE);
+    
+    Observable<AppInfo> appsSequence = Observable.interval(1000, TimeUnit.MILLISECONDS).map(position -> {
+        return apps.get(position.intValue());
+        });
 Observable<Long> tictoc = Observable.interval(1000,
 TimeUnit.MILLISECONDS);
 appsSequence .join(
