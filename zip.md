@@ -24,6 +24,7 @@ private void loadList(List<AppInfo> apps) {
     Observable<AppInfo> observableApp = Observable.from(apps);
     
     Observable<Long> tictoc = Observable.interval(1, TimeUnit.SECONDS);
+    
     Observable.zip(observableApp, tictoc,(AppInfo appInfo, Long time) -> updateTitle(appInfo, time)) .observeOn(AndroidSchedulers.mainThread())
 .subscribe(new Observer<AppInfo>() {
 @Override
