@@ -19,12 +19,11 @@ private AppInfo updateTitle(AppInfoappInfo, Long time) {
 ```
 现在我们的`loadList()`函数变成这样：
 ```java
-private void loadList(List<AppInfo> apps) { mRecyclerView.setVisibility(View.VISIBLE);
-Observable<AppInfo> observableApp = Observable.from(apps);
-Observable<Long> tictoc = Observable.interval(1, TimeUnit.SECONDS);
-Observable
-.zip(observableApp, tictoc, (AppInfoappInfo, Long
-time) ->updateTitle(appInfo, time)) .observeOn(AndroidSchedulers.mainThread())
+private void loadList(List<AppInfo> apps) {
+    mRecyclerView.setVisibility(View.VISIBLE);
+    Observable<AppInfo> observableApp = Observable.from(apps);
+    Observable<Long> tictoc = Observable.interval(1, TimeUnit.SECONDS);
+    Observable.zip(observableApp, tictoc,(AppInfo appInfo, Long time) ->updateTitle(appInfo, time)) .observeOn(AndroidSchedulers.mainThread())
 .subscribe(new Observer<AppInfo>() {
 @Override
 public void onCompleted() { Toast.makeText(getActivity(), "Here is the list!", Toast.LENGTH_LONG).show();
