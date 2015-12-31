@@ -28,6 +28,7 @@ private void loadList(List<AppInfo> apps) {
             mSwipeRefreshLayout.setRefreshing(false);
             Toast.makeText(getActivity(), "Something went wrong!", Toast.LENGTH_SHORT).show();
         }
+        
         @Override
         public void onNext(AppInfoappInfo) {
         if (mSwipeRefreshLayout.isRefreshing()) { mSwipeRefreshLayout.setRefreshing(false);
