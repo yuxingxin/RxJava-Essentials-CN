@@ -67,6 +67,9 @@ time -> Observable.timer(0, TimeUnit.SECONDS)
 this::updateTitle
 ```
 
+结果：
+
+
 
 
 
