@@ -20,8 +20,8 @@ private void loadList(List<AppInfo> apps) {
         return apps.get(position.intValue());
     });
     Observable<Long> tictoc = Observable.interval(1000,TimeUnit.MILLISECONDS);
-appsSequence .join(
-tictoc, appInfo ->Observable.timer(2, TimeUnit.SECONDS),time - >Observable.timer(0, TimeUnit.SECONDS),this::updateTitle)
+    appsSequence .join(
+        tictoc, appInfo ->Observable.timer(2,TimeUnit.SECONDS),time - >Observable.timer(0, TimeUnit.SECONDS),this::updateTitle)
 .observeOn(AndroidSchedulers.mainThread()) .take(10)
 .subscribe(new Observer<AppInfo>() {
 @Override
