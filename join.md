@@ -7,3 +7,4 @@
 为了正确的理解上一张图，我们解释下`join()`需要的参数：
 
 * 第二个Observable和源Observable结合。
+
