@@ -1,3 +1,3 @@
 # Schedulers-解决Android主线程问题
 
-前面一章是最后一章关于RxJava的Observable的创建和操作的章节。我们学习到了如何将两个或更多的Observables合并在一起，`join`它们，`zip`，`merge`以及如何创建一个新的Observable来满足我们特殊的需求。
+前面一章是最后一章关于RxJava的Observable的创建和操作的章节。我们学习到了如何将两个或更多的Observables合并在一起，`join`它们，`zip`它们，`merge`它们以及如何创建一个新的Observable来满足我们特殊的需求。
