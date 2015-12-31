@@ -10,3 +10,9 @@
 Observable<Long> tictoc = Observable.interval(1, TimeUnit.SECONDS);
 ```
 `tictoc`Observable变量使用`interval()`函数每秒生成一个Long类型的数据：简单且高效，正如之前所说的，我们需要一个`Func`对象。因为它需要传两个参数，所以是`Func2`:
+
+```java
+private AppInfo updateTitle(AppInfoappInfo, Long time) {
+    appInfo.setName(time + " " + appInfo.getName()); return appInfo;
+}
+```
