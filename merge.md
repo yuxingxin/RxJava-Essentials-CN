@@ -42,7 +42,7 @@ private void loadList(List<AppInfo> apps) {
 正如你能看到的,每个方法签名都是一样的，因此我们的观察者无需在意任何不同就可以复用代码。结果如下：
 ![](chapter6_2.png)
 
-
+注意错误时的toast消息，你可以认为每个Observable抛出的错误将会打断合并。
 
 
 
