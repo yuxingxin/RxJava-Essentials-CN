@@ -47,7 +47,7 @@ private void loadList(List<AppInfo> apps) {
         });
 }
 ```
-
+和通常一样，我们有两个发射的序列，`observableApp`，发射我们安装的应用列表
 
 
 
