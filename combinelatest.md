@@ -8,5 +8,27 @@ RxJava的`combineLatest()`函数有点像`zip()`函数的特殊形式。正如�
 
 从之前的例子中把`loadList()`函数借用过来，我们可以修改一下来用于`combineLatest()`实现“真实世界”这个例子：
 ```java
+private void loadList(List<AppInfo> apps) {
+    mRecyclerView.setVisibility(View.VISIBLE);
+    Observable<AppInfo> appsSequence = Observable.interval(1000, TimeUnit.MILLISECONDS)
+              .map(position ->apps.get(position.intValue()));
+Observable<Long> tictoc = Observable.interval(1500, TimeUnit.MILLISECONDS);
+Observable
+.combineLatest(appsSequence, tictoc,
+this::updateTitle) .observeOn(AndroidSchedulers.mainThread())
+.subscribe(new Observer<AppInfo>() {
+@Override
+public void onCompleted() { Toast.makeText(getActivity(), "Here is the list!", Toast.LENGTH_LONG).show();
+}
+@Override
+public void onError(Throwable e) { mSwipeRefreshLayout.setRefreshing(false); Toast.makeText(getActivity(), "Something went wrong!", Toast.LENGTH_SHORT).show();
+}
+@Override
+public void onNext(AppInfoappInfo) {
+if (mSwipeRefreshLayout.isRefreshing()) { mSwipeRefreshLayout.setRefreshing(false);
+} mAddedApps.add(appInfo);
+intposition = mAddedApps.size() - 1; mAdapter.addApplication(position, appInfo); mRecyclerView.smoothScrollToPosition(position);
+} });
+}
 
 ```
