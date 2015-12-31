@@ -30,11 +30,13 @@ private void loadList(List<AppInfo> apps) {
             public void onCompleted() {
                 Toast.makeText(getActivity(), "Here is the list!", Toast.LENGTH_LONG).show();
             }
+            
             @Override
             public void onError(Throwable e) {
                 mSwipeRefreshLayout.setRefreshing(false); 
                 Toast.makeText(getActivity(), "Something went wrong!", Toast.LENGTH_SHORT).show();
             }
+            
             @Override
             public void onNext(AppInfoappInfo) {
             if (mSwipeRefreshLayout.isRefreshing()) { mSwipeRefreshLayout.setRefreshing(false);
