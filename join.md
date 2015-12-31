@@ -62,7 +62,10 @@ appInfo -> Observable.timer(2, TimeUnit.SECONDS)
 
 time -> Observable.timer(0, TimeUnit.SECONDS)
 ```
-
+上面描述了两个时间窗口。下面一行描述我们如何使用`Func2`将两个发射的数据结合在一起。
+```java
+this::updateTitle
+```
 
 
 
