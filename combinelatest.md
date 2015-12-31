@@ -6,4 +6,4 @@ RxJava的`combineLatest()`函数有点像`zip()`函数的特殊形式。正如�
 
 `combineLatest()`函数用9个Observables作为参数，如果有需要的话或者甚至是一个Observables列表。
 
-从之前的例子中把`loadList()`函数借用过来，
+从之前的例子中把`loadList()`函数借用过来，我们可以修改它来实现“真实世界”这个
