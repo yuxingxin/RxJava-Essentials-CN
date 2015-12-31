@@ -3,3 +3,5 @@
 有这样一个复杂的场景就是在一个`subscribe-unsubscribe`的序列里我们能够从一个Observable自动取消订阅来订阅一个新的Observable。
 
 RxJava的`switch()`，正如定义的，将一个发射多个Observables的Observable转换成另一个单独的Observable，后者发射那些Observables最近发射的数据项。
+
+举一个发射多个Observables序列的源Observable
