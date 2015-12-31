@@ -44,7 +44,8 @@ private void loadList(List<AppInfo> apps) {
                 } 
                 mAddedApps.add(appInfo);
                 int position = mAddedApps.size() - 1;
-                mAdapter.addApplication(position, appInfo); mRecyclerView.smoothScrollToPosition(position);
+                mAdapter.addApplication(position, appInfo);
+                mRecyclerView.smoothScrollToPosition(position);
             } });
 }
 ```
