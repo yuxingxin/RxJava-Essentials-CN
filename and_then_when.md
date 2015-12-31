@@ -40,8 +40,8 @@ private void loadList(List<AppInfo> apps) {
                 if (mSwipeRefreshLayout.isRefreshing()) { 
                 mSwipeRefreshLayout.setRefreshing(false);
                 } 
-            mAddedApps.add(appInfo);
-            intposition = mAddedApps.size() - 1; mAdapter.addApplication(position, appInfo); mRecyclerView.smoothScrollToPosition(position);
+                mAddedApps.add(appInfo);
+                intposition = mAddedApps.size() - 1; mAdapter.addApplication(position, appInfo); mRecyclerView.smoothScrollToPosition(position);
             } });
 }
 ```
