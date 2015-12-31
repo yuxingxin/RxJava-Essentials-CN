@@ -68,7 +68,7 @@ this::updateTitle
 ```
 
 结果如下：
-
+![](chapter6_7.png)
 
 
 
