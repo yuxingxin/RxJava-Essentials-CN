@@ -9,5 +9,5 @@
 * 第二个Observable和源Observable结合。
 * `Func1`参数：在指定的由时间窗口定义时间间隔内，源Observable发射的数据和从第二个Observable发射的数据相互配合返回的Observable。
 * `Func1`参数：在指定的由时间窗口定义时间间隔内，第二个Observable发射的数据和从源Observable发射的数据相互配合返回的Observable。
-* `Func2`参数：定义已发射的数据如何与新发射的数据项相结合 。
+* `Func2`参数：定义已发射的数据如何与新发射的数据项相结合。
 
