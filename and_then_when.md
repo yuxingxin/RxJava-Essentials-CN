@@ -52,7 +52,7 @@ private void loadList(List<AppInfo> apps) {
 ```java
 JoinObservable.from(observableApp).and(tictoc);
 ```
-这里创建一个`pattern`对象，使用这个对象我们可以创建一个`Plan`对象:"我们有两个发射数据的Observables,`then()`是做什么"
+这里创建一个`pattern`对象，使用这个对象我们可以创建一个`Plan`对象:"我们有两个发射数据的Observables,`then()`是做什么的？"
 
 
 
