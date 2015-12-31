@@ -44,5 +44,5 @@
    * [Join](join.md)
    * [combineLatest](combinelatest.md)
    * [And,Then和When](and_then_when.md)
-   * Switch
+   * [Switch](switch.md)
 
