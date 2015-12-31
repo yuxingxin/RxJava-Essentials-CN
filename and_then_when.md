@@ -5,3 +5,6 @@
 ![](chapter6_11.png)
 
 我们的`loadList()`函数将会被修改从这样：
+```java
+
+```
