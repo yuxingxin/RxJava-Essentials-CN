@@ -13,5 +13,5 @@ private void loadList(List<AppInfo> apps) {
     List reversedApps = Lists.reverse(apps);
     Observable<AppInfo> observableApps =Observable.from(apps);
     Observable<AppInfo> observableReversedApps =Observable.from(reversedApps);
-    Observable<AppInfo> mergedObserbable =Observable.merge(observableApps, observableReversedApps);
+    Observable<AppInfo> mergedObserbable =Observable.merge(observableApps,observableReversedApps);
 ```
