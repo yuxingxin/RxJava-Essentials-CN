@@ -17,6 +17,7 @@ private void loadList(List<AppInfo> apps) {
                this::updateTitle)
        .observeOn(AndroidSchedulers.mainThread())
         .subscribe(new Observer<AppInfo>() {
+        
         @Override
         public void onCompleted() {
             Toast.makeText(getActivity(), "Here is the list!", Toast.LENGTH_LONG).show();
