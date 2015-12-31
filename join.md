@@ -56,7 +56,7 @@ private void loadList(List<AppInfo> apps) {
         });
 }
 ```
-我们有一个新的对象`appsSequence`，它是一个每秒从我们已安装的app数据列表发射app的可观测序列。`tictoc`Observable数据每秒只发射一个新的`Long`型整数。合并他们，我们指定两个`Func1`变量：
+我们有一个新的对象`appsSequence`，它是一个每秒从我们已安装的app列表发射app的可观测序列。`tictoc`Observable数据每秒只发射一个新的`Long`型整数。合并他们，我们指定两个`Func1`变量：
 
 ```java
 appInfo -> Observable.timer(2, TimeUnit.SECONDS)
