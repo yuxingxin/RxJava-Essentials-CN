@@ -42,7 +42,7 @@ private void loadList(List<AppInfo> apps) {
     });
 }
 ```
-这我们使用了两个Observables：一个从我们已安装的应用列表发射数据
+这我们使用了两个Observables：一个从我们已安装的应用列表发射一个App数据
 
 
 
