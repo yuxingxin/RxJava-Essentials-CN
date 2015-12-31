@@ -10,4 +10,7 @@
 ```java
 private void loadList(List<AppInfo> apps) {
     mRecyclerView.setVisibility(View.VISIBLE);
+    List reversedApps = Lists.reverse(apps);
+    Observable<AppInfo> observableApps =Observable.from(apps);
+    Observable<AppInfo> observableReversedApps =Observable.from(reversedApps);
 ```
