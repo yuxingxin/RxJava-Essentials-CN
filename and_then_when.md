@@ -10,8 +10,9 @@ private void loadList(List<AppInfo> apps) {
 
     mRecyclerView.setVisibility(View.VISIBLE);
 
-Observable<AppInfo> observableApp = Observable.from(apps);
-Observable<Long> tictoc = Observable.interval(1, TimeUnit.SECONDS);
+    Observable<AppInfo> observableApp = Observable.from(apps);
+    
+    Observable<Long> tictoc = Observable.interval(1, TimeUnit.SECONDS);
 Pattern2<AppInfo, Long>pattern =
 JoinObservable.from(observableApp).and(tictoc); Plan0<AppInfo> plan = pattern.then(this::updateTitle);
 JoinObservable .when(plan)
