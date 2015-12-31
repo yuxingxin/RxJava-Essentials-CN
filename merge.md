@@ -39,7 +39,7 @@ private void loadList(List<AppInfo> apps) {
 
 我们创建了Observable和observableApps数据以及新的observableReversedApps逆序列表。使用`Observable.merge()`，我们可以创建新的`ObservableMergedObservable`在单个可观测序列中发射源Observables发出的所有数据。
 
-正如你能看到的,每个方法特征都是一样的，
+正如你能看到的,每个方法签名都是一样的，因此我们的观察者无需
 
 
 
