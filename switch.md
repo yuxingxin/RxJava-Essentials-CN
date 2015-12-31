@@ -4,4 +4,4 @@
 
 RxJava的`switch()`，正如定义的，将一个发射多个Observables的Observable转换成另一个单独的Observable，后者发射那些Observables最近发射的数据项。
 
-举一个发射多个Observables序列的源Observable
+举一个发射多个Observables序列的源Observable，`switch()`订阅到源Observable然后开始发射被第一个发射的Observable同样的数据
