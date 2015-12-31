@@ -13,6 +13,7 @@ Observable<Long> tictoc = Observable.interval(1, TimeUnit.SECONDS);
 
 ```java
 private AppInfo updateTitle(AppInfoappInfo, Long time) {
-    appInfo.setName(time + " " + appInfo.getName()); return appInfo;
+    appInfo.setName(time + " " + appInfo.getName());
+    return appInfo;
 }
 ```
