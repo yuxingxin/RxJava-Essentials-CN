@@ -7,6 +7,7 @@
 我们的`loadList()`函数将会被修改从这样：
 ```java
 private void loadList(List<AppInfo> apps) {
+
 mRecyclerView.setVisibility(View.VISIBLE);
 
 Observable<AppInfo> observableApp = Observable.from(apps);
