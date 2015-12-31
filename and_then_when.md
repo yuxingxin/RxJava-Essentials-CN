@@ -39,7 +39,7 @@ private void loadList(List<AppInfo> apps) {
             public void onNext(AppInfoappInfo) {
                 if (mSwipeRefreshLayout.isRefreshing()) { 
                 mSwipeRefreshLayout.setRefreshing(false);
-            } 
+                } 
             mAddedApps.add(appInfo);
             intposition = mAddedApps.size() - 1; mAdapter.addApplication(position, appInfo); mRecyclerView.smoothScrollToPosition(position);
             } });
