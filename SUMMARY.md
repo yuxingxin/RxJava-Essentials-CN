@@ -42,5 +42,5 @@
    * [Merge](merge.md)
    * [Zip](zip.md)
    * [Join](join.md)
-   * combineLatest
+   * [combineLatest](combinelatest.md)
 
