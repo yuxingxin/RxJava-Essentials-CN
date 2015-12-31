@@ -21,6 +21,7 @@ private void loadList(List<AppInfo> apps) {
                 .map(position -> {
                     return apps.get(position.intValue());
                 });
+                
     Observable<Long> tictoc = Observable.interval(1000,TimeUnit.MILLISECONDS);
     
     appsSequence.join(
