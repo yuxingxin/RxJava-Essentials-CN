@@ -12,5 +12,29 @@
 * `Func2`参数：定义已发射的数据如何与新发射的数据项相结合。
 * 
 如下练习的例子，我们可以修改`loadList()`函数像下面这样：
-
+```java
+private void loadList(List<AppInfo> apps) { mRecyclerView.setVisibility(View.VISIBLE);
+Observable<AppInfo> appsSequence = Observable.interval(1000, TimeUnit.MILLISECONDS).map(position -> {
+return apps.get(position.intValue());
+});
+Observable<Long> tictoc = Observable.interval(1000,
+TimeUnit.MILLISECONDS);
+appsSequence .join(
+tictoc, appInfo ->Observable.timer(2, TimeUnit.SECONDS),time - >Observable.timer(0, TimeUnit.SECONDS),this::updateTitle)
+.observeOn(AndroidSchedulers.mainThread()) .take(10)
+.subscribe(new Observer<AppInfo>() {
+@Override
+public void onCompleted() { Toast.makeText(getActivity(), "Here is the list!", Toast.LENGTH_LONG).show();
+}
+@Override
+public void onError(Throwable e) { mSwipeRefreshLayout.setRefreshing(false); Toast.makeText(getActivity(), "Something went wrong!", Toast.LENGTH_SHORT).show();
+}
+@Override
+public void onNext(AppInfoappInfo) {
+if (mSwipeRefreshLayout.isRefreshing()) { mSwipeRefreshLayout.setRefreshing(false);
+} mAddedApps.add(appInfo);
+intposition = mAddedApps.size() - 1; mAdapter.addApplication(position, appInfo); mRecyclerView.smoothScrollToPosition(position);
+} });
+}
+```
 
