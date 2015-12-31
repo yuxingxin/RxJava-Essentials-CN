@@ -43,7 +43,7 @@ private void loadList(List<AppInfo> apps) {
                 mSwipeRefreshLayout.setRefreshing(false);
                 } 
                 mAddedApps.add(appInfo);
-            intposition = mAddedApps.size() - 1; mAdapter.addApplication(position, appInfo); mRecyclerView.smoothScrollToPosition(position);
+                int position = mAddedApps.size() - 1; mAdapter.addApplication(position, appInfo); mRecyclerView.smoothScrollToPosition(position);
             } });
 }
 ```
