@@ -21,7 +21,8 @@ private void loadList(List<AppInfo> apps) {
     JoinObservable
         .when(plan)
         .toObservable()
-        .observeOn(AndroidSchedulers.mainThread()) .subscribe(new Observer<AppInfo>() {
+        .observeOn(AndroidSchedulers.mainThread())
+        .subscribe(new Observer<AppInfo>() {
 @Override
 public void
 Toast.makeText(getActivity(), "Here is the list!", Toast.LENGTH_LONG).show();
