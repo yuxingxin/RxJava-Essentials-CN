@@ -44,7 +44,7 @@ private void loadList(List<AppInfo> apps) {
 
 注意错误时的toast消息，你可以认为每个Observable抛出的错误将会打断合并。如果你需要避免这种情况，RxJava提供了`mergeDelayError()`，它能从一个Observable中继续发射数据即便时其中有一个抛出了错误。当所有的Observables都完成时，`mergeDelayError()`将会发射`onError()`，如下图所示：
 
-
+![](chapter6_3.png)
 
 
 
