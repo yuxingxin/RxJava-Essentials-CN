@@ -55,6 +55,8 @@ private void loadList(List<AppInfo> apps) {
 ```
 正如你看到的那样，`zip()`函数有三个参数：两个Observables和一个`Func2`。
 
+仔细一看会发现`observeOn()`函数。它将在下一章中讲解：现在我们冒险试一下。
+
 
 
 
