@@ -26,18 +26,21 @@ private void loadList(List<AppInfo> apps) {
         .observeOn(AndroidSchedulers.mainThread())
         .take(10)
         .subscribe(new Observer<AppInfo>() {
-@Override
-public void onCompleted() { Toast.makeText(getActivity(), "Here is the list!", Toast.LENGTH_LONG).show();
-}
-@Override
-public void onError(Throwable e) { mSwipeRefreshLayout.setRefreshing(false); Toast.makeText(getActivity(), "Something went wrong!", Toast.LENGTH_SHORT).show();
-}
-@Override
-public void onNext(AppInfoappInfo) {
-if (mSwipeRefreshLayout.isRefreshing()) { mSwipeRefreshLayout.setRefreshing(false);
-} mAddedApps.add(appInfo);
-intposition = mAddedApps.size() - 1; mAdapter.addApplication(position, appInfo); mRecyclerView.smoothScrollToPosition(position);
-} });
+            @Override
+            public void onCompleted() {
+                Toast.makeText(getActivity(), "Here is the list!", Toast.LENGTH_LONG).show();
+            }
+            @Override
+            public void onError(Throwable e) {
+                mSwipeRefreshLayout.setRefreshing(false); 
+                Toast.makeText(getActivity(), "Something went wrong!", Toast.LENGTH_SHORT).show();
+            }
+            @Override
+            public void onNext(AppInfoappInfo) {
+            if (mSwipeRefreshLayout.isRefreshing()) { mSwipeRefreshLayout.setRefreshing(false);
+            } mAddedApps.add(appInfo);
+            intposition = mAddedApps.size() - 1; mAdapter.addApplication(position, appInfo); mRecyclerView.smoothScrollToPosition(position);
+            } });
 }
 ```
 
