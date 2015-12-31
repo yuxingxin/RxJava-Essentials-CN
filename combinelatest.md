@@ -42,7 +42,9 @@ private void loadList(List<AppInfo> apps) {
     });
 }
 ```
-这我们使用了两个Observables：一个是每秒钟从我们已安装的应用列表发射一个App数据，第二个是每隔1.5秒发射一个Long型整数。
+这我们使用了两个Observables：一个是每秒钟从我们已安装的应用列表发射一个App数据，第二个是每隔1.5秒发射一个Long型整数。我们将他们结合起来并执行`updateTitle()`函数，结果如下：
+
+
 
 
 
