@@ -17,6 +17,7 @@ private void loadList(List<AppInfo> apps) {
     Pattern2<AppInfo, Long>pattern = JoinObservable.from(observableApp).and(tictoc); 
     
     Plan0<AppInfo> plan = pattern.then(this::updateTitle);
+    
 JoinObservable .when(plan)
 .toObservable() .observeOn(AndroidSchedulers.mainThread()) .subscribe(new Observer<AppInfo>() {
 @Override
