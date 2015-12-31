@@ -40,5 +40,5 @@
    * [总结](summary5.md)
 * [组合Observables](combining_observables.md)
    * [Merge](merge.md)
-   * [ZIP](zip.md)
+   * [Zip](zip.md)
 
