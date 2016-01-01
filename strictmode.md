@@ -7,13 +7,14 @@
 为了在我们的App中激活`StrictMode`，我们只需要在`MainActivity`中添加几行代码，即`onCreate()`方法中这样：
 ```java
 @Override
-public void onCreate() { super.onCreate();
-if (BuildConfig.DEBUG) { StrictMode.setThreadPolicy(new
-StrictMode.ThreadPolicy.Builder() .detectAll()
-.penaltyLog()
-.build()); StrictMode.setVmPolicy(new
-StrictMode.VmPolicy.Builder() .detectAll()
-.penaltyLog() .build());
-} }
-
+public void onCreate() { 
+    super.onCreate();
+    if (BuildConfig.DEBUG) { StrictMode.setThreadPolicy(new
+    StrictMode.ThreadPolicy.Builder() .detectAll()
+    .penaltyLog()
+    .build()); StrictMode.setVmPolicy(new
+    StrictMode.VmPolicy.Builder() .detectAll()
+    .penaltyLog() .build());
+    } 
+}
 ```
