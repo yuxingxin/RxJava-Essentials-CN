@@ -31,15 +31,18 @@ private void loadList() {
             mSwipeRefreshLayout.setRefreshing(false);
             Toast.makeText(getActivity(), "Here is the list!", Toast.LENGTH_LONG).show();
         }
-@Override
-public void onError(Throwable e) {
-Toast.makeText(getActivity(), "Something went wrong!", Toast.LENGTH_SHORT).show();
-mSwipeRefreshLayout.setRefreshing(false); }
-@Override
-public void onNext(AppInfo appInfo) { mAddedApps.add(appInfo); mAdapter.addApplication(mAddedApps.size() - 1, appInfo);
-} });
-
-
+        
+        @Override
+        public void onError(Throwable e) {
+            Toast.makeText(getActivity(), "Something went wrong!", Toast.LENGTH_SHORT).show();
+            mSwipeRefreshLayout.setRefreshing(false);
+        }
+        
+        @Override
+        public void onNext(AppInfo appInfo) {
+            mAddedApps.add(appInfo); mAdapter.addApplication(mAddedApps.size() - 1, appInfo);
+        } 
+    });
 }
 
 ```
