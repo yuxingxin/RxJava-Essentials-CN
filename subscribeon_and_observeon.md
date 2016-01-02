@@ -41,11 +41,40 @@ private void loadList() {
         @Override
         public void onNext(AppInfo appInfo) {
             mAddedApps.add(appInfo);
-            mAdapter.addApplication(mAddedApps.size() - 1, appInfo);
+                mAdapter.addApplication(mAddedApps.size() - 1, appInfo);
         } 
     });
 }
 ```
+如果我们运行代码，`StrictMode`将会报告一个不合规操作，这是因为`SharePreferences`会减慢I/O操作。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
