@@ -21,6 +21,34 @@ private Observable<AppInfo> getApps() {
     });
 }
 ```
+`getApps()`方法返回一个`AppInfo`的Observable。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
