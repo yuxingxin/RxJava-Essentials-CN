@@ -13,4 +13,31 @@ at android.app.ContextImpl.openFileOutput(ContextImpl.java:918)
 at android.content.ContextWrapper.openFileOutput(ContextWrapper. java:185)
 at com.packtpub.apps.rxjava_essentials.Utils.storeBitmap (Utils.java:30)
 ```
+上一条信息告诉我们`Utils.storeBitmap()`函数执行完耗时998ms：在UI线程上近1秒的不必要的工作和
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
