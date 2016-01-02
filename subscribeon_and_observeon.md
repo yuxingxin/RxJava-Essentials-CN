@@ -21,3 +21,13 @@ private Observable<AppInfo> getApps() {
     });
 }
 ```
+
+
+
+
+
+
+
+
+
+
