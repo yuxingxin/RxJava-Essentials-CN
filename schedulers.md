@@ -6,3 +6,6 @@ RxJava提供了5种调度器：
 
 * `.io()`
 * `.computation()`
+* `.immediate()`
+* `.newThread()`
+* `.trampoline()`
