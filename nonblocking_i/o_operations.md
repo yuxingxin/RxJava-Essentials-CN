@@ -4,18 +4,20 @@
 
 ```java
 private static void blockingStoreBitmap(Context context, Bitmap bitmap, String filename) {
-FileOutputStream fOut = null; try {
-fOut = context.openFileOutput(filename, Context.MODE_PRIVATE);
-bitmap.compress(Bitmap.CompressFormat.PNG, 100, fOut); fOut.flush();
-fOut.close();
-} catch (Exception e) {
-throw new RuntimeException(e);
-} finally { try {
-if (fOut != null) { fOut.close();
+    FileOutputStream fOut = null; 
+    try {
+    fOut = context.openFileOutput(filename, Context.MODE_PRIVATE);
+    bitmap.compress(Bitmap.CompressFormat.PNG, 100, fOut); fOut.flush();
+    fOut.close();
+    } catch (Exception e) {
+    throw new RuntimeException(e);
+    } finally { try {
+    if (fOut != null) { fOut.close();
+    }
+    } catch (IOException e) {
+    throw new RuntimeException(e); }
+    } 
 }
-} catch (IOException e) {
-throw new RuntimeException(e); }
-} }
 
 ```
 
