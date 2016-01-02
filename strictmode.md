@@ -15,7 +15,7 @@ public void onCreate() {
     } 
 }
 ```
-我们并不想它总是激活着，因此我们只在debug构建时使用。这种配置将报告违反主线程的用法，并且每一种违规都可能与内存泄露有关：`Activities`、`BroadcastReceivers`、`Sqlite`等更多对象。
+我们并不想它总是激活着，因此我们只在debug构建时使用。这种配置将报告每一种关于主线程的用法的违规做法，并且每一种违规都可能与内存泄露有关：`Activities`、`BroadcastReceivers`、`Sqlite`等更多对象。
 
 
 
