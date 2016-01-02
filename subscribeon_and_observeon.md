@@ -66,7 +66,7 @@ at java.lang.Thread.run(Thread.java:841) Caused by:
     android.view.ViewRootImpl$CalledFromWrongThreadException: Only the original thread that created a view hierarchy can touch its views.
 
 ```
-
+Only the original thread that created a view hierarchy can touch its views.
 
 
 
