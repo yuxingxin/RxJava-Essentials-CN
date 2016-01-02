@@ -33,7 +33,7 @@ public static void storeBitmap(Context context, Bitmap bitmap, String filename) 
 }
 ```
 
-每次我们调用`storeBitmap()`，RxJava处理创建所有它需要从I / O线程池一个特定的I/ O线程执行我们的任务。
+每次我们调用`storeBitmap()`，RxJava处理创建所有它需要从I / O线程池一个特定的I/ O线程执行我们的任务。所有来自UI线程要执行的操作以及App比之前要快上1秒：logcat上也不再有`StrictMode`不合规做法。
 
 
 
