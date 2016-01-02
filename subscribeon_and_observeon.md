@@ -22,7 +22,27 @@ private Observable<AppInfo> getApps() {
 }
 ```
 `getApps()`方法返回一个`AppInfo`的Observable。它先从Android的SharePreferences读取到已安装的应用程序列表。反序列化，并一个接一个的发射AppInfo数据。使用新的方法来检索列表，`loadList()`函数改成下面这样：
+```java
+private void loadList() {
+    mRecyclerView.setVisibility(View.VISIBLE);
+    getApps().subscribe(new Observer<AppInfo>() {
+        @Override
+        public void onCompleted() {
+            mSwipeRefreshLayout.setRefreshing(false);
+            Toast.makeText(getActivity(), "Here is the list!", Toast.LENGTH_LONG).show();
+        }
+@Override
+public void onError(Throwable e) {
+Toast.makeText(getActivity(), "Something went wrong!", Toast.LENGTH_SHORT).show();
+mSwipeRefreshLayout.setRefreshing(false); }
+@Override
+public void onNext(AppInfo appInfo) { mAddedApps.add(appInfo); mAdapter.addApplication(mAddedApps.size() - 1, appInfo);
+} });
 
+
+}
+
+```
 
 
 
