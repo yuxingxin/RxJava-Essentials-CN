@@ -27,7 +27,7 @@ private static void blockingStoreBitmap(Context context, Bitmap bitmap, String f
 
 ```java
 public static void storeBitmap(Context context, Bitmap bitmap, String filename) {
-Schedulers.io().createWorker().schedule(() -> { blockingStoreBitmap(context, bitmap, filename);
+    Schedulers.io().createWorker().schedule(() -> { blockingStoreBitmap(context, bitmap, filename);
 }); }
 ```
 
