@@ -11,3 +11,7 @@ RxJava提供了5种调度器：
 * `.trampoline()`
 
 让我们一个一个的来看下它们：
+
+## Schedulers.io()
+
+这个调度器时用于I/O操作。
