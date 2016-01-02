@@ -26,6 +26,9 @@ RxJava提供了5种调度器：
 
 这个调度器允许你立即在当前线程执行你指定的工作。它是`timeout()`,`timeInterval()`,以及`timestamp()`方法默认的调度器。
 
+## Schedulers.newThread()
+
+
 
 
 
