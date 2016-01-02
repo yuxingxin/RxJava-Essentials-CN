@@ -32,7 +32,7 @@ RxJava提供了5种调度器：
 
 ## Schedulers.trampoline()
 
-
+当我们想在当前线程执行一个任务时，
 
 
 
