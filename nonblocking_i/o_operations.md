@@ -22,6 +22,5 @@ private static void blockingStoreBitmap(Context context, Bitmap bitmap, String f
         }
     } 
 }
-
 ```
 
