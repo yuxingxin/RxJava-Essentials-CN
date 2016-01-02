@@ -25,7 +25,11 @@ private static void blockingStoreBitmap(Context context, Bitmap bitmap, String f
 ```
 现在我们可以使用`Schedulers.io()`创建非阻塞的版本：
 
-
+```java
+public static void storeBitmap(Context context, Bitmap bitmap, String filename) {
+Schedulers.io().createWorker().schedule(() -> { blockingStoreBitmap(context, bitmap, filename);
+}); }
+```
 
 
 
