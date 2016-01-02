@@ -9,3 +9,5 @@ RxJava提供了5种调度器：
 * `.immediate()`
 * `.newThread()`
 * `.trampoline()`
+
+让我们一个一个的来看下它们：
