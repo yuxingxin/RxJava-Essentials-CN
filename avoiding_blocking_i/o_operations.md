@@ -17,7 +17,7 @@ at com.packtpub.apps.rxjava_essentials.Utils.storeBitmap (Utils.java:30)
 ```java
 FileOutputStream fOut = context.openFileOutput(filename, Context.MODE_PRIVATE);
 ```
-它直接访问智能手机的固态存储然后就慢了。我们该如何提高访问速度呢？`storeBitmap()`函数保存了已安装App的图标。他返回了`void`，因此在执行下一个操作前我们毫无理由去等待直到它完成。我们可以启动它并让它执行在不同的线程。Android中这些年线程管理的变化产生了App诡异的行为。我们可以使用`AsyncTask`，但是我们避免掉入前几章里的`onPre... onPost...doInBackGround`地狱
+它直接访问智能手机的固态存储然后就慢了。我们该如何提高访问速度呢？`storeBitmap()`函数保存了已安装App的图标。他返回了`void`，因此在执行下一个操作前我们毫无理由去等待直到它完成。我们可以启动它并让它执行在不同的线程。Android中这些年线程管理的变化产生了App诡异的行为。我们可以使用`AsyncTask`，但是我们避免掉入前几章里的`onPre... onPost...doInBackGround`地狱。
 
 
 
