@@ -23,6 +23,8 @@ private static void blockingStoreBitmap(Context context, Bitmap bitmap, String f
     } 
 }
 ```
+现在我们可以使用`Schedulers.io()`创建非阻塞的版本：
+
 
 
 
