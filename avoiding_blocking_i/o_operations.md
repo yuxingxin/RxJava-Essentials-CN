@@ -12,5 +12,4 @@ at java.io.FileOutputStream.<init>(FileOutputStream.java:88)
 at android.app.ContextImpl.openFileOutput(ContextImpl.java:918) 
 at android.content.ContextWrapper.openFileOutput(ContextWrapper. java:185)
 at com.packtpub.apps.rxjava_essentials.Utils.storeBitmap (Utils.java:30)
-
 ```
