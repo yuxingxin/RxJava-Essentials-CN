@@ -13,7 +13,10 @@ at android.app.ContextImpl.openFileOutput(ContextImpl.java:918)
 at android.content.ContextWrapper.openFileOutput(ContextWrapper. java:185)
 at com.packtpub.apps.rxjava_essentials.Utils.storeBitmap (Utils.java:30)
 ```
-上一条信息告诉我们`Utils.storeBitmap()`函数执行完耗时998ms：在UI线程上近1秒的不必要的工作和App上近1秒不必要的迟钝。这是因为我们以阻塞的方式访问磁盘。
+上一条信息告诉我们`Utils.storeBitmap()`函数执行完耗时998ms：在UI线程上近1秒的不必要的工作和App上近1秒不必要的迟钝。这是因为我们以阻塞的方式访问磁盘。我们的`storeBitmap()`函数包含了：
+```java
+FileOutputStream fOut = context.openFileOutput(filename, Context.MODE_PRIVATE);
+```
 
 
 
