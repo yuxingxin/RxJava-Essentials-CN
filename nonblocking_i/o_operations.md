@@ -14,7 +14,7 @@ private static void blockingStoreBitmap(Context context, Bitmap bitmap, String f
         throw new RuntimeException(e);
     } finally { try {
     if (fOut != null) {
-    fOut.close();
+        fOut.close();
     }
     } catch (IOException e) {
     throw new RuntimeException(e); }
