@@ -7,7 +7,8 @@ private static void blockingStoreBitmap(Context context, Bitmap bitmap, String f
     FileOutputStream fOut = null; 
     try {
         fOut = context.openFileOutput(filename, Context.MODE_PRIVATE);
-        bitmap.compress(Bitmap.CompressFormat.PNG, 100, fOut); fOut.flush();
+        bitmap.compress(Bitmap.CompressFormat.PNG, 100, fOut); 
+        fOut.flush();
         fOut.close();
     } catch (Exception e) {
     throw new RuntimeException(e);
