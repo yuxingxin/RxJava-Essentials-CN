@@ -24,7 +24,7 @@ RxJava提供了5种调度器：
 
 ## Schedulers.immediate()
 
-
+这个调度器允许你立即在当前线程执行你指定的工作。
 
 
 
