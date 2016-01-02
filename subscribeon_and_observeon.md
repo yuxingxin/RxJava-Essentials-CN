@@ -53,7 +53,7 @@ private void loadList() {
 getApps().subscribeOn(Schedulers.io())
         .subscribe(new Observer<AppInfo>() { [...]
 ```
-`Schedulers.io()`
+`Schedulers.io()`将会除去`StrictMode`的不合规操作，
 
 
 
