@@ -20,7 +20,7 @@ RxJava提供了5种调度器：
 
 ## Schedulers.computation()
 
-
+这个是计算工作默认的调度器，它与I/O操作无关，
 
 
 
