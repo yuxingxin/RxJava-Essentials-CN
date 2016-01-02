@@ -9,7 +9,7 @@ private Observable<AppInfo> getApps() {
     return Observable.create(subscriber -> {
         List<AppInfo> apps = new ArrayList<>();
         SharedPreferences sharedPref = getActivity().getPreferences(Context.MODE_PRIVATE);
-        Type appInfoType = new TypeToken<List<AppInfo>>() {}.getType();
+        Type appInfoType = new TypeToken<List<AppInfo>>(){}.getType();
         String serializedApps = sharedPref.getString("APPS", "");
         if (!"".equals(serializedApps)) {
         appInfoType);
