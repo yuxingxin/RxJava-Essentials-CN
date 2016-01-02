@@ -40,7 +40,8 @@ private void loadList() {
         
         @Override
         public void onNext(AppInfo appInfo) {
-            mAddedApps.add(appInfo); mAdapter.addApplication(mAddedApps.size() - 1, appInfo);
+            mAddedApps.add(appInfo);
+            mAdapter.addApplication(mAddedApps.size() - 1, appInfo);
         } 
     });
 }
