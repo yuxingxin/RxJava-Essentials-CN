@@ -13,7 +13,7 @@ private Observable<AppInfo> getApps() {
         String serializedApps = sharedPref.getString("APPS", "");
         if (!"".equals(serializedApps)) {
         
-            apps = new Gson().fromJson(serializedApps, }
+            apps = new Gson().fromJson(serializedApps,appInfoType); }
         for (AppInfo app : apps) { subscriber.onNext(app);
         }
         }
