@@ -48,7 +48,12 @@ private void loadList() {
 ```
 如果我们运行代码，`StrictMode`将会报告一个不合规操作，这是因为`SharePreferences`会减慢I/O操作。我们所需要做的是指定`getApps()`需要在调度器上执行：
 
+```java
 
+getApps() .subscribeOn(Schedulers.io())
+.subscribe(new Observer<AppInfo>() { [...]
+Schedulers.io()
+```
 
 
 
