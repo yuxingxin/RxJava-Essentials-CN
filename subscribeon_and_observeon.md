@@ -21,7 +21,7 @@ private Observable<AppInfo> getApps() {
     });
 }
 ```
-`getApps()`方法返回一个`AppInfo`的Observable。
+`getApps()`方法返回一个`AppInfo`的Observable。它先从Android的SharePreferences读取到已安装的应用程序列表。
 
 
 
