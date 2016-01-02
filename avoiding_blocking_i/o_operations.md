@@ -8,8 +8,7 @@
 D/StrictMode  StrictMode policy violation; ~duration=998 ms: android.os.StrictMode$StrictModeDiskReadViolation: policy=31 violation=2
 at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk (StrictMode.java:1135)
 at libcore.io.BlockGuardOs.open(BlockGuardOs.java:106) at libcore.io.IoBridge.open(IoBridge.java:393)
-at java.io.FileOutputStream.<init>
-(FileOutputStream.java:88) at
+at java.io.FileOutputStream.<init>(FileOutputStream.java:88) at
 android.app.ContextImpl.openFileOutput(ContextImpl.java:918) at
 android.content.ContextWrapper.openFileOutput(ContextWrapper. java:185)
 at com.packtpub.apps.rxjava_essentials.Utils.storeBitmap (Utils.java:30)
