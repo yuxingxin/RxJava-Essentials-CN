@@ -53,7 +53,20 @@ private void loadList() {
 getApps().subscribeOn(Schedulers.io())
         .subscribe(new Observer<AppInfo>() { [...]
 ```
-`Schedulers.io()`将会去掉`StrictMode`的不合规操作，
+`Schedulers.io()`将会去掉`StrictMode`的不合规操作，但是我们的App现在崩溃了是因为：
+```java
+at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.jav a:58)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors. java:422)
+at
+java.util.concurrent.FutureTask.run(FutureTask.java:237) at
+java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutu reTask.access$201(ScheduledThreadPoolExecutor.java:152)
+at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutu reTask.run(ScheduledThreadPoolExecutor.java:265)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolEx ecutor.java:1112)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolE xecutor.java:587)
+at java.lang.Thread.run(Thread.java:841) Caused by:
+android.view.ViewRootImpl$CalledFromWrongThreadException: Only the original thread that created a view hierarchy can touch its views.
+
+```
 
 
 
