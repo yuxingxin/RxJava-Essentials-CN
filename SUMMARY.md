@@ -49,5 +49,5 @@
    * [总结](summary6.md)
 * [Schedulers-解决Android主线程问题](schedulers_defeating_the_android_mainthread_issue.md)
    * [StrictMode](strictmode.md)
-   * 避免阻塞I/O的操作
+   * [避免阻塞I/O的操作](avoiding_blocking_i/o_operations.md)
 
