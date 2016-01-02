@@ -33,7 +33,7 @@ public static void storeBitmap(Context context, Bitmap bitmap, String filename) 
 }
 ```
 
-每次我们调用`storeBitmap()`，RxJava利用创建所有它需要的在来自I/O线程池里指定的I/O线程执行我们的任务。
+每次我们调用`storeBitmap()`，RxJava需要创建所有它需要从I / O线程池一个特定的I/ O线程执行我们的任务满足需要。
 
 
 
