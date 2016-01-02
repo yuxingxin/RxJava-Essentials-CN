@@ -12,7 +12,6 @@ private Observable<AppInfo> getApps() {
         Type appInfoType = new TypeToken<List<AppInfo>>(){}.getType();
         String serializedApps = sharedPref.getString("APPS", "");
         if (!"".equals(serializedApps)) {
-        
             apps = new Gson().fromJson(serializedApps,appInfoType); }
         for (AppInfo app : apps) { subscriber.onNext(app);
         }
