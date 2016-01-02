@@ -16,8 +16,7 @@ private Observable<AppInfo> getApps() {
             for (AppInfo app : apps) {
                 subscriber.onNext(app);
             }
-        }
-        subscriber.onCompleted(); 
+            subscriber.onCompleted(); 
     });
 }
 ```
