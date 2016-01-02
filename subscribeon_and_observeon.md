@@ -51,7 +51,7 @@ private void loadList() {
 ```java
 
 getApps().subscribeOn(Schedulers.io())
-.subscribe(new Observer<AppInfo>() { [...]
+        .subscribe(new Observer<AppInfo>() { [...]
 ```
 `Schedulers.io()`
 
