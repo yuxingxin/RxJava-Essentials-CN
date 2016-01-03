@@ -162,7 +162,7 @@ if (isCityValid(location)) {
 }
 ```
 运行代码，我们可以在下面列表中为每个用户获得新的天气图标：
-
+![](chapter8_2.png)
 
 
 
