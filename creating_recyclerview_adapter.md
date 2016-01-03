@@ -78,7 +78,8 @@ private boolean isCityValid(String location) {
     return !"".equals(location) && separatorPosition > -1; 
 }
 
-private int getSeparatorPosition(String location) {     int separatorPosition = -1;
+private int getSeparatorPosition(String location) { 
+    int separatorPosition = -1;
     if (location != null) {
         separatorPosition = location.indexOf(","); 
     }
