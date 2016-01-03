@@ -35,6 +35,28 @@ public void setUser(User user) {
     ImageLoader.getInstance().displayImage(user.getProfileImage(), user_image);
 }
 ```
+此时，我们可以允许代码获得一个用户列表，正如下图所示：
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
