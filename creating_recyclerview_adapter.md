@@ -106,8 +106,7 @@ getWeatherIconUrl(weatherResponse);
 ```java
 private Observable<Bitmap> loadBitmap(String url) {
     return Observable.create(subscriber -> {
-        ImageLoader.getInstance().displayImage(url,
-city_image, new ImageLoadingListener() { 
+        ImageLoader.getInstance().displayImage(url,city_image, new ImageLoadingListener() { 
             @Override
             public void onLoadingStarted(String imageUri, View view) {
             }
