@@ -28,7 +28,7 @@ Subscription subscription = getCurrentTemperature()
 
 下图中展示了一旦Observable超过了限时就会触发`onError()`函数：因为超时后它才到达，所以最后一个元素将不会发射出去。
 
-![](chapter4_14.png)
+![](images/chapter4_14.png)
 
 
 
