@@ -45,6 +45,14 @@ public void setUser(User user) {
 
 和往常一样，我们将使用Retrofit映射到API然后通过RxJava来访问它。至于StackExchange API，我们将创建`interface`，`RestAdapter`和一个灵活的管理器：
 
+```java
+public interface OpenWeatherMapService {
+@GET("data2.5/weather")
+Observable<WeatherResponse> getForecastByCity(@Query("q") String city);
+}
+
+```
+
 
 
 
