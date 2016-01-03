@@ -190,7 +190,7 @@ public void open(String url) {
     startActivity(i);
 }
 ```
-`Activity`收到URL并用外部Android浏览器打开它。
+`Activity`收到URL并用外部Android浏览器打开它。我们的`ViewHolder`负责创建`OnClickListener`
 
 
 
