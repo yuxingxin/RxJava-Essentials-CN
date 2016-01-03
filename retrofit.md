@@ -25,10 +25,12 @@ public class SeApiManager {
             .build();
         mStackExchangeService = restAdapter.create(StackExchangeService.class);
 }
+
 public Observable<List<User>> getMostPopularSOusers(int howmany) {
-} }
+} 
 return mStackExchangeService .getMostPopularSOusers(howmany)
 .map(UsersResponse::getUsers) .subscribeOn(Schedulers.io()) .observeOn(AndroidSchedulers.mainThread());
+}
 ```
 
 
