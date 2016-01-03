@@ -97,6 +97,7 @@ void download() {
     mDownloadProgress.distinct()
     .observeOn(AndroidSchedulers.mainThread())
     .subscribe(new Observer<Integer>() {
+    @Override
 ```
 
 
