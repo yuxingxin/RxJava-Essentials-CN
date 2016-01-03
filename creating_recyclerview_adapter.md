@@ -130,7 +130,7 @@ private Observable<Bitmap> loadBitmap(String url) {
     });
 }
 ```
-这个`loadBitmap()`返回Observable可以链接前面一个，并且最后我们可以有一个单独的Observable
+这个`loadBitmap()`返回的Observable可以链接前面一个，并且最后我们可以为这个任务返回一个单独的Observable：
 
 
 
