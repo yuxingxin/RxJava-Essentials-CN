@@ -19,8 +19,10 @@ public class SeApiManager {
     private final StackExchangeService mStackExchangeService;
     
     public SeApiManager() {
-RestAdapter restAdapter = new RestAdapter.Builder()
-.setEndpoint("https://api.stackexchange.com") .setLogLevel(RestAdapter.LogLevel.BASIC) .build();
+        RestAdapter restAdapter = new RestAdapter.Builder()
+            .setEndpoint("https://api.stackexchange.com")
+            .setLogLevel(RestAdapter.LogLevel.BASIC)
+            .build();
 mStackExchangeService = restAdapter.create(StackExchangeService.class);
 }
 public Observable<List<User>> getMostPopularSOusers(int howmany) {
