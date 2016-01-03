@@ -2,7 +2,7 @@ RxJava Essentials 中文翻译版
 =======
 ![](rxjava.jpg)
 
-本书是对Ivan.Morgillo所写一书的翻译版本，仅供交流学习使用，严禁商业用途。
+本书是对Ivan.Morgillo所写一书的中文翻译版本，仅供交流学习使用，严禁商业用途。
 
 
 
