@@ -126,11 +126,12 @@ void download() {
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); 
             startActivity(intent);
         }, error -> {
-            Toast.makeText(getActivity(), "Something went south", Toast.LENGTH_SHORT).show(); resetDownloadButton();
-});
+            Toast.makeText(getActivity(), "Something went south", Toast.LENGTH_SHORT).show();
+            resetDownloadButton();
+        });
 }
 ```
-
+我们使用Butter Knife的注解`@OnClick`来绑定按钮的方法并更新按钮信息和点击状态
 
 
 
