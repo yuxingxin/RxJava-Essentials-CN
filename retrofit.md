@@ -16,9 +16,16 @@ public interface StackExchangeService {
 当我们有了`interface`，我们可以创建`RestAdapter`类，为了更清楚的组织我们的代码，我们创建一个`SeApiManager`函数提供一种更适当的方式来和StackExchange API交互。
 ```java
 public class SeApiManager {
-private final StackExchangeService mStackExchangeService;
+    private final StackExchangeService mStackExchangeService;
 public SeApiManager() {
 RestAdapter restAdapter = new RestAdapter.Builder()
+.setEndpoint("https://api.stackexchange.com") .setLogLevel(RestAdapter.LogLevel.BASIC) .build();
+mStackExchangeService = restAdapter.create(StackExchangeService.class);
+}
+public Observable<List<User>> getMostPopularSOusers(int howmany) {
+} }
+return mStackExchangeService .getMostPopularSOusers(howmany)
+.map(UsersResponse::getUsers) .subscribeOn(Schedulers.io()) .observeOn(AndroidSchedulers.mainThread());
 ```
 
 
