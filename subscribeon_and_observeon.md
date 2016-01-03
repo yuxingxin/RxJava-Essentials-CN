@@ -76,7 +76,6 @@ getApps()
 .subscribeOn(Schedulers.io())
 .observeOn(AndroidSchedulers.mainThread())
 .subscribe(new Observer<AppInfo>() { [...]
-
 ```
 
 
