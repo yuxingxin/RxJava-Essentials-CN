@@ -8,7 +8,7 @@ RxJava是一个正在不断发展和扩大的世界。还有许多方法我们�
 
 Android是一个好玩的地方，但是它也有局限性。作为一个Android开发者，你可以用RxJava和RxAndroid克服它们中许多部分。我们用AndroidScheduler只简单提了下RxAndroid,除了在最后一章，你了解了`ViewObservable`。RxAndroid给了你许多：例如，`WidgetObservable`，`LifecycleObservable`。现在要更多的推动它取决于你了。
 
-记得可观测序列就像一条河：它们是流动的。你可以“过滤”一条河，你可以“转换”一条河
+记得可观测序列就像一条河：它们是流动的。你可以“过滤”一条河，你可以“转换”一条河，你可以将两条河合并成一个，然后它仍旧时流动的。最后，它将成为你想要的那条河。
 
 
 
