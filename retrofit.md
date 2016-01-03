@@ -13,6 +13,4 @@ public interface StackExchangeService {
 
 
 
-
-
 ```
