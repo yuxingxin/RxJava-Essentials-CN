@@ -27,8 +27,12 @@ public void onBindViewHolder(SoAdapter.ViewHolder holder, int position) {
 ```
 在`ViewHolder`，我们可以这样：
 ```java
-public void setUser(User user) { name.setText(user.getDisplayName()); city.setText(user.getLocation()); reputation.setText(String.valueOf(user.getReputation()));
-ImageLoader.getInstance().displayImage(user.getProfileImage(), user_image);
+public void setUser(User user) { 
+    name.setText(user.getDisplayName());
+    city.setText(user.getLocation());
+    reputation.setText(String.valueOf(user.getReputation()));
+    
+    ImageLoader.getInstance().displayImage(user.getProfileImage(), user_image);
 }
 ```
 
