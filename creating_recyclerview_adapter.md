@@ -146,6 +146,12 @@ public void onCompleted() {
 }
 @Override
 public void onError(Throwable e) {
+App.L.error(e.toString()); }
+@Override
+public void onNext(Bitmap icon) {
+city_image.setImageBitmap(icon); }
+});
+}
 ```
 
 
