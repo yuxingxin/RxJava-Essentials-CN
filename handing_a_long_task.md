@@ -54,7 +54,9 @@ private void loadList(List<AppInfo> apps) {
 
 可以确定的是，我们将会看到下面在logcat中不愉快的信息：
 
-
+```java
+I/Choreographer  Skipped 598 frames! The application may be doing too much work on its main thread.
+```
 
 
 
