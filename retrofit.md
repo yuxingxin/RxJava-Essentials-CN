@@ -1,3 +1,3 @@
 # Retrofit
 
-Retrofit是Square公司专为Android和Java设计一个类型安全的REST客户端
+Retrofit是Square公司专为Android和Java设计的一个类型安全的REST客户端
