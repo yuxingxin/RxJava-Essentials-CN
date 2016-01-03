@@ -7,8 +7,10 @@ public static class ViewHolder extends RecyclerView.ViewHolder {
     @InjectView(R.id.city) TextView city;
     @InjectView(R.id.reputation) TextView reputation;
     @InjectView(R.id.user_image) ImageView user_image;
-    public ViewHolder(View view) { super(view);
-    ButterKnife.inject(this, view); }
+    public ViewHolder(View view) { 
+        super(view);
+        ButterKnife.inject(this, view); 
+        }
 }
 
 ```
