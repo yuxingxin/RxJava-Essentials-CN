@@ -7,8 +7,12 @@
 private void refreshList() { 
     showRefresh(true);
     mSeApiManager.getMostPopularSOusers(10)
-        .subscribe(users -> { showRefresh(false); mAdapter.updateUsers(users);
-}, error -> { App.L.error(error.toString()); showRefresh(false);
-});
+        .subscribe(users -> { 
+            showRefresh(false);
+            mAdapter.updateUsers(users);
+        }, error -> { 
+            App.L.error(error.toString());
+            showRefresh(false);
+        });
 }
 ```
