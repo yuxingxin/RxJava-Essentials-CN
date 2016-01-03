@@ -33,7 +33,7 @@ private void loadList(List<AppInfo> apps) {
 ```
 下图中展示了发射数字的一个可观测序列。我们对这个可观测序列应用`take(2)`函数，然后我们创建一个只发射可观测源的第一个和第二个数据的新序列。
 
-![](chapter4_2.png)
+![](images/chapter4_2.png)
 
 ## TakeLast
 
@@ -47,11 +47,11 @@ Observable.from(apps)
 
 下一张图中展示了如何从可观测源中发射最后一个元素来创建一个新的序列：
 
-![](chapter4_3.png)
+![](images/chapter4_3.png)
 
 下一张图中展示了我们在已安装的应用列表使用`take()`和`takeLast()`函数后发生的结果：
 
-![](chapter4_4.png)
+![](images/chapter4_4.png)
 
 
 
