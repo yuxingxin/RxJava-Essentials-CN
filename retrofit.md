@@ -27,9 +27,8 @@ public class SeApiManager {
 }
 
 public Observable<List<User>> getMostPopularSOusers(int howmany) {
-} 
-return mStackExchangeService .getMostPopularSOusers(howmany)
-.map(UsersResponse::getUsers) .subscribeOn(Schedulers.io()) .observeOn(AndroidSchedulers.mainThread());
+    return mStackExchangeService .getMostPopularSOusers(howmany)
+    .map(UsersResponse::getUsers) .subscribeOn(Schedulers.io()) .observeOn(AndroidSchedulers.mainThread());
 }
 ```
 
