@@ -46,13 +46,18 @@ private boolean downloadFile(String source, String destination) {
         }
         output.write(data, 0, count); 
     }
-mDownloadProgress.onCompleted(); result = true;
-} catch (Exception e) { mDownloadProgress.onError(e);
-} finally { try {
-if (output != null) { output.close();
-}
-if (input != null) {
-input.close(); }
+    mDownloadProgress.onCompleted(); 
+    result = true;
+} catch (Exception e) { 
+    mDownloadProgress.onError(e);
+} finally { 
+    try {
+        if (output != null) { 
+            output.close();
+        }
+        if (input != null) {
+            input.close(); 
+        }
 } catch (IOException e) { mDownloadProgress.onError(e);
 }
 if (connection != null) { connection.disconnect();
