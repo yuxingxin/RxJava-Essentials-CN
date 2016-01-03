@@ -128,7 +128,7 @@ city_image, new ImageLoadingListener() {
                 subscriber.onError(new Throwable("Image loading cancelled"));
             }
          });
-});
+    });
 }
 ```
 
