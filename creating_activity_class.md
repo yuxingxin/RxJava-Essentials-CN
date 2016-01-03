@@ -16,7 +16,7 @@ private void refreshList() {
         });
 }
 ```
-我们显示了进度条，从StackExchange API 管理器
+我们显示了进度条，从StackExchange API 管理器观测用户列表。
 
 
 
