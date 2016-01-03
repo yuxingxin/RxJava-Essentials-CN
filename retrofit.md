@@ -15,7 +15,10 @@ public interface StackExchangeService {
 
 当我们有了`interface`，我们可以创建`RestAdapter`类，为了更清楚的组织我们的代码，我们创建一个`SeApiManager`类提供一种更适当的方式来和StackExchange API交互。
 ```java
-
+public class SeApiManager {
+private final StackExchangeService mStackExchangeService;
+public SeApiManager() {
+RestAdapter restAdapter = new RestAdapter.Builder()
 ```
 
 
