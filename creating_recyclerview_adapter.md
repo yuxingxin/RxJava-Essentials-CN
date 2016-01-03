@@ -209,8 +209,7 @@ mView.setOnClickListener(view -> {
 ViewObservable.clicks(mView).subscribe(onClickEvent -> {
     if (mProfileListener != null) {
         String url = user.getWebsiteUrl();
-        if (url != null && !url.equals("") &&
-!url.contains("search")) { 
+        if (url != null && !url.equals("") && !url.contains("search")) { 
             mProfileListener.open(url);
         } else {
             mProfileListener.open(user.getLink());
