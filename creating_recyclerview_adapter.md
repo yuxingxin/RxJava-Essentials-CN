@@ -53,10 +53,13 @@ public interface OpenWeatherMapService {
 ```
 这个方法用城市名字作为参数提供当地的预报信息。我们像下面这样将接口和`RestAdapter`类绑定在一起：
 ```java
-RestAdapter restAdapter = new RestAdapter.Builder() .setEndpoint("http://api.openweathermap.org") .setLogLevel(RestAdapter.LogLevel.BASIC) .build();
+RestAdapter restAdapter = new RestAdapter.Builder()
+        .setEndpoint("http://api.openweathermap.org")
+        .setLogLevel(RestAdapter.LogLevel.BASIC)
+        .build();
 mOpenWeatherMapService = restAdapter.create(OpenWeatherMapService.class);
 ```
-
+像以前一样，我们只需设置API端口和log级别：我们需要立马做的两件
 
 
 
