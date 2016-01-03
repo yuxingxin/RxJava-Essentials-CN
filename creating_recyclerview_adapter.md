@@ -13,3 +13,4 @@ public static class ViewHolder extends RecyclerView.ViewHolder {
     }
 }
 ```
+我们一旦收到来自API管理器的数据，我们可以设置界面上所有的标签：`name`,`city`和`reputation`。
