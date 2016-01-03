@@ -19,6 +19,9 @@
 private PublishSubject<Integer>mDownloadProgress = PublishSubject.create();
 ```
 这个主题我们用来管理进度的更新，它和`download`函数协同工作。
+```java
+private boolean downloadFile(String source, String destination) {
+```
 
 
 
