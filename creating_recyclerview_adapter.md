@@ -47,8 +47,8 @@ public void setUser(User user) {
 
 ```java
 public interface OpenWeatherMapService {
-@GET("data2.5/weather")
-Observable<WeatherResponse> getForecastByCity(@Query("q") String city);
+    @GET("data2.5/weather")
+    Observable<WeatherResponse> getForecastByCity(@Query("q") String city);
 }
 
 ```
