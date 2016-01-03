@@ -204,7 +204,7 @@ mView.setOnClickListener(view -> {
     }
 )}；
 ```
-
+一旦我们点击了，我们将直接重定向到预期的网站。
 
 
 
