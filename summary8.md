@@ -6,7 +6,7 @@
 
 RxJava是一个正在不断发展和扩大的世界。还有许多方法我们还没有去探索。有些方法甚至还没有，因为RxJava，你可以创建你自己的操作符并把他们推得更远。
 
-Android是一个好玩的地方，但是它也有局限性。作为一个Android开发者，你可以用RxJava和RxAndroid克服它们中许多部分。我们用AndroidScheduler只简单提了下RxAndroid,除了在最后一章，你了解了`ViewObservable`。RxAndroid给了你许多：例如，`WidgetObservable`，`LifecycleObservable`。现在你要更多的推动它取决于你了。
+Android是一个好玩的地方，但是它也有局限性。作为一个Android开发者，你可以用RxJava和RxAndroid克服它们中许多部分。我们用AndroidScheduler只简单提了下RxAndroid,除了在最后一章，你了解了`ViewObservable`。RxAndroid给了你许多：例如，`WidgetObservable`，`LifecycleObservable`。现在要更多的推动它取决于你了。
 
 
 
