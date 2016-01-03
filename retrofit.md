@@ -6,8 +6,10 @@ Retrofit是Square公司专为Android和Java设计的一个类型安全的REST客
 
 当我们把所有的Java model准备好后，我们就可以开始建立Retrofit。Retrofi使用标准的Java接口来映射API路由。例如我们的例子，我们将使用从PI的一个路由，下面时我们Retrofit的接口类：
 ```java
-public interface StackExchangeService { @GET("2.2users?
-order=desc&sort=reputation&site=stackoverflow")Observable<User sResponse> getMostPopularSOusers(@Query("pagesize") int howmany);
+public interface StackExchangeService {
+    @GET("2.2users?
+order=desc&sort=reputation&site=stackoverflow")
+Observable<User sResponse> getMostPopularSOusers(@Query("pagesize") int howmany);
 }
 
 ```
