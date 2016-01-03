@@ -147,3 +147,5 @@ OpenWeatherMapApiManager.getInstance().getForecastByCity(city)
 
 
 
+
+
