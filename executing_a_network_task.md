@@ -11,7 +11,7 @@
 
 我们的用户界面非常简单，我们只需要一个有趣的进度条和一个下载按钮。
 
-![](chapter7_5.png)
+![](images/chapter7_5.png)
 
 首先，我们创建`mDownloadProgress`
 
