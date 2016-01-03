@@ -133,10 +133,9 @@ private Observable<Bitmap> loadBitmap(String url) {
 这个`loadBitmap()`返回的Observable可以链接前面一个，并且最后我们可以为这个任务返回一个单独的Observable：
 ```java
 if (isCityValid(location)) {
-String city = getCity(location, separatorPosition); OpenWeatherMapApiManager.getInstance()
-0)
-.getForecastByCity(city)
-.filter(response -> response != null) .filter(response -> response.getWeather().size() >
+    String city = getCity(location, separatorPosition);
+    OpenWeatherMapApiManager.getInstance().getForecastByCity(city)
+        .filter(response -> response != null) .filter(response -> response.getWeather().size() >
 .flatMap(response -> {
 String url = getWeatherIconUrl(response); return loadBitmap(url);
 })
