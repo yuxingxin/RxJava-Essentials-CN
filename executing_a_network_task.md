@@ -58,7 +58,7 @@ private boolean downloadFile(String source, String destination) {
             if (input != null) {
                 input.close(); 
             }
-} catch (IOException e) {    
+    } catch (IOException e) {    
     mDownloadProgress.onError(e);
 }
 if (connection != null) {
