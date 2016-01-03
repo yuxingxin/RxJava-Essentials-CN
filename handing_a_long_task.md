@@ -4,11 +4,11 @@
 
 ```java
 private Observable<AppInfo> getObservableApps(List<AppInfo> apps) {
-return Observable .create(subscriber -> {
-}
-for (double i = 0; i < 1000000000; i++) { double y = i * i;
-}
-for (AppInfo app : apps) { subscriber.onNext(app);
-}
-subscriber.onCompleted(); });
+    return Observable .create(subscriber -> {
+    }
+    for (double i = 0; i < 1000000000; i++) { double y = i * i;
+    }
+    for (AppInfo app : apps) { subscriber.onNext(app);
+    }
+    subscriber.onCompleted(); });
 ```
