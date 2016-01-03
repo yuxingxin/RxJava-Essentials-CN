@@ -11,7 +11,7 @@ public interface StackExchangeService {
     Observable<User sResponse> getMostPopularSOusers(@Query("pagesize") int howmany);
 }
 ```
-
+`interface`接口只包含一个方法，即`getMostPopularSOusers`。这个方法用整型`howmany`作为一个参数并返回`UserResponse`的Observable。
 
 
 
