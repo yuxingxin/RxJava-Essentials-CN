@@ -135,7 +135,8 @@ private Observable<Bitmap> loadBitmap(String url) {
 if (isCityValid(location)) {
     String city = getCity(location, separatorPosition);
     OpenWeatherMapApiManager.getInstance().getForecastByCity(city)
-        .filter(response -> response != null) .filter(response -> response.getWeather().size() >
+        .filter(response -> response != null)
+        .filter(response -> response.getWeather().size() >
 .flatMap(response -> {
 String url = getWeatherIconUrl(response); return loadBitmap(url);
 })
