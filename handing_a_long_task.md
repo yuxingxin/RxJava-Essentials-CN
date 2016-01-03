@@ -44,6 +44,7 @@ private void loadList(List<AppInfo> apps) {
 }
 ```
 
+如果我们运行这段代码，当我们点击`Navigation Drawer`菜单项时App将会卡住一会，
 
 
 
