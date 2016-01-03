@@ -10,7 +10,7 @@ public static class ViewHolder extends RecyclerView.ViewHolder {
     public ViewHolder(View view) { 
         super(view);
         ButterKnife.inject(this, view); 
-        }
+    }
 }
 
 ```
