@@ -59,7 +59,17 @@ RestAdapter restAdapter = new RestAdapter.Builder()
         .build();
 mOpenWeatherMapService = restAdapter.create(OpenWeatherMapService.class);
 ```
-像以前一样，我们只需设置API端口和log级别：我们只需要立马做的两件事情
+像以前一样，我们只需设置API端口和log级别：我们只需要立马做的两件事情。
+
+`OpenWeatherMapApiManager`类将提供下面的方法：
+```java
+public Observable<WeatherResponse> getForecastByCity(String city) {
+return mOpenWeatherMapService .getForecastByCity(city)
+.subscribeOn(Schedulers.io()) .observeOn(AndroidSchedulers.mainThread());
+}
+
+```
+
 
 
 
