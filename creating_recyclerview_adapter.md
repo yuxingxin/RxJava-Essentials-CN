@@ -168,7 +168,7 @@ if (isCityValid(location)) {
 
 使用用户主页包含的信息，我们将会创建一个`onClick`监听器来导航到用户web页面，如果有，或者是Stack Overflow个人主页。
 
-
+为了实现它，我们简单实现`Activity`类的接口，用来在适配器触发Android的`onClick`事件。
 
 
 
