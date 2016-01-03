@@ -16,7 +16,9 @@ private Observable<AppInfo> getObservableApps(List<AppInfo> apps) {
 }
 ```
 
-正如你看到的，这个函数执行了一些毫无意义的计算，只是针对这个例子消耗时间，从`List<AppInfo>`对象中发射我们的`AppInfo`数据，
+正如你看到的，这个函数执行了一些毫无意义的计算，只是针对这个例子消耗时间，然后从`List<AppInfo>`对象中发射我们的`AppInfo`数据，现在，我们重排`loadList()`函数如下：
+
+
 
 
 
