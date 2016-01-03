@@ -50,7 +50,6 @@ public interface OpenWeatherMapService {
     @GET("data2.5/weather")
     Observable<WeatherResponse> getForecastByCity(@Query("q") String city);
 }
-
 ```
 
 
