@@ -13,5 +13,5 @@ private Observable<AppInfo> getObservableApps(List<AppInfo> apps) {
         }
         subscriber.onCompleted(); 
     });
-    }
+}
 ```
