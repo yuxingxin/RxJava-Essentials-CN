@@ -111,6 +111,17 @@ public void onLoadingStarted(String imageUri, View view) {
 }
 @Override
 public void onLoadingFailed(String imageUri, View view, FailReason failReason) {
+subscriber.onError(failReason.getCause()); }
+@Override
+public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
+subscriber.onNext(loadedImage);
+subscriber.onCompleted(); }
+@Override
+public void onLoadingCancelled(String imageUri, View view) {
+subscriber.onError(new Throwable("Image loading cancelled"));
+}
+} });
+});
 ```
 
 
