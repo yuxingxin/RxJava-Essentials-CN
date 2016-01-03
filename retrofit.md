@@ -40,7 +40,7 @@ public Observable<List<User>> getMostPopularSOusers(int howmany) {
 
 Retrofit把`RestAdapter`类和我们的API接口绑定在一起后就创建结束。它返回给我们一个对象用来查询API。我们可以选择直接暴露这个对象，或者以某种方式封装依次来限制访问它。在这个例子中，我们封装它并只暴露`getMostPopularSOusers`方法。这个方法执行查询，让Retrofit解析JSON响应数据。获得用户列表，并返回给订阅者。正如你看到的，使用Retrofit、RxJava和Retrolambda，我们几乎没有模板代码：它非常紧凑并且可读性也高。
 
-现在，我们已经有一个API管理者来暴露一个响应式的方法，它从远程API获取到数据并给I/O调度器，解析映射最后提供给我们的消费者一个用户列表。
+现在，我们已经有一个API管理者来暴露一个响应式的方法，它从远程API获取到数据并给I/O调度器，解析映射最后提供给我们的消费者一个整洁的用户列表。
 
 
 
