@@ -69,7 +69,7 @@ public Observable<WeatherResponse> getForecastByCity(String city) {
     .observeOn(AndroidSchedulers.mainThread());
 }
 ```
-现在，我们有了用户列表，我们可以根据城市名来查询OpenWeatherMap来接收天气预报信息。下一步是修改我们的`ViewHolder`类来为每位用户检索和使用天气预报
+现在，我们有了用户列表，我们可以根据城市名来查询OpenWeatherMap来接收天气预报信息。下一步是修改我们的`ViewHolder`类来为每位用户检索和使用天气预报信息从而根据状态来展示天气图标。
 
 
 
