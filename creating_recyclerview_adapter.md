@@ -37,7 +37,7 @@ public void setUser(User user) {
 ```
 此时，我们可以允许代码获得一个用户列表，正如下图所示：
 
-![](chapter8_1.png)
+![](images/chapter8_1.png)
 
 ### 检索天气预报
 
@@ -162,7 +162,7 @@ if (isCityValid(location)) {
 }
 ```
 运行代码，我们可以在下面列表中为每个用户获得新的天气图标：
-![](chapter8_2.png)
+![](images/chapter8_2.png)
 
 ### 打开网站
 
