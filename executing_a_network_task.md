@@ -49,7 +49,7 @@ private boolean downloadFile(String source, String destination) {
         mDownloadProgress.onCompleted(); 
         result = true;
     } catch (Exception e) { 
-    mDownloadProgress.onError(e);
+        mDownloadProgress.onError(e);
     } finally { 
     try {
         if (output != null) { 
