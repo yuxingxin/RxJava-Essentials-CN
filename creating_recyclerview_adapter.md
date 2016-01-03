@@ -65,7 +65,8 @@ mOpenWeatherMapService = restAdapter.create(OpenWeatherMapService.class);
 ```java
 public Observable<WeatherResponse> getForecastByCity(String city) {
     return mOpenWeatherMapService.getForecastByCity(city)
-    .subscribeOn(Schedulers.io()) .observeOn(AndroidSchedulers.mainThread());
+    .subscribeOn(Schedulers.io())
+    .observeOn(AndroidSchedulers.mainThread());
 }
 
 ```
