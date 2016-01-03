@@ -60,4 +60,5 @@
    * [项目目标](the_project_goal.md)
    * [Retrofit](retrofit.md)
    * [App架构](app_structure.md)
+   * 创建Activity类
 
