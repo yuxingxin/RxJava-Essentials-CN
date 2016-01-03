@@ -94,9 +94,10 @@ private String getCity(String location, int position) {
     }
 }
 ```
-借助一个有效的城市名，我们可以用下面命令获得我们所需要天气的所有数据：
-
-
+借助一个有效的城市名，我们可以用下面命令来获得我们所需要天气的所有数据：
+```java
+OpenWeatherMapApiManager.getInstance().getForecastByCity(city)
+```
 
 
 
