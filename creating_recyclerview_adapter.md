@@ -207,12 +207,15 @@ mView.setOnClickListener(view -> {
 一旦我们点击了，我们将直接重定向到预期的网站。在Android上，我们可以用RxAndroid的一种特殊形式（ViewObservable）以更加响应式的方式实现同样的结果。
 ```java
 ViewObservable.clicks(mView).subscribe(onClickEvent -> {
-if (mProfileListener != null) {
-String url = user.getWebsiteUrl();
-if (url != null && !url.equals("") &&
-!url.contains("search")) { mProfileListener.open(url);
-} else { mProfileListener.open(user.getLink());
-} }
+    if (mProfileListener != null) {
+        String url = user.getWebsiteUrl();
+        if (url != null && !url.equals("") &&
+!url.contains("search")) { 
+            mProfileListener.open(url);
+        } else {
+            mProfileListener.open(user.getLink());
+        } 
+    }
 });
 ```
 
