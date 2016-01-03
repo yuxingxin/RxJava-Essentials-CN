@@ -67,7 +67,7 @@ getObservableApps(apps)
     .observeOn(AndroidSchedulers.mainThread())
     .subscribe(new Observer<AppInfo>() { [...]
 ```
-用这几行代码，我们将可以快速关掉`Navigation Drawer`,一个漂亮的进度条，一个工作在独立的线程并缓慢执行的计算任务，
+用这几行代码，我们将可以快速关掉`Navigation Drawer`,一个漂亮的进度条，一个工作在独立的线程缓慢执行的计算任务，
 
 
 
