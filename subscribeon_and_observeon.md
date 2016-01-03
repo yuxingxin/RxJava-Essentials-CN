@@ -77,7 +77,7 @@ getApps()
 .observeOn(AndroidSchedulers.mainThread())
 .subscribe(new Observer<AppInfo>() { [...]
 ```
-`observeOn()`方法将会在指定的调度器上返回结果：如例子中的UI线程。`onBackpressureBuffer()`方法将指导Observable发射的数据是否比观察者消费的数据要更快。
+`observeOn()`方法将会在指定的调度器上返回结果：如例子中的UI线程。`onBackpressureBuffer()`方法将指导Observable发射的数据是否比观察者消费的数据要更快。它必须把它们存储在缓存中并提供一个合适的时间给它们。
 
 
 
