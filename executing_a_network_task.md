@@ -81,9 +81,11 @@ private Observable<Boolean> obserbableDownload(String source, String destination
                 subscriber.onCompleted(); 
             } else {
                 subscriber.onError(new Throwable("Download failed."));
-}
-} catch (Exception e) { subscriber.onError(e);
-} });
+            }
+        } catch (Exception e) { 
+            subscriber.onError(e);
+        } 
+    });
 }
 
 ```
