@@ -4,9 +4,11 @@
 
 我们的`refreshList()`函数看起来如下：
 ```java
-private void refreshList() { showRefresh(true); mSeApiManager.getMostPopularSOusers(10)
-}
-.subscribe(users -> { showRefresh(false); mAdapter.updateUsers(users);
+private void refreshList() { 
+    showRefresh(true);
+    mSeApiManager.getMostPopularSOusers(10)
+        .subscribe(users -> { showRefresh(false); mAdapter.updateUsers(users);
 }, error -> { App.L.error(error.toString()); showRefresh(false);
 });
+}
 ```
