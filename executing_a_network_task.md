@@ -69,7 +69,7 @@ private boolean downloadFile(String source, String destination) {
     return result;
 }
 ```
-上面的这段代码将会触发`NetworkOnMainThreadException`异常。
+上面的这段代码将会触发`NetworkOnMainThreadException`异常。我们可以创建RxJava版本的函数进入我们挚爱的响应式世界
 
 
 
