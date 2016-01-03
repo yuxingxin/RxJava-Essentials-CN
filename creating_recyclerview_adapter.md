@@ -102,7 +102,7 @@ OpenWeatherMapApiManager.getInstance().getForecastByCity(city)
 ```java
 getWeatherIconUrl(weatherResponse);
 ```
-用图标URL，我们可以检索图标本身：
+用图标URL，我们可以检索到图标本身：
 
 
 
