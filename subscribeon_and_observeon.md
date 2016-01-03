@@ -68,7 +68,7 @@ at java.lang.Thread.run(Thread.java:841) Caused by:
 ```
 Only the original thread that created a view hierarchy can touch its views.
 
-我们再次回到Android的世界。
+我们再次回到Android的世界。这条信息简单的告诉我们我们试图在一个非UI线程来修改UI操作。
 
 
 
