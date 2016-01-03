@@ -196,6 +196,10 @@ public void open(String url) {
 mView.setOnClickListener(view -> { if (mProfileListener != null) {
 String url = user.getWebsiteUrl();
 if (url != null && !url.equals("") && !url.contains("search")) {
+mProfileListener.open(url); } else {
+mProfileListener.open(user.getLink()); }
+}
+）}；
 ```
 
 
