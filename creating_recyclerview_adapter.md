@@ -71,6 +71,22 @@ public Observable<WeatherResponse> getForecastByCity(String city) {
 ```
 现在，我们有了用户列表，我们可以根据城市名来查询OpenWeatherMap来接收天气预报信息。下一步是修改我们的`ViewHolder`类来为每位用户检索和使用天气预报信息从而根据状态来展示天气图标。
 
+我们使用这些工具方法先验证用户主页信息并获得一个合法的城市名字：
+```java
+private boolean isCityValid(String location) {
+    int separatorPosition = getSeparatorPosition(location);
+    return !"".equals(location) && separatorPosition > -1; 
+}
+private int getSeparatorPosition(String location) { int separatorPosition = -1;
+if (location != null) {
+separatorPosition = location.indexOf(","); }
+return separatorPosition; }
+private String getCity(String location, int position) { if (location != null) {
+return location.substring(0, position); } else {
+return ""; }
+}
+```
+
 
 
 
