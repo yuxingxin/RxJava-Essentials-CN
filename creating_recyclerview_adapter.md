@@ -98,8 +98,10 @@ private String getCity(String location, int position) {
 ```java
 OpenWeatherMapApiManager.getInstance().getForecastByCity(city)
 ```
-
-
+用天气响应的结果，我们可以获得天气图标的URL：
+```java
+getWeatherIconUrl(weatherResponse);
+```
 
 
 
