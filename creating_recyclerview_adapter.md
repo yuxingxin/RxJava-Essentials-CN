@@ -141,17 +141,24 @@ if (isCityValid(location)) {
             String url = getWeatherIconUrl(response);
             return loadBitmap(url);
     })
-.subscribeOn(Schedulers.io()) .observeOn(AndroidSchedulers.mainThread()) .subscribe(new Observer<Bitmap>() {
-@Override
-public void onCompleted() {
-}
-@Override
-public void onError(Throwable e) {
-App.L.error(e.toString()); }
-@Override
-public void onNext(Bitmap icon) {
-city_image.setImageBitmap(icon); }
-});
+    .subscribeOn(Schedulers.io())
+    .observeOn(AndroidSchedulers.mainThread())
+    .subscribe(new Observer<Bitmap>() {
+    
+        @Override
+        public void onCompleted() {
+        }
+        
+        @Override
+        public void onError(Throwable e) {
+            App.L.error(e.toString()); 
+        }
+        
+        @Override
+        public void onNext(Bitmap icon) {
+            city_image.setImageBitmap(icon); 
+        }
+    });
 }
 ```
 
