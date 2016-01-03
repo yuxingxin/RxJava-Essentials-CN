@@ -25,7 +25,7 @@ private boolean downloadFile(String source, String destination) {
     InputStream input = null; 
     OutputStream output = null; 
     HttpURLConnection connection = null;
-try {
+    try {
 URL url = new URL(source);
 connection = (HttpURLConnection) url.openConnection(); connection.connect();
 if (connection.getResponseCode() != HttpURLConnection.HTTP_OK) {
