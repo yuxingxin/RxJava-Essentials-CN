@@ -10,6 +10,29 @@ public interface StackExchangeService {
     @GET("2.2users?order=desc&sort=reputation&site=stackoverflow")
     Observable<User sResponse> getMostPopularSOusers(@Query("pagesize") int howmany);
 }
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
