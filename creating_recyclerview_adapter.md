@@ -94,7 +94,8 @@ private String getCity(String location, int position) {
     }
 }
 ```
-使用一个有效的城市名，我们可以用下面命令查询我们所需要天气的所有数据
+借助一个有效的城市名，我们可以用下面命令查询我们所需要天气的所有数据：
+
 
 
 
