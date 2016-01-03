@@ -37,6 +37,7 @@ public void setUser(User user) {
 ```
 此时，我们可以允许代码获得一个用户列表，正如下图所示：
 
+![](chapter8_1.png)
 
 
 
