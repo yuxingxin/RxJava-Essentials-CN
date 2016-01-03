@@ -180,7 +180,9 @@ public interface OpenProfileListener {
 `Activity`实现它：
 ```java
 [...] implements SoAdapter.ViewHolder.OpenProfileListener { [...]
-mAdapter.setOpenProfileListener(this); [...]
+mAdapter.setOpenProfileListener(this); 
+[...]
+
 @Override
 public void open(String url) {
 Intent i = new Intent(Intent.ACTION_VIEW); i.setData(Uri.parse(url)); startActivity(i);
