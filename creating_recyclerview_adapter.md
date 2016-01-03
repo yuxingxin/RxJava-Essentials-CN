@@ -68,7 +68,6 @@ public Observable<WeatherResponse> getForecastByCity(String city) {
     .subscribeOn(Schedulers.io())
     .observeOn(AndroidSchedulers.mainThread());
 }
-
 ```
 
 
