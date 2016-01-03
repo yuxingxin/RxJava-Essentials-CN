@@ -103,6 +103,15 @@ OpenWeatherMapApiManager.getInstance().getForecastByCity(city)
 getWeatherIconUrl(weatherResponse);
 ```
 用图标URL，我们可以检索到图标本身：
+```java
+private Observable<Bitmap> loadBitmap(String url) { return Observable
+.create(subscriber -> { ImageLoader.getInstance().displayImage(url,
+city_image, new ImageLoadingListener() { @Override
+public void onLoadingStarted(String imageUri, View view) {
+}
+@Override
+public void onLoadingFailed(String imageUri, View view, FailReason failReason) {
+```
 
 
 
