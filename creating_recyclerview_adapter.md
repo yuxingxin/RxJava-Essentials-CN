@@ -180,7 +180,7 @@ public interface OpenProfileListener {
 `Activity`实现它：
 ```java
 [...] implements SoAdapter.ViewHolder.OpenProfileListener { [...]
-mAdapter.setOpenProfileListener(this); 
+    mAdapter.setOpenProfileListener(this); 
 [...]
 
 @Override
