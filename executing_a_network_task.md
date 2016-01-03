@@ -60,12 +60,12 @@ private boolean downloadFile(String source, String destination) {
             }
     } catch (IOException e) {    
         mDownloadProgress.onError(e);
-}
-if (connection != null) {
-    connection.disconnect();
-    mDownloadProgress.onCompleted();
-}
-return result;
+    }
+    if (connection != null) {
+        connection.disconnect();
+        mDownloadProgress.onCompleted();
+    }
+    return result;
 }
 
 ```
