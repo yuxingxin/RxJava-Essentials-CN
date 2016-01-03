@@ -73,13 +73,14 @@ private boolean downloadFile(String source, String destination) {
 
 ```java
 private Observable<Boolean> obserbableDownload(String source, String destination) {
-return Observable.create(subscriber -> {
-try {
-boolean result = downloadFile(source, destination); if (result) {
-subscriber.onNext(true);
-subscriber.onCompleted(); } else {
-subscriber.onError(new Throwable("Download
-failed."));
+    return Observable.create(subscriber -> {
+        try {
+            boolean result = downloadFile(source, destination); 
+            if (result) {
+                subscriber.onNext(true);
+                subscriber.onCompleted(); 
+            } else {
+                subscriber.onError(new Throwable("Download failed."));
 }
 } catch (Exception e) { subscriber.onError(e);
 } });
