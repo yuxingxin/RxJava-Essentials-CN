@@ -50,7 +50,7 @@ fullOfDuplicates.distinct()
 ```
 结果，很明显，我们得到：
 
-![](chapter4_6.png)
+![](images/chapter4_6.png)
 
 ## DistinctUntilsChanged
 
@@ -62,7 +62,7 @@ fullOfDuplicates.distinct()
 
 下图用图形化的方式展示了我们如何将`distinctUntilChanged()`函数应用在一个存在的序列上来创建一个新的不重复发射元素的序列。
 
-![](chapter4_7.png)
+![](images/chapter4_7.png)
 
 
 
