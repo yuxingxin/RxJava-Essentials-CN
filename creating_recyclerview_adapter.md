@@ -199,7 +199,7 @@ if (url != null && !url.equals("") && !url.contains("search")) {
 mProfileListener.open(url); } else {
 mProfileListener.open(user.getLink()); }
 }
-）}；
+)}；
 ```
 
 
