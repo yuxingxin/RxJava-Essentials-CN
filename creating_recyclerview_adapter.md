@@ -140,7 +140,7 @@ if (isCityValid(location)) {
         .flatMap(response -> {
             String url = getWeatherIconUrl(response);
             return loadBitmap(url);
-    })
+        })
     .subscribeOn(Schedulers.io())
     .observeOn(AndroidSchedulers.mainThread())
     .subscribe(new Observer<Bitmap>() {
