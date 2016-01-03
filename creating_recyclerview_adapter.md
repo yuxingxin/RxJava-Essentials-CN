@@ -43,7 +43,7 @@ public void setUser(User user) {
 
 我们加大难度，将当地城市的天气加入列表中。**OpenWeatherMap**是一个灵活的web service公共API，我们可以查询检索许多有用的预报信息。
 
-和通常意义，我们将使用Retrofit映射到API然后通过RxJava来访问它。正如StackExchange API一样，我们将创建`interface`，`RestAdapter`和一个灵活的管理器：
+和通常一样，我们将使用Retrofit映射到API然后通过RxJava来访问它。正如StackExchange API一样，我们将创建`interface`，`RestAdapter`和一个灵活的管理器：
 
 
 
