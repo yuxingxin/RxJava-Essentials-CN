@@ -36,7 +36,7 @@ public Observable<List<User>> getMostPopularSOusers(int howmany) {
 ```
 为了简化例子，我们不再将这个类设计为它本应该设计为的单例。使用依赖注入解决方案，如Dagger2将会使代码质量更高。
 
-创建`RestAdapter`类
+创建`RestAdapter`类，我们为API客户端建立了几个重要的点。这个例子中，我们设置`endpoint`和`log level`。由于这个例子URL只时硬编码，
 
 
 
