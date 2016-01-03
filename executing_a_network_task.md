@@ -95,8 +95,9 @@ void download() {
     mButton.setText(getString(R.string.downloading));
     mButton.setClickable(false);
     mDownloadProgress.distinct()
-@Override
-.observeOn(AndroidSchedulers.mainThread()) .subscribe(new Observer<Integer>() {
+    @Override
+    .observeOn(AndroidSchedulers.mainThread())
+    .subscribe(new Observer<Integer>() {
 ```
 
 
