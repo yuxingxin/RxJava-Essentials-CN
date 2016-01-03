@@ -173,7 +173,8 @@ if (isCityValid(location)) {
 我们的`Adapter ViewHolder`指定这个接口：
 ```java
 public interface OpenProfileListener {
-public void open(String url); }
+    public void open(String url); 
+}
 ```
 
 
