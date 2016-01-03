@@ -88,7 +88,8 @@ private Observable<Boolean> obserbableDownload(String source, String destination
     });
 }
 ```
-现在我们需要触发下载操作，点
+现在我们需要触发下载操作，点击下载按钮:
+
 
 
 
