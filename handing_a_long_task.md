@@ -52,6 +52,8 @@ private void loadList(List<AppInfo> apps) {
 
 ![](chapter7_4.png)
 
+可以确定的是，我们将会看到下面在logcat中不愉快的信息：
+
 
 
 
