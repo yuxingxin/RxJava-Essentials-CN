@@ -44,8 +44,8 @@ private boolean downloadFile(String source, String destination) {
                 int percentage = (int) (total * 100 / fileLength);
                 mDownloadProgress.onNext(percentage);
             }
-        output.write(data, 0, count); 
-    }
+            output.write(data, 0, count); 
+        }
     mDownloadProgress.onCompleted(); 
     result = true;
 } catch (Exception e) { 
