@@ -69,7 +69,7 @@ private boolean downloadFile(String source, String destination) {
     return result;
 }
 ```
-
+上面的这段代码将会触发`NetworkOnMainThreadException`异常。
 
 
 
