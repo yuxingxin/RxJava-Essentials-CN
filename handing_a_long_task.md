@@ -58,7 +58,7 @@ private void loadList(List<AppInfo> apps) {
 I/Choreographer  Skipped 598 frames! The application may be doing too much work on its main thread.
 ```
 
-这条信息比较清楚，Android在告诉我们用户体验非常差是因为我们阻塞了UI线程
+这条信息比较清楚，Android在告诉我们用户体验非常差是因为我们用不必要的任务加载阻塞了UI线程
 
 
 
