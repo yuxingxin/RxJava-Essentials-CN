@@ -140,6 +140,8 @@ obserbableDownload("http://archive.blender.org/fileadmin/movies/softboy.avi", "s
 ```
 这是一个下载Observable。网络调用是一个I/O任务和我们预料的那样使用I/O调度器。当下载完成时，我们在`onNext()`启动视频播放器，并且播放器将会在目的URL找到下载的文件.。
 
+下图
+
 
 
 
