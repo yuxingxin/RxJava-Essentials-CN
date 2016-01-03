@@ -18,7 +18,13 @@ public static class ViewHolder extends RecyclerView.ViewHolder {
 为了展示用户的头像，我们将使用Sergey Tarasevich (https://github.com/nostra13/Android-Universal- ImageLoader)写的`Universal Image Loader`。UIL是非常有名的并且被测试出很好用的图片管理库。我们也可以使用Square公司的Picasso，Glide或者Facebook公司的Fresco。这只是根据你自己的爱好。重要的是无须重复造轮子：库能够方便开发者的生活并让他们更快速实现目标。
 
 在我们的适配器中，我们可以这样：
-
+```java
+@Override
+public void onBindViewHolder(SoAdapter.ViewHolder holder, int position) {
+    User user = mUsers.get(position);
+    holder.setUser(user); 
+}
+```
 
 
 
