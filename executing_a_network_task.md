@@ -142,7 +142,7 @@ obserbableDownload("http://archive.blender.org/fileadmin/movies/softboy.avi", "s
 
 下图展示了下载进度和视频播放器对话框：
 
-
+![](chapter7_6.png)
 
 
 
