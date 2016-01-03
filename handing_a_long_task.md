@@ -61,7 +61,8 @@ I/Choreographer  Skipped 598 frames! The application may be doing too much work 
 这条信息比较清楚，Android在告诉我们用户体验非常差的原因是我们用不必要的工作量阻塞了UI线程。但是我们已经知道了如何处理它：我们有调度器！我们只须添加几行代码到我们的Observable链中就能去掉加载慢和`Choreographer`信息：
 
 ```java
-getObservableApps(apps) .onBackpressureBuffer()
+getObservableApps(apps)
+.onBackpressureBuffer()
 .subscribeOn(Schedulers.computation()) .observeOn(AndroidSchedulers.mainThread()) .subscribe(new Observer<AppInfo>() { [...]
 ```
 
