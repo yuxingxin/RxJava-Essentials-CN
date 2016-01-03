@@ -170,6 +170,9 @@ if (isCityValid(location)) {
 
 为了实现它，我们简单实现`Activity`类的接口，用来在适配器触发Android的`onClick`事件。
 
+我们的`Adapter ViewHolder`指定接口：
+
+
 
 
 
