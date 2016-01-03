@@ -48,6 +48,34 @@ private void loadList(List<AppInfo> apps) {
 
 ![](chapter7_3.png)
 
+如果我们不够走运的话，我们可以看到下图中经典的ANR信息框
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
