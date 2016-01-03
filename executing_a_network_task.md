@@ -94,7 +94,7 @@ private Observable<Boolean> obserbableDownload(String source, String destination
 void download() {
     mButton.setText(getString(R.string.downloading));
     mButton.setClickable(false);
-    mDownloadProgress .distinct()
+    mDownloadProgress.distinct()
 @Override
 .observeOn(AndroidSchedulers.mainThread()) .subscribe(new Observer<Integer>() {
 ```
