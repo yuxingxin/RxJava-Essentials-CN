@@ -8,7 +8,7 @@ Retrofit是Square公司专为Android和Java设计的一个类型安全的REST客
 ```java
 public interface StackExchangeService {
     @GET("2.2users?order=desc&sort=reputation&site=stackoverflow")
-Observable<User sResponse> getMostPopularSOusers(@Query("pagesize") int howmany);
+    Observable<User sResponse> getMostPopularSOusers(@Query("pagesize") int howmany);
 }
 
 ```
