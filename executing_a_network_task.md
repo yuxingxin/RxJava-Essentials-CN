@@ -121,9 +121,8 @@ void download() {
         .subscribe(success -> {
             resetDownloadButton();
             Intent intent = new Intent(android.content.Intent.ACTION_VIEW);
-File file = new File(destination);
-intent.setDataAndType(Uri.fromFile(file),
-"video/avi");
+            File file = new File(destination);
+            intent.setDataAndType(Uri.fromFile(file),"video/avi");
 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); startActivity(intent);
 }, error -> {
 Toast.makeText(getActivity(), "Something went
