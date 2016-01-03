@@ -89,7 +89,13 @@ private Observable<Boolean> obserbableDownload(String source, String destination
 }
 ```
 现在我们需要触发下载操作，点击下载按钮:
-
+```java
+@OnClick(R.id.button_download)
+void download() { mButton.setText(getString(R.string.downloading)); mButton.setClickable(false);
+mDownloadProgress .distinct()
+@Override
+.observeOn(AndroidSchedulers.mainThread()) .subscribe(new Observer<Integer>() {
+```
 
 
 
