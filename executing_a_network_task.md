@@ -99,14 +99,21 @@ void download() {
     .subscribe(new Observer<Integer>() {
     
         @Override
-        public void onCompleted() { App.L.debug("Completed");
-}
-@Override
-public void onError(Throwable e) {
-App.L.error(e.toString()); }
-@Override
-public void onNext(Integer progress) { mArcProgress.setProgress(progress);
-} });
+        public void onCompleted() {  
+            App.L.debug("Completed");
+        }
+    
+    @Override
+    public void onError(Throwable e) {
+        App.L.error(e.toString()); 
+    }
+    
+    @Override
+    public void onNext(Integer progress) {
+        mArcProgress.setProgress(progress);
+    } 
+    
+    });
 String destination = "sdcardsoftboy.avi"; obserbableDownload("http://archive.blender.org/fileadmin/movie s/ softboy.avi", destination)
 .subscribeOn(Schedulers.io()) .observeOn(AndroidSchedulers.mainThread()) .subscribe(success -> {
 resetDownloadButton();
