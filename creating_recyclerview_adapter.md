@@ -166,7 +166,7 @@ if (isCityValid(location)) {
 
 ### 打开网站
 
-使用用户主页包含的信息，我们将会创建一个`onClick`监听器来引导用户web页面，如果有，或者是Stack Overflow主页。
+使用用户主页包含的信息，我们将会创建一个`onClick`监听器来引导用户web页面，如果有，或者是Stack Overflow个人主页。
 
 
 
