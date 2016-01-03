@@ -50,6 +50,13 @@ if (output != null) { output.close();
 if (input != null) {
 input.close(); }
 } catch (IOException e) { mDownloadProgress.onError(e);
+}
+if (connection != null) { connection.disconnect();
+mDownloadProgress.onCompleted(); }
+}
+return result;
+}
+
 ```
 
 
