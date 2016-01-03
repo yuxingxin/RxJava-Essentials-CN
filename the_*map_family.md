@@ -6,7 +6,7 @@ RxJava提供了几个mapping函数：`map()`,`flatMap()`,`concatMap()`,`flatMapI
 
 RxJava的`map`函数接收一个指定的`Func`对象然后将它应用到每一个由Observable发射的值上。下图展示了如何将一个乘法函数应用到每个发出的值上以此创建一个新的Observable来发射转换的数据。
 
-![](chapter5_1.png)
+![](images/chapter5_1.png)
 
 考虑我们已安装的应用列表。我们怎么才能够显示同样的列表，但是所有的名字都是小写。
 
@@ -52,7 +52,7 @@ private void loadList(List<AppInfo> apps) {
 
 在复杂的场景中，我们有一个这样的Observable：它发射一个数据序列，这些数据本身也可以发射Observable。RxJava的`flatMap()`函数提供一种铺平序列的方式，然后合并这些Observables发射的数据，最后将合并后的结果作为最终的Observable。
 
-![](chapter5_2.png)
+![](images/chapter5_2.png)
 
 当我们在处理可能有大量的Observables时，重要是记住任何一个Observables发生错误的情况，`flatMap()`函数将会触发它自己的`onError()`函数并放弃整个链。
 
@@ -62,19 +62,19 @@ private void loadList(List<AppInfo> apps) {
 
 RxJava的`concatMap()`函数解决了`flatMap()`的交叉问题，提供了一种能够把发射的值连在一起的铺平函数，而不是合并它们，如下图所示：
 
-![](chapter5_3.png)
+![](images/chapter5_3.png)
 
 ## FlatMapIterable
 
 作为*map家族的一员，`flatMapInterable()`和`flatMap()`很像。仅有的不同是这个变体成对的打包数据，然后生成Iterable而不是原始数据和生成的Observables。
 
-![](chapter5_4.png)
+![](images/chapter5_4.png)
 
 ## SwitchMap
 
 如下图所示，`switchMap()`和`flatMap()`很像，除了一点：当原始Observable发射一个新的数据（Observable）时，它将取消订阅并停止监视之前那个数据的Observable产生的Observable，并开始监视当前这一个。
 
-![](chapter5_5.png)
+![](images/chapter5_5.png)
 
 ## Scan
 
@@ -148,11 +148,11 @@ private void loadList(List<AppInfo> apps) {
 
 结果如下：
 
-![](chapter5_6.png)
+![](images/chapter5_6.png)
 
 有一个`scan()`函数的变体，它用初始值作为第一个发射的值，方法特征就像：`scan(R,Func2)`，就像下图中的例子这样：
 
-![](chapter5_7.png)
+![](images/chapter5_7.png)
 
 
 
