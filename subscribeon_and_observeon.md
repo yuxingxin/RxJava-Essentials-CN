@@ -77,7 +77,7 @@ getApps()
 .observeOn(AndroidSchedulers.mainThread())
 .subscribe(new Observer<AppInfo>() { [...]
 ```
-
+`observeOn()`方法将会在指定的调度器上返回结果：如例子中的UI线程。`onBackpressureBuffer()`方法将指导Observable
 
 
 
