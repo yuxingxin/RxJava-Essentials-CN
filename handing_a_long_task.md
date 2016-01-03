@@ -63,7 +63,8 @@ I/Choreographer  Skipped 598 frames! The application may be doing too much work 
 ```java
 getObservableApps(apps)
     .onBackpressureBuffer()
-    .subscribeOn(Schedulers.computation()) .observeOn(AndroidSchedulers.mainThread()) .subscribe(new Observer<AppInfo>() { [...]
+    .subscribeOn(Schedulers.computation())
+    .observeOn(AndroidSchedulers.mainThread()) .subscribe(new Observer<AppInfo>() { [...]
 ```
 
 
