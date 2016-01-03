@@ -97,7 +97,30 @@ void download() {
     mDownloadProgress.distinct()
     .observeOn(AndroidSchedulers.mainThread())
     .subscribe(new Observer<Integer>() {
-    @Override
+    
+        @Override
+        public void onCompleted() { App.L.debug("Completed");
+}
+@Override
+public void onError(Throwable e) {
+App.L.error(e.toString()); }
+@Override
+public void onNext(Integer progress) { mArcProgress.setProgress(progress);
+} });
+String destination = "sdcardsoftboy.avi"; obserbableDownload("http://archive.blender.org/fileadmin/movie s/ softboy.avi", destination)
+.subscribeOn(Schedulers.io()) .observeOn(AndroidSchedulers.mainThread()) .subscribe(success -> {
+resetDownloadButton();
+Intent intent = new
+Intent(android.content.Intent.ACTION_VIEW);
+File file = new File(destination);
+intent.setDataAndType(Uri.fromFile(file),
+"video/avi");
+intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); startActivity(intent);
+}, error -> {
+Toast.makeText(getActivity(), "Something went
+south", Toast.LENGTH_SHORT).show(); resetDownloadButton();
+});
+}
 ```
 
 
