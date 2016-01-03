@@ -41,9 +41,9 @@ private boolean downloadFile(String source, String destination) {
         while ((count = input.read(data)) != -1) {
             total += count;
             if (fileLength >0) {
-            int percentage = (int) (total * 100 / fileLength);
-            mDownloadProgress.onNext(percentage);
-        }
+                int percentage = (int) (total * 100 / fileLength);
+                mDownloadProgress.onNext(percentage);
+            }
         output.write(data, 0, count); 
     }
     mDownloadProgress.onCompleted(); 
