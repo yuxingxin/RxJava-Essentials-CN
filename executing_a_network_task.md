@@ -32,17 +32,18 @@ private boolean downloadFile(String source, String destination) {
         if (connection.getResponseCode() != HttpURLConnection.HTTP_OK) {
             return false;
         }
-int fileLength = connection.getContentLength();
-input = connection.getInputStream();
-output = new FileOutputStream(destination);
-byte data[] = new byte[4096];
-long total = 0;
-int count;
-while ((count = input.read(data)) != -1) {
-total += count;
-if (fileLength >0) {
-int percentage = (int) (total * 100 / fileLength); mDownloadProgress.onNext(percentage);
-}
+        int fileLength = connection.getContentLength();
+        input = connection.getInputStream();
+        output = new FileOutputStream(destination);
+        byte data[] = new byte[4096];
+        long total = 0;
+        int count;
+        while ((count = input.read(data)) != -1) {
+            total += count;
+            if (fileLength >0) {
+            int percentage = (int) (total * 100 / fileLength);
+            mDownloadProgress.onNext(percentage);
+        }
 output.write(data, 0, count); }
 mDownloadProgress.onCompleted(); result = true;
 } catch (Exception e) { mDownloadProgress.onError(e);
