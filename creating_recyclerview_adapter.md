@@ -185,7 +185,8 @@ mAdapter.setOpenProfileListener(this);
 
 @Override
 public void open(String url) {
-Intent i = new Intent(Intent.ACTION_VIEW); i.setData(Uri.parse(url)); startActivity(i);
+    Intent i = new Intent(Intent.ACTION_VIEW);
+    i.setData(Uri.parse(url)); startActivity(i);
 }
 ```
 
