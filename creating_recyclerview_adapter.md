@@ -204,7 +204,7 @@ mView.setOnClickListener(view -> {
     }
 )}；
 ```
-一旦我们点击了，我们将直接重定向到预期的网站。在Android上，我们可以用RxAndroid的一种特殊形式（ViewObservable）以更加响应式的方式实现同样结果
+一旦我们点击了，我们将直接重定向到预期的网站。在Android上，我们可以用RxAndroid的一种特殊形式（ViewObservable）以更加响应式的方式实现同样的结果。
 
 
 
