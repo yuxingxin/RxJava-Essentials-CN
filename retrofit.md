@@ -17,7 +17,8 @@ public interface StackExchangeService {
 ```java
 public class SeApiManager {
     private final StackExchangeService mStackExchangeService;
-public SeApiManager() {
+    
+    public SeApiManager() {
 RestAdapter restAdapter = new RestAdapter.Builder()
 .setEndpoint("https://api.stackexchange.com") .setLogLevel(RestAdapter.LogLevel.BASIC) .build();
 mStackExchangeService = restAdapter.create(StackExchangeService.class);
