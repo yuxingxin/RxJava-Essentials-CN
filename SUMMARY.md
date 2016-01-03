@@ -61,5 +61,5 @@
    * [Retrofit](retrofit.md)
    * [App架构](app_structure.md)
    * [创建Activity类](creating_activity_class.md)
-   * 创建RecyclerView Adapter
+   * [创建RecyclerView Adapter](creating_recyclerview_adapter.md)
 
