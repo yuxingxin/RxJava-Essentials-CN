@@ -136,8 +136,7 @@ void download() {
 然后，我们创建一个subscription来观察下载进度并相应的更新进度条。很明显，我们我们观测主线程是因为进度条是UI元素。
 
 ```java
-obserbableDownload("http://archive.blender.org/fileadmin/movie
-s/ softboy.avi", "sdcardsoftboy.avi";)
+obserbableDownload("http://archive.blender.org/fileadmin/movies/softboy.avi", "sdcardsoftboy.avi";)
 ```
 
 
