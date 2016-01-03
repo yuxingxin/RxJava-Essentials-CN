@@ -41,6 +41,7 @@ public void setUser(User user) {
 
 ### 检索天气预报
 
+我们加大难度，将当地城市的天气加入列表中。
 
 
 
