@@ -38,7 +38,7 @@ public Observable<List<User>> getMostPopularSOusers(int howmany) {
 
 创建`RestAdapter`类，我们为API客户端建立了几个重要的点。这个例子中，我们设置`endpoint`和`log level`。由于这个例子URL只是硬编码，使用外部资源来像这样存储数据很重要。避免在代码中硬编码字符串是一个好的实践。
 
-Retrofit把`RestAdapter`类和我们的API接口绑定在一起后就创建结束。它返回给我们一个对象用来查询API。我们可以选择直接暴露这个对象，或者以某种方式封装依次来限制访问它。在这个例子中，我们封装它并只暴露`getMostPopularSOusers`方法。
+Retrofit把`RestAdapter`类和我们的API接口绑定在一起后就创建结束。它返回给我们一个对象用来查询API。我们可以选择直接暴露这个对象，或者以某种方式封装依次来限制访问它。在这个例子中，我们封装它并只暴露`getMostPopularSOusers`方法。这个方法执行查询，让Retrofit解析JSON响应数据
 
 
 
