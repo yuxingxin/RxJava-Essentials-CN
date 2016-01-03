@@ -13,7 +13,7 @@ public interface StackExchangeService {
 ```
 `interface`接口只包含一个方法，即`getMostPopularSOusers`。这个方法用整型`howmany`作为一个参数并返回`UserResponse`的Observable。
 
-
+当我们有了`interface`，我们可以创建`RestAdapter`类，
 
 
 
