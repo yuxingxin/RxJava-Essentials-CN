@@ -39,6 +39,7 @@ public void setUser(User user) {
 
 ![](chapter8_1.png)
 
+检索天气预报
 
 
 
