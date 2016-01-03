@@ -53,5 +53,5 @@
    * [Schedulers](schedulers.md)
    * [非阻塞I/O操作](nonblocking_i/o_operations.md)
    * [SubscribeOn and ObserveOn](subscribeon_and_observeon.md)
-   * [处理大的任务](handing_a_long_task.md)
+   * [处理耗时的任务](handing_a_long_task.md)
 
