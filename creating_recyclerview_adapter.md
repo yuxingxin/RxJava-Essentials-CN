@@ -190,7 +190,13 @@ public void open(String url) {
     startActivity(i);
 }
 ```
-`Activity`收到URL并用外部Android浏览器打开它。我们的`ViewHolder`负责在用户列表的每个卡片上创建`OnClickListener`并检查我们是打开Stack Overflow用户主页还是外部个人站。
+`Activity`收到URL并用外部Android浏览器打开它。我们的`ViewHolder`负责在用户列表的每个卡片上创建`OnClickListener`并检查我们是打开Stack Overflow用户主页还是外部个人站：
+
+```java
+mView.setOnClickListener(view -> { if (mProfileListener != null) {
+String url = user.getWebsiteUrl();
+if (url != null && !url.equals("") && !url.contains("search")) {
+```
 
 
 
