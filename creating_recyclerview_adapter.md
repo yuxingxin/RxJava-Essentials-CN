@@ -64,8 +64,8 @@ mOpenWeatherMapService = restAdapter.create(OpenWeatherMapService.class);
 `OpenWeatherMapApiManager`类将提供下面的方法：
 ```java
 public Observable<WeatherResponse> getForecastByCity(String city) {
-return mOpenWeatherMapService .getForecastByCity(city)
-.subscribeOn(Schedulers.io()) .observeOn(AndroidSchedulers.mainThread());
+    return mOpenWeatherMapService.getForecastByCity(city)
+    .subscribeOn(Schedulers.io()) .observeOn(AndroidSchedulers.mainThread());
 }
 
 ```
