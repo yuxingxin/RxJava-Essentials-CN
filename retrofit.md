@@ -2,3 +2,4 @@
 
 Retrofit是Square公司专为Android和Java设计的一个类型安全的REST客户端。它帮助你很容易的和任何REST API交互，它完美的集成R小Java：所有的JSON响应对象都被映射成原始的Java对象，并且所有的网络调用都基于Rxjava Observable这些对象。
 
+使用API文档，我们可以定义我们从服务器接收的JSON响应数据。
