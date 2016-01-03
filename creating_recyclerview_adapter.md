@@ -136,10 +136,11 @@ if (isCityValid(location)) {
     String city = getCity(location, separatorPosition);
     OpenWeatherMapApiManager.getInstance().getForecastByCity(city)
         .filter(response -> response != null)
-        .filter(response -> response.getWeather().size() >
-.flatMap(response -> {
-String url = getWeatherIconUrl(response); return loadBitmap(url);
-})
+        .filter(response -> response.getWeather().size() > 0)
+        .flatMap(response -> {
+            String url = getWeatherIconUrl(response);
+            return loadBitmap(url);
+    })
 .subscribeOn(Schedulers.io()) .observeOn(AndroidSchedulers.mainThread()) .subscribe(new Observer<Bitmap>() {
 @Override
 public void onCompleted() {
