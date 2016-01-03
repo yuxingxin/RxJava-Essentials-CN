@@ -51,6 +51,7 @@ public interface OpenWeatherMapService {
     Observable<WeatherResponse> getForecastByCity(@Query("q") String city);
 }
 ```
+这个方法用城市名字作为参数提供当地的预报信息。
 
 
 
