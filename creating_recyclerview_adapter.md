@@ -77,13 +77,20 @@ private boolean isCityValid(String location) {
     int separatorPosition = getSeparatorPosition(location);
     return !"".equals(location) && separatorPosition > -1; 
 }
-private int getSeparatorPosition(String location) { int separatorPosition = -1;
-if (location != null) {
-separatorPosition = location.indexOf(","); }
-return separatorPosition; }
-private String getCity(String location, int position) { if (location != null) {
-return location.substring(0, position); } else {
-return ""; }
+
+private int getSeparatorPosition(String location) {     int separatorPosition = -1;
+    if (location != null) {
+        separatorPosition = location.indexOf(","); 
+    }
+    return separatorPosition; 
+}
+
+private String getCity(String location, int position) {
+    if (location != null) {
+        return location.substring(0, position); 
+    } else {
+        return ""; 
+    }
 }
 ```
 
