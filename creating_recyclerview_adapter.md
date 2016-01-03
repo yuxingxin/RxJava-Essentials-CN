@@ -59,7 +59,7 @@ RestAdapter restAdapter = new RestAdapter.Builder()
         .build();
 mOpenWeatherMapService = restAdapter.create(OpenWeatherMapService.class);
 ```
-像以前一样，我们只需设置API端口和log级别：我们需要立马做的两件
+像以前一样，我们只需设置API端口和log级别：我们只需要立马做的两件事情
 
 
 
