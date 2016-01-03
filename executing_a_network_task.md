@@ -112,7 +112,6 @@ void download() {
         public void onNext(Integer progress) {
             mArcProgress.setProgress(progress);
         } 
-    
     });
 String destination = "sdcardsoftboy.avi"; obserbableDownload("http://archive.blender.org/fileadmin/movie s/ softboy.avi", destination)
 .subscribeOn(Schedulers.io()) .observeOn(AndroidSchedulers.mainThread()) .subscribe(success -> {
