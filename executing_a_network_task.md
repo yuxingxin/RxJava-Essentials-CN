@@ -116,10 +116,11 @@ void download() {
     
     String destination = "sdcardsoftboy.avi";
     obserbableDownload("http://archive.blender.org/fileadmin/movies/softboy.avi", destination)
-        .subscribeOn(Schedulers.io()) .observeOn(AndroidSchedulers.mainThread()) .subscribe(success -> {
-resetDownloadButton();
-Intent intent = new
-Intent(android.content.Intent.ACTION_VIEW);
+        .subscribeOn(Schedulers.io())
+        .observeOn(AndroidSchedulers.mainThread())
+        .subscribe(success -> {
+            resetDownloadButton();
+            Intent intent = new Intent(android.content.Intent.ACTION_VIEW);
 File file = new File(destination);
 intent.setDataAndType(Uri.fromFile(file),
 "video/avi");
