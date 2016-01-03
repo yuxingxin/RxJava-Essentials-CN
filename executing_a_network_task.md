@@ -13,4 +13,8 @@
 
 ![](chapter7_5.png)
 
+首先，我们创建`mDownloadProgress`
 
+```java
+private PublishSubject<Integer>mDownloadProgress = PublishSubject.create();
+```
