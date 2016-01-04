@@ -85,7 +85,7 @@ Observable.create(new Observable.OnSubscribe<Integer>() {
 
 ### BehaviorSubject
 
-本质上，BehaviorSubject是一个能够发射它所观察的最近的那个数据对象并且所有后续已订阅的数据都订阅它的一个subject。
+本质上，BehaviorSubject是一个能够发射它所观察的最近的那个数据对象并且所有后续已订阅的数据都订阅它的这样一个subject。
 
 ```java
 BehaviorSubject<Integer> behaviorSubject = BehaviorSubject.create(1);
