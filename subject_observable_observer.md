@@ -85,7 +85,7 @@ Observable.create(new Observable.OnSubscribe<Integer>() {
 
 ### BehaviorSubject
 
-本质上，BehaviorSubject是一个能够发射最近的那个它所观察的数据对象并且所有后续已订阅的数据都订阅它的这样一个subject。
+本质上，BehaviorSubject是一个能够发射最近的那个它所观察的数据对象并且所有后续已订阅的数据每一个都订阅它的这样一个subject。
 
 ```java
 BehaviorSubject<Integer> behaviorSubject = BehaviorSubject.create(1);
@@ -93,7 +93,7 @@ BehaviorSubject<Integer> behaviorSubject = BehaviorSubject.create(1);
 在这个短例子中，我们创建了一个能发射整数的BehaviorSubject。由于真相是一旦Observes订阅它就会发射最近的值，所以它需要一个初始值。
 ### ReplaySubject
 
-ReplaySubject会缓存它所订阅的所有数据，向任意一个订阅它的观察者repaly:
+ReplaySubject会缓存它所订阅的所有数据，向任意一个订阅它的观察者重发:
 ```java
 ReplaySubject<Integer> replaySubject = ReplaySubject.create();
 ```
