@@ -2,7 +2,7 @@
 
 我们将使用IntelliJ IDEA/Android Studio来创建这个工程，因此你会对截图看起来比较熟悉。
 
-让我们开始钻研并创建一个新的Android工程。你可以创建你自己的工程或者用本书中提供的导入。选择你自己喜欢的设置这取决于你。
+让我们开始创建一个新的Android工程。你可以创建你自己的工程或者用本书中提供的导入。选择你自己喜欢的设置这取决于你。
 
 如果你想用Android Studio创建一个新的工程，通常你可以参考官方文档：http://developer.android.com/intl/zh-cn/training/basics/firstapp/creating-project.html
 
