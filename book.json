@@ -2,5 +2,10 @@
     "plugins": [
         "disqus"
     ],
-    "pluginsConfig": {}
+    "pluginsConfig": {
+        "disqus": {
+            "shortName": "yuxingxin",
+            "useIdentifier": true
+        }
+    }
 }
