@@ -100,7 +100,7 @@ ReplaySubject<Integer> replaySubject = ReplaySubject.create();
 
 ### AsyncSubject
 
-当Observable完成时AsyncSubject会发布最后一个数据观测已经订阅的每一个观察者。
+当Observable完成时AsyncSubject只会发布最后一个数据给已经订阅的每一个观察者。
 
 ```java
 AsyncSubject<Integer> asyncSubject = AsyncSubject.create();
