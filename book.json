@@ -4,8 +4,7 @@
     ],
     "pluginsConfig": {
         "disqus": {
-            "shortName": "rxjavaessential",
-            "useIdentifier": false
+            "shortName": "rxjavaessential"
         }
     }
 }
