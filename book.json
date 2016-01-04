@@ -4,8 +4,7 @@
     ],
     "pluginsConfig": {
         "disqus": {
-            "shortName": "yuxingxin",
-            "useIdentifier": true
+            "shortName": "yuxingxin"
         }
     }
 }
