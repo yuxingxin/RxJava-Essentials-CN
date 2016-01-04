@@ -46,7 +46,7 @@ private void loadList(List<AppInfo> apps) {
 }
 ```
 
-正如你看到的这样，像通常一样创建我们发射的Observable，我们加一个`map`调用，我们可以创建一个简单的函数来更新`AppInfo`对象并提供一个小写的新版本的名字给观察者。
+正如你看到的这样，像往常一样创建我们发射的Observable，我们加一个`map`调用，我们可以创建一个简单的函数来更新`AppInfo`对象并提供一个小写的新版本的名字给观察者。
 
 ## FlatMap
 
