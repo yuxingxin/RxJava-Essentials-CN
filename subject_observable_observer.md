@@ -12,7 +12,7 @@ RxJava提供四种不同的主题：
 
 ### PublishSubject
 
-Publish是一个Subject基类。让我们看看用PublishSubject实现传统的Observable Hello World:
+Publish是一个Subject基类。让我们看看用PublishSubject实现传统的Observable `Hello World`:
 ```java
 PublishSubject<String> stringPublishSubject = PublishSubject.create();
 Subscription subscriptionPrint = stringPublishSubject.subscribe(new Observer<String>() {
