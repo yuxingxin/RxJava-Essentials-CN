@@ -110,7 +110,7 @@ Subscription subscriptionPrint = observableString.subscribe(new Observer<Integer
 
 输出的结果和上面的例子绝对是一样的。
 
-`from()`创建符可以从一个列表/数组来创建Observable,并一个接一个的从列表/数组中发射出来每一个对象，或者也可以从Java `Future`类来创建Observable，并发射Future对象的`.get()`方法返回的结果值。传入`Future`作为参数时，我们可以指定一个超时的值。Observable将等待来自`Future`的；如果在超时之前仍然没有结果出来，Observable将会触发`onError()`方法通知观察者有错误发生了。
+`from()`创建符可以从一个列表/数组来创建Observable,并一个接一个的从列表/数组中发射出来每一个对象，或者也可以从Java `Future`类来创建Observable，并发射Future对象的`.get()`方法返回的结果值。传入`Future`作为参数时，我们可以指定一个超时的值。Observable将等待来自`Future`的结果；如果在超时之前仍然没有结果，Observable将会触发`onError()`方法通知观察者有错误发生了。
 
 #### Observable.just()
 
