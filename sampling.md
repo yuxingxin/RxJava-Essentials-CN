@@ -30,7 +30,7 @@ sensor.sample(30,TimeUnit.SECONDS)
 
 ![](images/chapter4_13.png)
 
-如果我们想让它定时发射第一个元素而不是最近的一个元素，我们可以使用`throttleFirst()`.
+如果我们想让它定时发射第一个元素而不是最近的一个元素，我们可以使用`throttleFirst()`。
 
 
 
