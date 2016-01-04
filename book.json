@@ -1,9 +1,9 @@
 {
     "plugins": [
-        "disqus"
+        "-disqus"
     ],
     "pluginsConfig": {
-        "disqus": {
+        "-disqus": {
             "shortName": "rxjavaessential",
             "useIdentifier": false
         }
