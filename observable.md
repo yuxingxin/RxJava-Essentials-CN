@@ -16,7 +16,7 @@ Observable的生命周期包含了三种可能的易于与Iterable生命周期�
 
 为了更好地复用Iterable接口，RxJava Observable类扩展了GOF观察者模式的语义。引入了两个新的接口：
 * onCompleted() 即通知观察者Observable没有更多的数据。
-* onError() 即观察者有一个错误出现了。
+* onError() 即观察者有错误出现了。
 
 
 ### 热Observables和冷Observables
