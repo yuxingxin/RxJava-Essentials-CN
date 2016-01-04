@@ -73,7 +73,7 @@ Subscription subscriptionPrint = observableString.subscribe(new Observer<Integer
 
 另一方面，我们订阅了Observable，返回一个Subscription
 。一旦我们订阅了，我们就开始接受整数，并一个接一个的打印出它们。我们并不知道要接受多少整数。事实上，我们也无需知道是因为我们为每种场景都提供对应的处理操作：
-* 如果我们接收到了整数，那么久打印它。
+* 如果我们接收到了整数，那么就打印它。
 * 如果序列结束，我们就打印一个关闭的序列信息。
 * 如果错误发生了，我们就打印一个错误的信息。
 
