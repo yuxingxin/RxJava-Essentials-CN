@@ -7,7 +7,7 @@
 如果我们想对一个指定的值仅处理一次该怎么办？我们可以对我们的序列使用`distinct()`函数去掉重复的。就像`takeLast()`一样，`distinct()`作用于一个完整的序列，然后得到重复的过滤项，它需要记录每一个发射的值。如果你在处理一大堆序列或者大的数据记得关注内存使用情况。
 
 下图展示了如何在一个发射1和2两次的可观测源上创建一个无重的序列：
-![](images/chapter4_5.png)
+![](../images/chapter4_5.png)
 
 为了创建我们例子中序列，我们将使用我们至今已经学到的几个方法：
 * `take()`：它有一小组的可识别的数据项。
@@ -50,7 +50,7 @@ fullOfDuplicates.distinct()
 ```
 结果，很明显，我们得到：
 
-![](images/chapter4_6.png)
+![](../images/chapter4_6.png)
 
 ## DistinctUntilsChanged
 
@@ -62,7 +62,7 @@ fullOfDuplicates.distinct()
 
 下图用图形化的方式展示了我们如何将`distinctUntilChanged()`函数应用在一个存在的序列上来创建一个新的不重复发射元素的序列。
 
-![](images/chapter4_7.png)
+![](../images/chapter4_7.png)
 
 
 

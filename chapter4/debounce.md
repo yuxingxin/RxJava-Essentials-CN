@@ -6,5 +6,5 @@
 
 下图展示了多久从Observable发射一次新的数据，`debounce()`函数开启一个内部定时器，如果在这个时间间隔内没有新的数据发射，则新的Observable发射出最后一个数据：
 
-![](images/chapter4_15.png)
+![](../images/chapter4_15.png)
 

@@ -37,7 +37,7 @@ public static void storeBitmap(Context context, Bitmap bitmap, String filename) 
 
 下图展示了我们在`storeBitmap()`场景看到的两种方法的不同：
 
-![](images/chapter7_1.png)
+![](../images/chapter7_1.png)
 
 
 

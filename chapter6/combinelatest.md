@@ -2,7 +2,7 @@
 
 RxJava的`combineLatest()`函数有点像`zip()`函数的特殊形式。正如我们已经学习的，`zip()`作用于最近未打包的两个Observables。相反，`combineLatest()`作用于最近发射的数据项：如果`Observable1`发射了A并且`Observable2`发射了B和C，`combineLatest()`将会分组处理AB和AC，如下图所示：
 
-![](images/chapter6_9.png)
+![](../images/chapter6_9.png)
 
 `combineLatest()`函数接受二到九个Observable作为参数，如果有需要的话或者单个Observables列表作为参数。
 
@@ -44,7 +44,7 @@ private void loadList(List<AppInfo> apps) {
 ```
 这我们使用了两个Observables：一个是每秒钟从我们已安装的应用列表发射一个App数据，第二个是每隔1.5秒发射一个`Long`型整数。我们将他们结合起来并执行`updateTitle()`函数，结果如下：
 
-![](images/chapter6_10.png)
+![](../images/chapter6_10.png)
 
 正如你看到的，由于不同的时间间隔，`AppInfo`对象如我们所预料的那样有时候会重复。
 

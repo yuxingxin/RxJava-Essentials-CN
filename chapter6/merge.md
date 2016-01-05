@@ -2,7 +2,7 @@
 
 在异步的世界经常会创建这样的场景，我们有多个来源但是只想有一个结果：多输入，单输出。RxJava的`merge()`方法将帮助你把两个甚至更多的Observables合并到他们发射的数据里。下图给出了把两个序列合并在一个最终发射的Observable。
 
-![](images/chapter6_1.png)
+![](../images/chapter6_1.png)
 
 正如你看到的那样，发射的数据被交叉合并到一个Observable里面。注意如果你同步的合并Observable，它们将连接在一起并且不会交叉。
 
@@ -40,11 +40,11 @@ private void loadList(List<AppInfo> apps) {
 我们创建了Observable和observableApps数据以及新的observableReversedApps逆序列表。使用`Observable.merge()`，我们可以创建新的`ObservableMergedObservable`在单个可观测序列中发射源Observables发出的所有数据。
 
 正如你能看到的,每个方法签名都是一样的，因此我们的观察者无需在意任何不同就可以复用代码。结果如下：
-![](images/chapter6_2.png)
+![](../images/chapter6_2.png)
 
 注意错误时的toast消息，你可以认为每个Observable抛出的错误将会打断合并。如果你需要避免这种情况，RxJava提供了`mergeDelayError()`，它能从一个Observable中继续发射数据即便是其中有一个抛出了错误。当所有的Observables都完成时，`mergeDelayError()`将会发射`onError()`，如下图所示：
 
-![](images/chapter6_3.png)
+![](../images/chapter6_3.png)
 
 
 

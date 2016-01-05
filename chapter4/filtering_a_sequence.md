@@ -61,7 +61,7 @@ private void loadList(List<AppInfo> apps) {
 
 下图展示了过滤出的C字母开头的已安装的应用列表。
 
-![](images/chapter4_1.png)
+![](../images/chapter4_1.png)
 
 
 

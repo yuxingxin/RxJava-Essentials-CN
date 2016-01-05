@@ -6,13 +6,13 @@
 
 如果你想用Android Studio创建一个新的工程，通常你可以参考官方文档：http://developer.android.com/intl/zh-cn/training/basics/firstapp/creating-project.html
 
-![](images/chapter3_1.png)
+![](../images/chapter3_1.png)
 
 ### 依赖
 
 很明显，我们将使用**Gradle**来管理我们的依赖列表。我们的build.gradble文件看起来像这样：
- ![](images/chapter3_2.png)
- ![](images/chapter3_3.png)
+ ![](../images/chapter3_2.png)
+ ![](../images/chapter3_3.png)
 正如你看到的我们引入了RxAndroid。RxAndroid是RxJava的增强版，尤其是针对Android设计的。
 ### RxAndroid
 

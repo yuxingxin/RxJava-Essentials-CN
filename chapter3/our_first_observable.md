@@ -75,7 +75,7 @@ SwipeRefreshLayout mSwipeRefreshLayout;
 
 我们使用Android 5的标准组件：RecyclerView和SwipeRefreshLayout。截屏展示了我们这个简单App的list Fragment的layout文件：
 
-![](images/chapter3_4.png)
+![](../images/chapter3_4.png)
 
 我们使用一个下拉刷新方法，因此列表数据可以来自初始化加载，或由用户触发的一个刷新动作。针对这两个场景，我们用同样的行为，因此我们把我们的观察者放在一个易被复用的函数里面。下面是我们的观察者，定义了成功、失败、完成要做的事情：
 
@@ -113,7 +113,7 @@ mSwipeRefreshLayout.setOnRefreshListener(this::refreshTheList);
 
 我们第一个例子现在完成了，运行跑一下。
 
-![](images/chapter3_5.png)
+![](../images/chapter3_5.png)
 
 
 

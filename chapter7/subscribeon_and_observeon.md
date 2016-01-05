@@ -79,7 +79,7 @@ getApps()
 ```
 `observeOn()`方法将会在指定的调度器上返回结果：如例子中的UI线程。`onBackpressureBuffer()`方法将告诉Observable发射的数据如果比观察者消费的数据要更快的话，它必须把它们存储在缓存中并提供一个合适的时间给它们。做完这些工作之后，如果我们运行App，就会出现已安装的程序列表：
 
-![](images/chapter7_2.png)
+![](../images/chapter7_2.png)
 
 
 

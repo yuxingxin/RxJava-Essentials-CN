@@ -8,6 +8,6 @@
 
 这有一张图描述了Subject/Observer的关系是怎样的一对多的关系：
 
-![](images/chapter2_1.png)
+![](../images/chapter2_1.png)
 
 上面这张图展示了一个Subject为3个Observers提供服务。很明显，没有理由去限制Observers的数量：如果有需要，一个Subject可以有无限多个Observers,当subject状态发生变化时，这些Observers中的每一个都会收到通知。
