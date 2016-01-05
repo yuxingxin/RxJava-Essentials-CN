@@ -48,7 +48,7 @@ private void loadApps(AppInfo appOne,AppInfo appTwo,AppInfo appThree) {
 
 正如你看到的，代码和之前的例子很像。这种方法让我们有机会来考虑一下代码的复用。
 
-你可以将一个函数作为参数传给`just()`方法，你将会有一个已存在代码的原始Observable版本。在一个新的响应式架构的基础上迁移已存在的代码，这个方法可能时一个有用的开始。
+你可以将一个函数作为参数传给`just()`方法，你将会得到一个已存在代码的原始Observable版本。在一个新的响应式架构的基础上迁移已存在的代码，这个方法可能是一个有用的开始点。
 
 
 ## repeat()
@@ -86,7 +86,7 @@ private void loadApps(AppInfo appOne,AppInfo appTwo,AppInfo appThree) {
 
 ## defer()
 
-有这样一个场景，你想在这声明一个Observable但是你又想推迟这个Observable的创建。看下面的`getInt()`函数：
+有这样一个场景，你想在这声明一个Observable但是你又想推迟这个Observable的创建直到观察者订阅时。看下面的`getInt()`函数：
 ```java
 private Observable<Integer> getInt(){
     return Observable.create(subscriber -> {

@@ -4,8 +4,6 @@ RxJava Essentials 中文翻译版
 
 本书是对Ivan.Morgillo所写一书的中文翻译版本，仅供交流学习使用，严禁商业用途。
 
-
-
 ---
 
 
@@ -74,7 +72,7 @@ RxJava Essentials 中文翻译版
 
 在这本书中，你会发现许多用来区分不同信息的文本样式，这列举这些样式的一些例子和对他们释义的说明。
 
-以下列举了些文本中的代码、数据库表名、文件夹名、文件名、文件扩展名、路径名、伪造的URL、用户输入、Twitter handles ：“正如你看到的那样：zip()有三个参数：两个Observable和一个Func2，正如所预期的一样”
+以下列举了些文本中的代码、数据库表名、文件夹名、文件名、文件扩展名、路径名、伪造的URL、用户输入、Twitter handles ：“正如你看到的那样：zip()有三个参数：两个Observable和一个Func2”
 
 如下面的一块代码：
 
@@ -98,11 +96,11 @@ public Observable<List<User>> getMostPopularSOusers(int howmany){
 }
 ```
 
-**新的项目**和**重要的词语**都会以粗体显示。你在屏幕看到的字，例如在菜单或者对话框，会以类似这样的形式出现在文本中：“We will just need a fancy progress bar and a **DOWNLOAD** button.”
+**新的项目**和**重要的词语**都会以粗体显示。你在屏幕看到的字，例如在菜单或者对话框，会以类似这样的形式出现在文本中：“We will just need a fancy progress bar and a **DOWNLOAD** button.
 
 **Note**
 
-类似这样的是警告或者出现在框中重要提示。
+类似这样的是警告或者出现在框中的重要提示。
 
 **Tip**
 类似这样的是提示和技巧
@@ -117,4 +115,4 @@ public Observable<List<User>> getMostPopularSOusers(int howmany){
 
 # 下载样例代码
 
-你可以从你在http://www.packtpub.com的账户中下载所有你购买Packt 出版的图书的样例代码，如果你从别处购买这本书的话，你可以访问：http://www.packtpub.com/support 注册并让文件用邮件直接发给你。
+你可以从你在http://www.packtpub.com的账户中下载所有你购买Packt 出版的图书的样例代码，如果你从别处购买这本书的话，你可以访问：http://www.packtpub.com/support 注册并将文件用附件直接发给你。

@@ -1,6 +1,6 @@
 # *map家族
 
-RxJava提供了几个mapping函数：`map()`,`flatMap()`,`concatMap()`,`flatMapIterable()`以及`switchMap()`.所有这些函数都作用于一个可观测序列，然后变换它发射的值，最后用一种新的形式返回它们。让我们用真实世界合适的例子一个个的学习下。
+RxJava提供了几个mapping函数：`map()`,`flatMap()`,`concatMap()`,`flatMapIterable()`以及`switchMap()`.所有这些函数都作用于一个可观测序列，然后变换它发射的值，最后用一种新的形式返回它们。让我们用“真实世界”合适的例子一个个的学习下。
 
 ## Map
 
@@ -46,7 +46,7 @@ private void loadList(List<AppInfo> apps) {
 }
 ```
 
-正如你看到的这样，像通常一样创建我们发射的Observable，我们加一个`map`调用，我们可以创建一个简单的函数来更新`AppInfo`对象并提供一个小写的新版本的名字给观察者。
+正如你看到的，像往常一样创建我们发射的Observable，我们加一个`map`调用，我们可以创建一个简单的函数来更新`AppInfo`对象并提供一个名字小写的新版本给观察者。
 
 ## FlatMap
 
@@ -60,13 +60,13 @@ private void loadList(List<AppInfo> apps) {
 
 ## ConcatMap
 
-RxJava的`concatMap()`函数解决了`flatMap()`的交叉问题，提供了一种能够把发射的值连在一起的铺平函数，而不是合并它们，如下图所示：
+RxJava的`concatMap()`函数解决了`flatMap()`的交叉问题，提供了一种能够把发射的值连续在一起的铺平函数，而不是合并它们，如下图所示：
 
 ![](images/chapter5_3.png)
 
 ## FlatMapIterable
 
-作为*map家族的一员，`flatMapInterable()`和`flatMap()`很像。仅有的不同是这个变体成对的打包数据，然后生成Iterable而不是原始数据和生成的Observables。
+作为*map家族的一员，`flatMapInterable()`和`flatMap()`很像。仅有的本质不同是它将源数据两两结成对，然后生成Iterable而不是原始数据和生成的Observables。
 
 ![](images/chapter5_4.png)
 
