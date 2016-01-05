@@ -117,4 +117,4 @@ public Observable<List<User>> getMostPopularSOusers(int howmany){
 
 # 下载样例代码
 
-你可以从你在http://www.packtpub.com的账户中下载所有你购买Packt 出版的图书的样例代码，如果你从别处购买这本书的话，你可以访问：http://www.packtpub.com/support 注册并让文件用邮件直接发给你。
+你可以从你在http://www.packtpub.com的账户中下载所有你购买Packt 出版的图书的样例代码，如果你从别处购买这本书的话，你可以访问：http://www.packtpub.com/support 注册并将文件用附件直接发给你。
