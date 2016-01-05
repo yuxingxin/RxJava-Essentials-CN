@@ -102,7 +102,7 @@ public Observable<List<User>> getMostPopularSOusers(int howmany){
 
 **Note**
 
-类似这样的是警告或者出现在框中重要提示。
+类似这样的是警告或者出现在框中的重要提示。
 
 **Tip**
 类似这样的是提示和技巧
