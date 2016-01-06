@@ -1,10 +1,10 @@
 # Subject = Observable + Observer
 
-`subject`是一个神奇的对象，它可以是一个Observable同时也可以是一个Observer：它作为连接这两个世界的一座桥梁。一个主题可以订阅一个Observable，就像一个观察者，并且它可以发射新的数据，或者传递它接受到的数据，就像一个Observable。很明显，作为一个Observable，观察者们或者其它主题都可以订阅它。
+`subject`是一个神奇的对象，它可以是一个Observable同时也可以是一个Observer：它作为连接这两个世界的一座桥梁。一个Subject可以订阅一个Observable，就像一个观察者，并且它可以发射新的数据，或者传递它接受到的数据，就像一个Observable。很明显，作为一个Observable，观察者们或者其它Subject都可以订阅它。
 
-一旦主题订阅了Observable，它将会触发Observable开始发射。如果原始的Observable是“冷”的，这将会对订阅一个“热”的Observable变量产生影响。
+一旦Subject订阅了Observable，它将会触发Observable开始发射。如果原始的Observable是“冷”的，这将会对订阅一个“热”的Observable变量产生影响。
 
-RxJava提供四种不同的主题：
+RxJava提供四种不同的Subject：
 * PublishSubject
 * BehaviorSubject
 * ReplaySubject.
@@ -12,7 +12,7 @@ RxJava提供四种不同的主题：
 
 ### PublishSubject
 
-Publish是一个Subject基类。让我们看看用PublishSubject实现传统的Observable `Hello World`:
+Publish是Subject的一个基础子类。让我们看看用PublishSubject实现传统的Observable `Hello World`:
 ```java
 PublishSubject<String> stringPublishSubject = PublishSubject.create();
 Subscription subscriptionPrint = stringPublishSubject.subscribe(new Observer<String>() {
@@ -38,7 +38,7 @@ stringPublishSubject.onNext("Hello World");
 
 最后一行代码展示了手动发射字符串“Hello World”,它触发了观察者的`onNext()`方法，让我们在控制台打印出“Hello World”信息。
 
-让我们看一个更复杂的例子。话说我们有一个`private`声明的Observable，外部不能访问。Observable在它生命周期期间发射值，我们不用关心这些值，我们只关心他们的结束。
+让我们看一个更复杂的例子。话说我们有一个`private`声明的Observable，外部不能访问。Observable在它生命周期内发射值，我们不用关心这些值，我们只关心他们的结束。
 
 首先，我们创建一个新的PublishSubject来响应它的`onNext()`方法，并且外部也可以访问它。
 
@@ -81,19 +81,19 @@ Observable.create(new Observable.OnSubscribe<Integer>() {
 ```
 `Observable.create()`方法包含了我们熟悉的for循环，发射数字。`doOnCompleted()`方法指定当Observable结束时要做什么事情：在subject上发射true。最后，我们订阅了Observable。很明显，空的`subscribe()`调用仅仅是为了开启Observable，而不用管已发出的任何值，也不用管完成事件或者错误事件。为了这个例子我们需要它像这样。
 
-在这个例子中，我们创建一个实体  可以连接Observables,并且同时可以被观测。这在当我们针对公共资源时想创建独立性，抽象性或者更加有可观测的点时是极其有用的。
+在这个例子中，我们创建了一个可以连接Observables并且同时可被观测的实体。当我们想为公共资源创建独立、抽象或更易观测的点时，这是极其有用的。
 
 ### BehaviorSubject
 
-本质上，BehaviorSubject是一个能够发射最近的那个它所观察的数据对象并且所有后续已订阅的数据每一个都订阅它的这样一个subject。
+简单的说，BehaviorSubject会首先向他的订阅者发送截至订阅前最新的一个数据对象（或初始值）,然后正常发送订阅后的数据流。
 
 ```java
 BehaviorSubject<Integer> behaviorSubject = BehaviorSubject.create(1);
 ```
-在这个短例子中，我们创建了一个能发射整数的BehaviorSubject。由于真相是一旦Observes订阅它就会发射最近的值，所以它需要一个初始值。
+在这个短例子中，我们创建了一个能发射整形(Integer)的BehaviorSubject。由于每当Observes订阅它时就会发射最新的数据，所以它需要一个初始值。
 ### ReplaySubject
 
-ReplaySubject会缓存它所订阅的所有数据并向任意一个订阅它的观察者重发:
+ReplaySubject会缓存它所订阅的所有数据,向任意一个订阅它的观察者重发:
 ```java
 ReplaySubject<Integer> replaySubject = ReplaySubject.create();
 ```
