@@ -15,7 +15,7 @@ public static class ViewHolder extends RecyclerView.ViewHolder {
 ```
 我们一旦收到来自API管理器的数据，我们可以设置界面上所有的标签：`name`,`city`和`reputation`。
 
-为了展示用户的头像，我们将使用Sergey Tarasevich (https://github.com/nostra13/Android-Universal- ImageLoader)写的`Universal Image Loader`。UIL是非常有名的并且被测试出很好用的图片管理库。我们也可以使用Square公司的Picasso，Glide或者Facebook公司的Fresco。这只是根据你自己的爱好。重要的是无须重复造轮子：库能够方便开发者的生活并让他们更快速实现目标。
+为了展示用户的头像，我们将使用Sergey Tarasevich写的[Universal Image Loader][1]。实践证明，UIL是非常有名的好用的图片管理库。我们也可以使用Square公司的Picasso，Glide或者Facebook公司的Fresco。取决于你自己的喜好。最关键的是无需重复造轮子：库能够方便开发者并让他们更快速实现目标。
 
 在我们的适配器中，我们可以这样：
 ```java
@@ -41,7 +41,7 @@ public void setUser(User user) {
 
 ### 检索天气预报
 
-我们加大难度，将当地城市的天气加入列表中。**OpenWeatherMap**是一个灵活的web service公共API，我们可以查询检索许多有用的预报信息。
+我们加大难度，将当地城市的天气加入列表中。**OpenWeatherMap**是一个灵活公共在线天气API，我们可以查询许多有用的预报信息。
 
 和往常一样，我们将使用Retrofit映射到API然后通过RxJava来访问它。至于StackExchange API，我们将创建`interface`，`RestAdapter`和一个灵活的管理器：
 
@@ -59,7 +59,7 @@ RestAdapter restAdapter = new RestAdapter.Builder()
         .build();
 mOpenWeatherMapService = restAdapter.create(OpenWeatherMapService.class);
 ```
-像以前一样，我们只需设置API端口和log级别：我们只需要立马做的两件事情。
+像以前一样，我们只有两件事需要立马去做：设置API端口和log级别。
 
 `OpenWeatherMapApiManager`类将提供下面的方法：
 ```java
@@ -69,7 +69,7 @@ public Observable<WeatherResponse> getForecastByCity(String city) {
     .observeOn(AndroidSchedulers.mainThread());
 }
 ```
-现在，我们有了用户列表，我们可以根据城市名来查询OpenWeatherMap来接收天气预报信息。下一步是修改我们的`ViewHolder`类来为每位用户检索和使用天气预报信息从而根据状态来展示天气图标。
+现在，我们有了用户列表，我们可以根据城市名来查询OpenWeatherMap获得天气预报信息。下一步是修改我们的`ViewHolder`类来为每位用户展示相应的天气图标。
 
 我们使用这些工具方法先验证用户主页信息并获得一个合法的城市名字：
 ```java
@@ -166,7 +166,7 @@ if (isCityValid(location)) {
 
 ### 打开网站
 
-使用用户主页包含的信息，我们将会创建一个`onClick`监听器来导航到用户web页面，如果有，或者是Stack Overflow个人主页。
+使用用户主页包含的信息，我们将会创建一个`onClick`监听器来导航到用户web页面，如果有的话，否则打开在Stack Overflow上的个人主页。
 
 为了实现它，我们简单实现`Activity`类的接口，用来在适配器触发Android的`onClick`事件。
 
@@ -218,10 +218,10 @@ ViewObservable.clicks(mView)
     }
 });
 ```
-上面两块代码片段是等价的，你可以选择你最喜欢的那一种方式。
+上面两块代码片段是等价的，你可以选择最喜欢的方式来实现。
 
 
-
+[1]: https://github.com/nostra13/Android-Universal-ImageLoader
 
 
 

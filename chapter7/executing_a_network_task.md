@@ -1,8 +1,8 @@
 # 执行网络任务
 
-网络在今天是99%的移动应用的一部分：我们总是连接远端服务器来检索我们App需要的信息。
+在当今99%的移动应用中网络都是必不可缺的一部分：总是需要连接远程服务器来检索App需要的信息。
 
-作为网络访问的第一个方法，我们将创建下面这样一个场景:
+作为网络访问的第一个案例，我们将创建下面这样一个场景:
 
 * 加载一个进度条。
 * 用一个按钮开始文件下载。
@@ -16,7 +16,7 @@
 首先，我们创建`mDownloadProgress`
 
 ```java
-private PublishSubject<Integer>mDownloadProgress = PublishSubject.create();
+private PublishSubject<Integer> mDownloadProgress = PublishSubject.create();
 ```
 这个主题我们用来管理进度的更新，它和`download`函数协同工作。
 ```java
@@ -133,14 +133,14 @@ void download() {
 ```
 我们使用Butter Knife的注解`@OnClick`来绑定按钮的方法并更新按钮信息和点击状态：我们不想让用户点击多次从而触发多次下载事件。
 
-然后，我们创建一个subscription来观察下载进度并相应的更新进度条。很明显，我们我们观测主线程是因为进度条是UI元素。
+然后，我们创建一个subscription来观察下载进度并相应的更新进度条。很明显，我们订阅在主线程是因为进度条是UI元素。
 
 ```java
 obserbableDownload("http://archive.blender.org/fileadmin/movies/softboy.avi", "sdcardsoftboy.avi";)
 ```
-这是一个下载Observable。网络调用是一个I/O任务和我们预料的那样使用I/O调度器。当下载完成时，我们在`onNext()`启动视频播放器，并且播放器将会在目的URL找到下载的文件.。
+这是一个下载Observable。网络调用是一个I/O任务，理应使用I/O调度器。当下载完成，就会在`onNext()` 中启动视频播放器，并且播放器将会在目标路径找到下载的文件.。
 
-下图展示了下载进度和视频播放器对话框：
+下图展示了下载进度和视频播放器选择对话框：
 
 ![](../images/chapter7_6.png)
 
