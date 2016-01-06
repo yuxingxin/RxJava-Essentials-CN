@@ -1,6 +1,6 @@
 # ZIP
 
-我们在处理多源时可能会带来这样一种场景：多从个Observables接收数据，处理它们，然后将它们合并成一个新的可观测序列来使用。RxJava有一个特殊的方法可以完成：`zip()`合并两个或者多个Observables发射出的数据项，根据指定的函数`Func*`变换它们，并发射一个新值。下图展示了`zip()`方法如何处理发射的“numbers”和“letters”然后将它们合并一个新的数据项：
+在一种新的可能场景中处理多个数据来源时会带来：多从个Observables接收数据，处理它们，然后将它们合并成一个新的可观测序列来使用。RxJava有一个特殊的方法可以完成：`zip()`合并两个或者多个Observables发射出的数据项，根据指定的函数`Func*`变换它们，并发射一个新值。下图展示了`zip()`方法如何处理发射的“numbers”和“letters”然后将它们合并一个新的数据项：
 
 ![](../images/chapter6_4.png)
 
@@ -9,7 +9,7 @@
 ```java
 Observable<Long> tictoc = Observable.interval(1, TimeUnit.SECONDS);
 ```
-`tictoc`Observable变量使用`interval()`函数每秒生成一个Long类型的数据：简单且高效，正如之前所说的，我们需要一个`Func`对象。因为它需要传两个参数，所以是`Func2`:
+`tictoc`Observable变量使用`interval()`函数每秒生成一个Long类型的数据：虽简单但有效，正如之前所说的，我们需要一个`Func`对象。因为它需要传两个参数，所以是`Func2`:
 
 ```java
 private AppInfo updateTitle(AppInfoappInfo, Long time) {

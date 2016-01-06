@@ -150,7 +150,7 @@ private void loadList(List<AppInfo> apps) {
 
 ![](../images/chapter5_6.png)
 
-有一个`scan()`函数的变体，它用初始值作为第一个发射的值，方法特征看起来像：`scan(R,Func2)`，如下图中的例子这样：
+有一个`scan()`函数的变体，它用初始值作为第一个发射的值，方法签名看起来像：`scan(R,Func2)`，如下图中的例子这样：
 
 ![](../images/chapter5_7.png)
 
