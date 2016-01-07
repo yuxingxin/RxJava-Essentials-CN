@@ -23,7 +23,7 @@ loadApps(appOne,appTwo,appThree);
 private void loadApps(AppInfo appOne,AppInfo appTwo,AppInfo appThree) {
     mRecyclerView.setVisibility(View.VISIBLE);
     Observable.just(appOne,appTwo,appThree)
-            .subscribe(new Observable<AppInfo>() {
+            .subscribe(new Observer<AppInfo>() {
 
                 @Override
                 public void onCompleted() {
@@ -60,7 +60,7 @@ private void loadApps(AppInfo appOne,AppInfo appTwo,AppInfo appThree) {
     mRecyclerView.setVisibility(View.VISIBLE);
     Observable.just(appOne,appTwo,appThree)
             .repeat(3)
-            .subscribe(new Observable<AppInfo>() {
+            .subscribe(new Observer<AppInfo>() {
 
                 @Override
                 public void onCompleted() {
@@ -119,7 +119,7 @@ deferred.subscribe(number -> {
 你需要从一个指定的数字X开始发射N个数字吗？你可以用`range`:
 ```java
 Observable.range(10,3)
-    .subscribe(new Observable<Integer>() {
+    .subscribe(new Observer<Integer>() {
 
         @Override
         public void onCompleted() {
@@ -146,7 +146,7 @@ Observable.range(10,3)
 `interval()`函数在你需要创建一个轮询程序时非常好用。
 ```java
 Subscription stopMePlease = Observable.interval(3,TimeUnit.SECONDS)
-    .subscribe(new Observable<Integer>() {
+    .subscribe(new Observer<Integer>() {
 
         @Override
         public void onCompleted() {
@@ -173,7 +173,7 @@ Subscription stopMePlease = Observable.interval(3,TimeUnit.SECONDS)
 
 ```java
 Observable.timer(3,TimeUnit.SECONDS)
-    .subscribe(new Observable<Long>() {
+    .subscribe(new Observer<Long>() {
 
         @Override
         public void onCompleted() {
@@ -194,7 +194,7 @@ Observable.timer(3,TimeUnit.SECONDS)
 它将3秒后发射0,然后就完成了。让我们使用`timer()`的第三个参数，就像下面的例子：
 ```java
 Observable.timer(3,3,TimeUnit.SECONDS)
-    .subscribe(new Observable<Long>() {
+    .subscribe(new Observer<Long>() {
 
         @Override
         public void onCompleted() {
