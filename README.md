@@ -109,6 +109,6 @@ public Observable<List<User>> getMostPopularSOusers(int howmany){
 
 你可以从你在http://www.packtpub.com的账户中下载所有你购买Packt 出版的图书的样例代码，如果你从别处购买这本书的话，你可以访问：http://www.packtpub.com/support 注册并将文件用附件直接发给你。
 
-## Wiki 版权说明
+## 版权说明
 
 RxJava Essentials 中文翻译版 仅供交流学习使用，严禁商业用途。转载请联系作者[yuxingxin](https://github.com/yuxingxin)。
