@@ -1,0 +1,7 @@
+{
+    "name": "RxJava Essentials 中文翻译版",
+    "introduction": "这本书将帮助你学习RxJava的核心方面,也能帮助你克服Android平台局限性从而创建一个基于事件驱动的，响应式的，流畅体验的Android应用。",
+    "path":{
+        "toc":"SUMMARY.md"
+    }
+}

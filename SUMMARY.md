@@ -32,7 +32,7 @@
    * [Debounce](/chapter4/debounce.md)
    * [总结](/chapter4/summary4.md)
 * [变换Observables](/chapter5/transforming_observables.md)
-   * [*map家族](/chapter5/the_*map_family.md)
+   * [*map家族](/chapter5/the_map_family.md)
    * [GroupBy](/chapter5/groupby.md)
    * [Buffer](/chapter5/buffer.md)
    * [Window](/chapter5/window.md)
