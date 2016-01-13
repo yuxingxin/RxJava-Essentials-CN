@@ -24,7 +24,7 @@ private void loadList(List<AppInfo> apps) {
                 return appInfo;
             }
         })
-        .subscribe(new Observable<AppInfo>() {
+        .subscribe(new Observer<AppInfo>() {
 
             @Override
             public void onCompleted() {
@@ -124,7 +124,7 @@ private void loadList(List<AppInfo> apps) {
                 }
             })
             .distinct()
-            .subscribe(new Observable<AppInfo>() {
+            .subscribe(new Observer<AppInfo>() {
 
                 @Override
                 public void onCompleted() {

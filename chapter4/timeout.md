@@ -5,7 +5,7 @@
 ```java
 Subscription subscription = getCurrentTemperature()
     .timeout(2,TimeUnit.SECONDS)
-    .subscribe(new Observable<Integer>() {
+    .subscribe(new Observer<Integer>() {
 
         @Override
         public void onCompleted() {

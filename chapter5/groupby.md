@@ -23,7 +23,7 @@ Observable<GroupedObservable<String,AppInfo>> groupedItems = Observable.from(app
 
 ```java
 Observable.concat(groupedItems)
-    .subscribe(new Observable<AppInfo>() {
+    .subscribe(new Observer<AppInfo>() {
 
         @Override
         public void onCompleted() {

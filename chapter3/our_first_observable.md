@@ -82,7 +82,7 @@ SwipeRefreshLayout mSwipeRefreshLayout;
 ```java
 private void refreshTheList() {
     getApps().toSortedList()
-            .subscribe(new Observable<List<AppInfo>>() {
+            .subscribe(new Observer<List<AppInfo>>() {
 
                 @Override
                 public void onCompleted() {

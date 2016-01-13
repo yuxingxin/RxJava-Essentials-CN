@@ -14,7 +14,7 @@ mApps = ApplicationsList.getInstance().getList();
 private void loadList(List<AppInfo> apps) {
     mRecyclerView.setVisibility(View.VISIBLE);
     Observable.from(apps)
-            .subscribe(new Observable<AppInfo>() {
+            .subscribe(new Observer<AppInfo>() {
 
                 @Override
                 public void onCompleted() {

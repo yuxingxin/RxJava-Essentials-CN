@@ -9,7 +9,7 @@ private void loadList(List<AppInfo> apps) {
     Observable.from(apps)
             .filter((appInfo) ->
             appInfo.getName().startsWith("C"))
-            .subscribe(new Observable<AppInfo>() {
+            .subscribe(new Observer<AppInfo>() {
 
                 @Override
                 public void onCompleted() {

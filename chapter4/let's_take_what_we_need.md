@@ -10,7 +10,7 @@ private void loadList(List<AppInfo> apps) {
     mRecyclerView.setVisibility(View.VISIBLE);
     Observable.from(apps)
             .take(3)
-            .subscribe(new Observable<AppInfo>() {
+            .subscribe(new Observer<AppInfo>() {
 
                 @Override
                 public void onCompleted() {
