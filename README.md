@@ -2,14 +2,9 @@ RxJava Essentials 中文翻译版
 =======
 ![](images/rxjava.jpg)
 
-本书是对Ivan.Morgillo所写一书的中文翻译版本，仅供交流学习使用，严禁商业用途。另外推荐一本姊妹篇《Learning Reactive Programming》，各个文件下载地址如下：
+本书是对Ivan.Morgillo所写一书的中文翻译版本，仅供交流学习使用，严禁商业用途。另外推荐一本姊妹篇《Learning Reactive Programming》，
 
-* 《RxJava Essentials》[翻译中文版电子书下载地址](https://www.gitbook.com/book/yuxingxin/rxjava-essentials-cn/)
-
-* 《RxJava Essentials》[英文版电子书下载地址](http://vdisk.weibo.com/s/CeH3i0tfvZMVq)
-
-* 《Learning Reactive Programming》[英文版电子书下载地址](http://vdisk.weibo.com/s/CeH3i0tfvZMfT)
-
+* 《RxJava Essentials》[翻译中文版电子书](https://www.gitbook.com/book/yuxingxin/rxjava-essentials-cn/)
 ---
 
 # 本书内容有
