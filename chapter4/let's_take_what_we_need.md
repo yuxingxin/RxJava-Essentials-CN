@@ -25,7 +25,7 @@ private void loadList(List<AppInfo> apps) {
 
                 @Override
                 public void onNext(AppInfo appInfo) {
-                    mAddedApps.add(appInfo); 
+                    mAddedApps.add(appInfo);
                     mAdapter.addApplication(mAddedApps.size() - 1,appInfo);
                 }
             });
@@ -43,7 +43,7 @@ Observable.from(apps)
         .takeLast(3)
         .subscribe(...);
 ```
-正如听起来那样不值一提，重点注意`takeLast()`函数由于用一组有限的发射数的本质使得它仅可用于完成的序列。
+正如听起来那样不值一提，值得注意的是因为takeLast()方法只能作用于一组有限的序列（发射元素），它只能应用于一个完整的序列。
 
 下图中展示了如何从可观测源中发射最后一个元素来创建一个新的序列：
 
@@ -52,24 +52,3 @@ Observable.from(apps)
 下图中展示了我们在已安装的应用列表使用`take()`和`takeLast()`函数后发生的结果：
 
 ![](../images/chapter4_4.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
