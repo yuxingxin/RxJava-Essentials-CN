@@ -4,7 +4,7 @@
 
 ### Lombok
 
-Lombok使用注解的方式为你生成许多代码。我们将使用它老生成`getter/setter`、`toString()`、`equals()`、`hashCode()`。它借助于Gradle依赖和一个Android Studio插件。
+Lombok使用注解的方式为你生成许多代码。大多数情况下我们使用其生成`getter/setter`、`toString()`、`equals()`、`hashCode()`。它来自于一个Gradle依赖和Android Studio插件。
 
 ### Butter Knife
 
